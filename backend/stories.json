@@ -1,0 +1,7722 @@
+{
+  "schema_version": 1,
+  "genres": [
+    "生活悬疑",
+    "轻松脑洞",
+    "社会派",
+    "惊悚恐怖",
+    "科幻实验室",
+    "校园",
+    "职场",
+    "家庭伦理",
+    "历史民国",
+    "犯罪推理"
+  ],
+  "difficulties": [
+    "入门",
+    "进阶",
+    "烧脑"
+  ],
+  "scales": [
+    "无怖",
+    "惊悚",
+    "重口"
+  ],
+  "stories": [
+    {
+      "id": "second-cup-of-soy-milk",
+      "title": "第二杯豆浆",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "豆浆",
+        "寻找",
+        "姐妹"
+      ],
+      "warnings": [],
+      "surface": "每天早晨，女人都会在街角早餐店买两份豆浆。店员从没见她带第二个人来。三个月后，她第一次只买了一份，店员却悄悄松了口气。",
+      "bottom": "女人在等失踪的妹妹。妹妹失踪前最后一次被监控拍到，就在早餐店附近，手里也拿着同款豆浆。三个月后，警方确认妹妹平安，只是在外地受伤住院。女人终于不再替妹妹买早餐，店员悬着的心也放下了。",
+      "facts": [
+        {
+          "id": "woman-searching-sister",
+          "description": "女人一直在寻找失踪的妹妹。",
+          "truth": true,
+          "aliases": [
+            "女人在找妹妹",
+            "寻找失踪妹妹",
+            "妹妹失踪"
+          ]
+        },
+        {
+          "id": "second-cup-for-sister",
+          "description": "第二杯豆浆是买给妹妹的。",
+          "truth": true,
+          "aliases": [
+            "第二杯豆浆是给妹妹的吗",
+            "第二杯给妹妹",
+            "给妹妹买的"
+          ]
+        },
+        {
+          "id": "sister-dead",
+          "description": "妹妹已经死亡。",
+          "truth": false,
+          "aliases": [
+            "妹妹已经死了吗",
+            "妹妹死了",
+            "妹妹去世"
+          ]
+        },
+        {
+          "id": "sister-safe",
+          "description": "妹妹最终被确认平安并活着。",
+          "truth": true,
+          "aliases": [
+            "妹妹平安",
+            "妹妹没事",
+            "妹妹还活着"
+          ]
+        },
+        {
+          "id": "shopkeeper-relieved",
+          "description": "女人只买一份后，店员放心了。",
+          "truth": true,
+          "aliases": [
+            "店员放心",
+            "店员松口气",
+            "悄悄松了口气"
+          ]
+        }
+      ],
+      "hints": [
+        "第二杯豆浆并不是给店里某个隐形的人喝的。",
+        "只买一份意味着女人的等待结束了，而且结果是好的。"
+      ],
+      "suggestions": [
+        "第二杯豆浆是给妹妹的吗？",
+        "妹妹出事了吗？",
+        "店员为什么担心？"
+      ]
+    },
+    {
+      "id": "photograph-on-fridge",
+      "title": "冰箱上的照片",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "惊悚",
+      "tags": [
+        "旧照片",
+        "邻居",
+        "回忆"
+      ],
+      "warnings": [],
+      "surface": "独居男子的冰箱上一直贴着全家福。他每天都会擦一次相框，却从不邀请任何人来家里。一天，邻居发现那张照片其实是他小时候的合影。",
+      "bottom": "男子的父母在他小时候因事故去世，他由邻居家照顾长大。照片里的孩子不是他的家人，而是曾经照顾过他的邻居家的孩子。成年后他把照片贴在冰箱上，是为了提醒自己不要忘记那段被接住的日子，而不是纪念已故亲属。",
+      "facts": [
+        {
+          "id": "parents-dead",
+          "description": "男子的父母在他小时候因事故去世。",
+          "truth": true,
+          "aliases": [
+            "父母死了",
+            "父母去世",
+            "父母事故"
+          ]
+        },
+        {
+          "id": "photo-childhood",
+          "description": "照片是男子小时候的合影。",
+          "truth": true,
+          "aliases": [
+            "小时候的照片",
+            "童年合影",
+            "照片里是小时候"
+          ]
+        },
+        {
+          "id": "photo-family-photo",
+          "description": "照片里的其他人是他的直系亲属。",
+          "truth": false,
+          "aliases": [
+            "照片里是家人",
+            "全家福里的家人"
+          ]
+        },
+        {
+          "id": "neighbor-cared-for-him",
+          "description": "曾经照顾过他的邻居家孩子也在照片里。",
+          "truth": true,
+          "aliases": [
+            "邻居照顾他",
+            "照片里有邻居",
+            "邻居家的孩子"
+          ]
+        },
+        {
+          "id": "he-hides-someone",
+          "description": "男子家里藏着一个人。",
+          "truth": false,
+          "aliases": [
+            "家里藏着人",
+            "冰箱里有人",
+            "屋里有人"
+          ]
+        }
+      ],
+      "hints": [
+        "照片不是用来纪念血缘，而是用来纪念一段被照顾的经历。",
+        "冰箱上的照片与他小时候的生活有关。"
+      ],
+      "suggestions": [
+        "照片里是他的家人吗？",
+        "他为什么每天擦照片？",
+        "照片里的孩子是谁？"
+      ]
+    },
+    {
+      "id": "umbrella-dry-rain",
+      "title": "雨天不湿的伞",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "雨伞",
+        "轮渡",
+        "记忆偏差"
+      ],
+      "warnings": [],
+      "surface": "下着大雨，女人撑着伞走进咖啡馆，收伞时伞面几乎是干的。服务员问她是不是没走多远，她却说已经从河对岸走来了。",
+      "bottom": "女人不是步行来的。她把伞放在了河对岸的共享单车上，自己坐轮渡过了河，下船后才发现伞忘在车上。她手里这把是轮渡工作人员借给她的备用伞，和最初那把一模一样。她以为伞是干的，是因为借伞时没有淋雨，误把记忆里的两把伞混在了一起。",
+      "facts": [
+        {
+          "id": "two-umbrellas",
+          "description": "女人先后接触过两把相似的伞。",
+          "truth": true,
+          "aliases": [
+            "有两把伞",
+            "两把一样的伞",
+            "借来的伞"
+          ]
+        },
+        {
+          "id": "ferry-crossing",
+          "description": "女人是坐轮渡过河的，不是走来的。",
+          "truth": true,
+          "aliases": [
+            "坐轮渡",
+            "不是走路",
+            "从河对岸坐船"
+          ]
+        },
+        {
+          "id": "forgot-umbrella",
+          "description": "她把原来的伞忘在了共享单车上。",
+          "truth": true,
+          "aliases": [
+            "伞忘在车",
+            "忘在单车",
+            "原来的伞丢了"
+          ]
+        },
+        {
+          "id": "umbrella-never-used",
+          "description": "这把伞从来没有被雨淋湿过。",
+          "truth": true,
+          "aliases": [
+            "伞没淋雨",
+            "伞一直是干的",
+            "没打开过原来的伞"
+          ]
+        },
+        {
+          "id": "waitress-liar",
+          "description": "服务员故意撒谎隐瞒事情。",
+          "truth": false,
+          "aliases": [
+            "服务员撒谎",
+            "服务员说谎"
+          ]
+        }
+      ],
+      "hints": [
+        "问题不在雨，而在她从河对岸到这里的方式。",
+        "她记得的伞和手里的伞可能不是同一把。"
+      ],
+      "suggestions": [
+        "她是步行来的吗？",
+        "伞为什么是干的？",
+        "原来的伞在哪里？"
+      ]
+    },
+    {
+      "id": "milk-delivery-every-night",
+      "title": "每晚送到的牛奶",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "牛奶",
+        "夜班",
+        "报恩"
+      ],
+      "warnings": [],
+      "surface": "小区门口每天凌晨都会多出一瓶牛奶，没人知道是谁放的。物业装了监控后，发现送货的人每次都在镜头前停一下，然后把牛奶放在同一个角落。",
+      "bottom": "送奶的人是一位夜班护士。那瓶牛奶不是投递失误，而是她送给一位独居老人的。老人年轻时救过她，后来患上记忆障碍，只记得每天清晨要喝一瓶牛奶。护士值夜班回家时顺便放一瓶，停在镜头前是为了遮住自己疲惫的脸，不想让老人认出她。",
+      "facts": [
+        {
+          "id": "nurse-delivery",
+          "description": "送奶的人是一位夜班护士。",
+          "truth": true,
+          "aliases": [
+            "护士送奶",
+            "夜班护士",
+            "送奶的人是护士"
+          ]
+        },
+        {
+          "id": "elderly-patient",
+          "description": "牛奶是送给一位患上记忆障碍的独居老人。",
+          "truth": true,
+          "aliases": [
+            "送给老人",
+            "独居老人",
+            "老人失忆"
+          ]
+        },
+        {
+          "id": "old-man-rescued-her",
+          "description": "老人年轻时救过护士。",
+          "truth": true,
+          "aliases": [
+            "老人救过她",
+            "以前救过她",
+            "救命恩人"
+          ]
+        },
+        {
+          "id": "delivery-mistake",
+          "description": "牛奶只是送错了地址。",
+          "truth": false,
+          "aliases": [
+            "送错了",
+            "送错地址",
+            "投递错误"
+          ]
+        },
+        {
+          "id": "camera-hides-face",
+          "description": "她在镜头前停顿是为了遮住自己的脸。",
+          "truth": true,
+          "aliases": [
+            "遮住脸",
+            "不想被认出",
+            "挡镜头"
+          ]
+        }
+      ],
+      "hints": [
+        "这不是投递事故，而是有人长期在照顾另一个人。",
+        "她不想让收牛奶的人认出自己。"
+      ],
+      "suggestions": [
+        "牛奶是谁送的？",
+        "牛奶是送错了吗？",
+        "她为什么挡着摄像头？"
+      ]
+    },
+    {
+      "id": "empty-seat-opera",
+      "title": "剧院里的空座位",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "剧院",
+        "空座",
+        "纪念"
+      ],
+      "warnings": [],
+      "surface": "老剧院每晚都会在第一排留一个空座位。新经理觉得浪费，连续三晚把票卖出去。第四天，那位买票的观众却主动要求退款，并说那个位置不能坐。",
+      "bottom": "那个座位属于剧院曾经的灯光师。一次事故中，灯光师为了救演员从高处摔下，之后再也没能回到剧院。剧院保留座位并不是灵异事件，而是老员工之间的纪念仪式。新经理不知道这件事，观众发现座位上放着灯光师的照片和旧工牌后，主动退款离开。",
+      "facts": [
+        {
+          "id": "seat-for-lighting-technician",
+          "description": "空座位是为一位已故灯光师保留的。",
+          "truth": true,
+          "aliases": [
+            "灯光师的位置",
+            "纪念灯光师",
+            "空座是纪念"
+          ]
+        },
+        {
+          "id": "lighting-accident",
+          "description": "灯光师曾在事故中为救演员受伤死亡。",
+          "truth": true,
+          "aliases": [
+            "灯光师事故",
+            "救演员死了",
+            "灯光师去世"
+          ]
+        },
+        {
+          "id": "ghost-seat",
+          "description": "座位上有鬼魂出没。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "有鬼",
+            "幽灵座位"
+          ]
+        },
+        {
+          "id": "new-manager-unaware",
+          "description": "新经理不知道座位的来历。",
+          "truth": true,
+          "aliases": [
+            "经理不知道",
+            "新经理不知情",
+            "没人告诉他"
+          ]
+        },
+        {
+          "id": "audience-notice-photo",
+          "description": "观众看到了座位上的照片和工牌。",
+          "truth": true,
+          "aliases": [
+            "看到照片",
+            "看到工牌",
+            "发现纪念物"
+          ]
+        }
+      ],
+      "hints": [
+        "空座位不是事故现场，而是一种纪念。",
+        "新经理不知道老员工之间发生过什么。"
+      ],
+      "suggestions": [
+        "座位为什么不能坐？",
+        "剧院闹鬼吗？",
+        "经理知道原因吗？"
+      ]
+    },
+    {
+      "id": "closed-lift-every-monday",
+      "title": "每周一停用的电梯",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "电梯",
+        "心理",
+        "上班"
+      ],
+      "warnings": [],
+      "surface": "写字楼的一部电梯每周一上午都会停用一小时。保洁员总在门口放一块维修牌，但其实电梯没有故障。新来的员工偷偷看了监控，发现那段时间里总有一个男人站在电梯口。",
+      "bottom": "男人是楼里一位患有广场恐惧症的员工。每周一他要参加例会，平时必须坐货梯从地下车库进入。那部客梯停用的一小时，是他独自做心理准备的时间。保洁员知道他的情况，就帮他挡住其他人。监控里他并没有进电梯，只是在门口练习呼吸。",
+      "facts": [
+        {
+          "id": "man-fear-crowd",
+          "description": "男人患有广场恐惧症，害怕拥挤。",
+          "truth": true,
+          "aliases": [
+            "害怕人群",
+            "广场恐惧",
+            "不敢坐客梯"
+          ]
+        },
+        {
+          "id": "elevator-not-broken",
+          "description": "电梯并没有故障。",
+          "truth": false,
+          "aliases": [
+            "电梯坏了",
+            "电梯故障",
+            "维修是真的"
+          ]
+        },
+        {
+          "id": "cleaner-helps",
+          "description": "保洁员知道情况并帮他挡住其他人。",
+          "truth": true,
+          "aliases": [
+            "保洁员帮忙",
+            "保洁知道",
+            "帮他挡人"
+          ]
+        },
+        {
+          "id": "man-practices",
+          "description": "男人在电梯口练习呼吸并做心理准备。",
+          "truth": true,
+          "aliases": [
+            "练习呼吸",
+            "心理准备",
+            "等例会"
+          ]
+        },
+        {
+          "id": "monitor-shows-ghost",
+          "description": "监控里出现的是幽灵。",
+          "truth": false,
+          "aliases": [
+            "幽灵",
+            "鬼魂",
+            "闹鬼"
+          ]
+        }
+      ],
+      "hints": [
+        "停用电梯的人不是维修员。",
+        "男人并不是在等电梯，而是在等自己准备好。"
+      ],
+      "suggestions": [
+        "电梯真的坏了吗？",
+        "男人为什么站在那里？",
+        "保洁员知道吗？"
+      ]
+    },
+    {
+      "id": "red-light-at-night",
+      "title": "凌晨亮起的红灯",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "惊悚",
+      "tags": [
+        "红灯",
+        "海员",
+        "误会"
+      ],
+      "warnings": [],
+      "surface": "公寓对面的一户人家每天凌晨三点都会亮起红灯。住户从不拉窗帘，邻居们怀疑那间房里有人被囚禁。警察上门后，发现屋里只有一位老人和一台旧收音机。",
+      "bottom": "老人是位退休海员。红灯不是求救信号，而是他年轻时船上使用的夜灯。老人习惯在凌晨三点起床听短波，红灯是为了在黑暗中不刺眼。邻居看到的“人影”只是收音机旁的旧救生衣。",
+      "facts": [
+        {
+          "id": "retired-sailor",
+          "description": "老人是一位退休海员。",
+          "truth": true,
+          "aliases": [
+            "退休海员",
+            "老船员",
+            "曾经是海员"
+          ]
+        },
+        {
+          "id": "red-lamp",
+          "description": "红灯是他从船上带回来的夜灯。",
+          "truth": true,
+          "aliases": [
+            "船上夜灯",
+            "旧夜灯",
+            "红色灯"
+          ]
+        },
+        {
+          "id": "someone-imprisoned",
+          "description": "屋里有人被囚禁。",
+          "truth": false,
+          "aliases": [
+            "有人被关",
+            "囚禁",
+            "绑架"
+          ]
+        },
+        {
+          "id": "shortwave-radio",
+          "description": "老人凌晨起床是为了听短波广播。",
+          "truth": true,
+          "aliases": [
+            "听短波",
+            "听收音机",
+            "凌晨广播"
+          ]
+        },
+        {
+          "id": "silhouette-lifejacket",
+          "description": "邻居看到的人影其实是救生衣。",
+          "truth": true,
+          "aliases": [
+            "救生衣",
+            "衣架",
+            "不是人"
+          ]
+        }
+      ],
+      "hints": [
+        "红灯不是求救信号，而是老人习惯使用的夜灯。",
+        "屋里没有第二个人，邻居看到的是旧物。"
+      ],
+      "suggestions": [
+        "红灯代表危险吗？",
+        "老人为什么凌晨起床？",
+        "邻居看到了什么？"
+      ]
+    },
+    {
+      "id": "chair-at-bus-stop",
+      "title": "公交站旁的椅子",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "公交站",
+        "旧椅子",
+        "纪念"
+      ],
+      "warnings": [],
+      "surface": "公交站旁有一把旧木椅，雨天总有人把伞放在上面。奇怪的是，那把椅子从来没有被人坐过。一天，站务员把椅子搬走后，附近居民竟然都来询问。",
+      "bottom": "那把椅子是一位已经去世的修鞋匠留下的。修鞋匠在世时每天坐在那里看公交车，也为路人免费修伞。他去世后，居民自发保留椅子作为纪念。没有人坐，是因为大家默认那是他的位置；下雨时放伞，是在延续他帮人修伞的习惯。",
+      "facts": [
+        {
+          "id": "chair-memory-cobbler",
+          "description": "椅子是为纪念一位去世的修鞋匠。",
+          "truth": true,
+          "aliases": [
+            "纪念修鞋匠",
+            "老人的椅子",
+            "去世的人"
+          ]
+        },
+        {
+          "id": "cobbler-fixed-umbrellas",
+          "description": "修鞋匠生前会免费帮人修伞。",
+          "truth": true,
+          "aliases": [
+            "免费修伞",
+            "修伞",
+            "帮路人修伞"
+          ]
+        },
+        {
+          "id": "chair-dangerous",
+          "description": "椅子被搬走是因为有危险。",
+          "truth": false,
+          "aliases": [
+            "椅子危险",
+            "有炸弹",
+            "不安全"
+          ]
+        },
+        {
+          "id": "people-want-return",
+          "description": "居民询问是想让椅子放回原处。",
+          "truth": true,
+          "aliases": [
+            "让大家坐",
+            "希望搬回来",
+            "要求还回来"
+          ]
+        },
+        {
+          "id": "chair-is-haunted",
+          "description": "椅子被搬走是因为闹鬼。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "有鬼",
+            "灵异"
+          ]
+        }
+      ],
+      "hints": [
+        "椅子不是公共财产，而是一座很小的纪念物。",
+        "放伞的人不是在占座，而是在延续一个习惯。"
+      ],
+      "suggestions": [
+        "椅子为什么没人坐？",
+        "大家为什么来询问？",
+        "修鞋匠和伞有什么关系？"
+      ]
+    },
+    {
+      "id": "neighbor-never-opens-window",
+      "title": "从不打开窗户的邻居",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "邻居",
+        "过敏",
+        "停电"
+      ],
+      "warnings": [],
+      "surface": "楼上邻居家的窗户整年紧闭。快递员说屋里总有人应门，但从来没有人出来。一次停电后，邻居却第一次打开窗，向楼下喊了一句“谁能借我一盏灯”。",
+      "bottom": "邻居患有严重的紫外线过敏，平时必须拉窗帘、避免阳光直射。停电后屋内备用电源也断了，她在黑暗中找不到药，才不得不开窗求助。快递员听到的应门声是她隔着门说的，不是屋里另有别人。",
+      "facts": [
+        {
+          "id": "sunlight-allergy",
+          "description": "邻居患有严重的紫外线过敏。",
+          "truth": true,
+          "aliases": [
+            "紫外线过敏",
+            "怕阳光",
+            "不能见光"
+          ]
+        },
+        {
+          "id": "power-outage",
+          "description": "停电让她失去了屋内备用电源。",
+          "truth": true,
+          "aliases": [
+            "停电",
+            "备用电源断了",
+            "没电了"
+          ]
+        },
+        {
+          "id": "trapped-person",
+          "description": "屋里关着另一个人。",
+          "truth": false,
+          "aliases": [
+            "屋里有人",
+            "关着人",
+            "囚禁"
+          ]
+        },
+        {
+          "id": "delivery-knock",
+          "description": "快递员听到的应门声来自邻居本人。",
+          "truth": true,
+          "aliases": [
+            "她自己应门",
+            "隔门说话",
+            "不是另一个人"
+          ]
+        },
+        {
+          "id": "needs-medicine",
+          "description": "她开窗是为了找药和求助。",
+          "truth": true,
+          "aliases": [
+            "找药",
+            "求助",
+            "需要灯"
+          ]
+        }
+      ],
+      "hints": [
+        "她不是不想接触人，而是身体不能接触阳光。",
+        "停电打破了平时维持生活的条件。"
+      ],
+      "suggestions": [
+        "邻居为什么不开窗？",
+        "屋里还有别人吗？",
+        "她为什么突然求助？"
+      ]
+    },
+    {
+      "id": "lift-without-floor-seven",
+      "title": "没有七楼的电梯",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "电梯",
+        "旧楼",
+        "楼层"
+      ],
+      "warnings": [],
+      "surface": "新公寓的电梯按钮从六楼直接跳到八楼。租客问物业七楼在哪里，物业只说“没有七楼”。但到了深夜，电梯偶尔会在六楼和八楼之间停一下，门却不开。",
+      "bottom": "这栋楼原本有七楼，但七楼曾是旧医院的手术层。改造时，开发商把七楼改成了设备夹层，只在消防通道保留入口。电梯仍保留旧楼层的感应装置，所以深夜偶尔会停在半层位置。租客听到的“七楼”不是幽灵，而是楼层编号被抹去后留下的历史。",
+      "facts": [
+        {
+          "id": "seven-floor-exists",
+          "description": "这栋楼曾经有第七层。",
+          "truth": true,
+          "aliases": [
+            "原来有七楼",
+            "七楼存在过",
+            "旧楼层"
+          ]
+        },
+        {
+          "id": "seven-floor-equipment",
+          "description": "七楼后来被改造成设备夹层。",
+          "truth": true,
+          "aliases": [
+            "设备夹层",
+            "改造成机房",
+            "不是住宅"
+          ]
+        },
+        {
+          "id": "elevator-haunted",
+          "description": "电梯停住是因为有鬼。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "幽灵",
+            "鬼魂"
+          ]
+        },
+        {
+          "id": "old-sensor",
+          "description": "电梯保留了旧楼层的感应装置。",
+          "truth": true,
+          "aliases": [
+            "旧感应器",
+            "系统没更新",
+            "旧楼层装置"
+          ]
+        },
+        {
+          "id": "fire-stairs-only",
+          "description": "七楼只能通过消防通道进入。",
+          "truth": true,
+          "aliases": [
+            "消防通道",
+            "楼梯才能进",
+            "没有电梯门"
+          ]
+        }
+      ],
+      "hints": [
+        "七楼没有被彻底拆掉，只是不再作为住宅展示。",
+        "电梯停住不是有人按下了七楼，而是系统记住了旧结构。"
+      ],
+      "suggestions": [
+        "七楼真的不存在吗？",
+        "电梯为什么会在半层停？",
+        "有人住在七楼吗？"
+      ]
+    },
+    {
+      "id": "applause-after-blackout",
+      "title": "停电后的掌声",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "剧院",
+        "视障",
+        "掌声"
+      ],
+      "warnings": [],
+      "surface": "演出刚要开始，剧院突然停电。观众没有惊慌，反而鼓掌欢呼。五分钟后灯光恢复，演员却发现最前排少了一个人。",
+      "bottom": "这是为视障观众举办的特别演出，当晚由一位盲人钢琴家伴奏。停电时，观众通过声音确认演奏者仍在继续，于是用掌声鼓励他。最前排少掉的人不是观众，而是赶去配电室恢复供电的维修员。",
+      "facts": [
+        {
+          "id": "special-performance",
+          "description": "这是一场面向视障观众的特别演出。",
+          "truth": true,
+          "aliases": [
+            "特别演出",
+            "视障观众",
+            "盲人观众"
+          ]
+        },
+        {
+          "id": "performance-continues",
+          "description": "停电时台上的演奏仍在继续。",
+          "truth": true,
+          "aliases": [
+            "演奏继续",
+            "音乐没停",
+            "演出没停"
+          ]
+        },
+        {
+          "id": "audience-applauds",
+          "description": "观众鼓掌是为了鼓励仍在演奏的人。",
+          "truth": true,
+          "aliases": [
+            "观众为什么鼓掌",
+            "掌声鼓励",
+            "给演奏者鼓掌"
+          ]
+        },
+        {
+          "id": "blackout-intentional",
+          "description": "停电是有人故意造成的。",
+          "truth": false,
+          "aliases": [
+            "故意停电",
+            "人为断电",
+            "有人故意"
+          ]
+        },
+        {
+          "id": "missing-person-repair",
+          "description": "少掉的人是去恢复供电的维修员。",
+          "truth": true,
+          "aliases": [
+            "离开的人是维修员",
+            "少的人是维修员",
+            "维修员离开"
+          ]
+        }
+      ],
+      "hints": [
+        "掌声不是对停电本身的反应，而是在回应台上仍然存在的声音。",
+        "少掉的人不是观众，他离开座位与恢复灯光有关。"
+      ],
+      "suggestions": [
+        "观众为什么鼓掌？",
+        "停电是有人故意造成的吗？",
+        "离开的人是维修员吗？"
+      ]
+    },
+    {
+      "id": "man-brings-own-chair",
+      "title": "自带椅子的人",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "公园",
+        "约定",
+        "等待"
+      ],
+      "warnings": [],
+      "surface": "男人每天去公园都自带一把折叠椅，坐在同一棵树下。一天，公园管理员告诉他那棵树要被移走，男人沉默了一会儿，却说“那我明天不来了”。",
+      "bottom": "男人不是来公园休息的，他是在等一个人。多年前，他和失散的朋友约定每年那天在树下见。朋友一直没来，他自带椅子只是为了让朋友远远看到熟悉的位置。树被移走后，他终于决定结束等待，因为他知道朋友不会来了。",
+      "facts": [
+        {
+          "id": "waiting-friend",
+          "description": "男人每天来公园是在等一位失散的朋友。",
+          "truth": true,
+          "aliases": [
+            "等朋友",
+            "等人",
+            "约定见面"
+          ]
+        },
+        {
+          "id": "tree-meeting-point",
+          "description": "树是他们约定的见面地点。",
+          "truth": true,
+          "aliases": [
+            "树下见面",
+            "约定地点",
+            "老地方"
+          ]
+        },
+        {
+          "id": "chair-for-himself",
+          "description": "椅子是给朋友准备的。",
+          "truth": false,
+          "aliases": [
+            "给朋友坐",
+            "朋友的椅子",
+            "第二个人坐"
+          ]
+        },
+        {
+          "id": "friend-dead",
+          "description": "朋友已经死了。",
+          "truth": false,
+          "aliases": [
+            "朋友死了",
+            "朋友去世",
+            "朋友死亡"
+          ]
+        },
+        {
+          "id": "stops-waiting",
+          "description": "树被移走后他决定停止等待。",
+          "truth": true,
+          "aliases": [
+            "不再等了",
+            "放弃等待",
+            "结束等待"
+          ]
+        }
+      ],
+      "hints": [
+        "他不是每天都想坐，而是每天都想被看见。",
+        "树不在了，约定的地点也就失去了意义。"
+      ],
+      "suggestions": [
+        "他在等谁？",
+        "椅子是给谁坐的？",
+        "朋友已经死了吗？"
+      ]
+    },
+    {
+      "id": "cat-that-rings-bell",
+      "title": "会按门铃的猫",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "猫",
+        "门铃",
+        "邻居"
+      ],
+      "warnings": [],
+      "surface": "邻居说楼里有一只猫会按门铃。每次门铃响，打开门却只看到猫。住户装了摄像头，发现猫确实用爪子碰了按钮，但它是从隔壁阳台过来的。",
+      "bottom": "猫的主人是隔壁一位行动不便的老人。老人每天需要人帮忙拿报纸，但不好意思直接麻烦邻居。猫经过训练，会按门铃提醒邻居老人需要帮助。邻居以为是猫在恶作剧，实际上每次都是老人让猫去“叫人”。",
+      "facts": [
+        {
+          "id": "cat-owner-elderly",
+          "description": "猫的主人是一位行动不便的老人。",
+          "truth": true,
+          "aliases": [
+            "老人养猫",
+            "主人行动不便",
+            "隔壁老人"
+          ]
+        },
+        {
+          "id": "cat-trained",
+          "description": "猫经过训练会按门铃求助。",
+          "truth": true,
+          "aliases": [
+            "训练过的猫",
+            "猫求助",
+            "猫叫人"
+          ]
+        },
+        {
+          "id": "cat-prank",
+          "description": "猫只是恶作剧按门铃。",
+          "truth": false,
+          "aliases": [
+            "猫恶作剧",
+            "猫乱按",
+            "只是玩"
+          ]
+        },
+        {
+          "id": "neighbor-helps",
+          "description": "邻居开门后会帮老人拿报纸。",
+          "truth": true,
+          "aliases": [
+            "帮老人拿报纸",
+            "帮邻居",
+            "送报纸"
+          ]
+        },
+        {
+          "id": "old-man-cannot-walk",
+          "description": "老人完全不能移动。",
+          "truth": false,
+          "aliases": [
+            "老人不能动",
+            "瘫痪",
+            "完全不能走"
+          ]
+        }
+      ],
+      "hints": [
+        "猫不是在玩门铃，而是在替另一个人求助。",
+        "门铃每次响起，都和隔壁的老人有关。"
+      ],
+      "suggestions": [
+        "猫为什么按门铃？",
+        "猫是恶作剧吗？",
+        "老人为什么让猫这样做？"
+      ]
+    },
+    {
+      "id": "socks-in-freezer",
+      "title": "冰箱里的袜子",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "合租",
+        "急救",
+        "误会"
+      ],
+      "warnings": [],
+      "surface": "合租房的冰箱里出现了一双干净袜子。室友们互相怀疑，直到有一天，做饭的人发现袜子外面包着一层报纸，里面还夹着一张公交票。",
+      "bottom": "其中一位室友是急救志愿者。那天他在地铁站救人时，伤者的脚受了伤，他把自己的袜子脱下来临时包扎。袜子被污染后不能马上洗，他先用报纸包好放进冰箱低温保存，准备下班后处理。公交票是伤者留下的联系方式。",
+      "facts": [
+        {
+          "id": "roommate-volunteer",
+          "description": "其中一位室友是急救志愿者。",
+          "truth": true,
+          "aliases": [
+            "急救志愿者",
+            "志愿者",
+            "救人"
+          ]
+        },
+        {
+          "id": "socks-bandage",
+          "description": "袜子被用来临时包扎伤者的脚。",
+          "truth": true,
+          "aliases": [
+            "包扎伤口",
+            "当绷带",
+            "给伤者用"
+          ]
+        },
+        {
+          "id": "socks-food",
+          "description": "袜子和食物有关。",
+          "truth": false,
+          "aliases": [
+            "袜子是食物",
+            "恶作剧",
+            "放错冰箱"
+          ]
+        },
+        {
+          "id": "bus-ticket-contact",
+          "description": "公交票是伤者留下的联系方式。",
+          "truth": true,
+          "aliases": [
+            "伤者联系方式",
+            "公交票",
+            "电话号码"
+          ]
+        },
+        {
+          "id": "roommate-hiding",
+          "description": "室友故意把袜子藏起来。",
+          "truth": false,
+          "aliases": [
+            "故意藏",
+            "隐瞒",
+            "恶作剧"
+          ]
+        }
+      ],
+      "hints": [
+        "那双袜子不是生活用品，而是一次急救留下的痕迹。",
+        "冰箱里的东西不一定都和食物有关。"
+      ],
+      "suggestions": [
+        "袜子为什么在冰箱？",
+        "室友在隐瞒什么吗？",
+        "公交票代表什么？"
+      ]
+    },
+    {
+      "id": "font-changed-at-night",
+      "title": "半夜改变的字体",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "手稿",
+        "纸张",
+        "错觉"
+      ],
+      "warnings": [],
+      "surface": "出版社编辑发现一份手稿的字体半夜变了。没有人动过文件，作者也已经去世。她把文件打印出来后，才发现变的不是字体，而是纸张的尺寸。",
+      "bottom": "作者去世前把小说最后一部分写在旧票据上，交给编辑时夹在手稿里。编辑每次翻开文件都会把票据当成普通 A4 纸，数字文件则扫描了不同尺寸的纸张，系统自动缩放成了不同字体效果。所谓“半夜改变”只是她记忆和扫描比例造成的错觉。",
+      "facts": [
+        {
+          "id": "paper-size-different",
+          "description": "手稿里混入了不同尺寸的旧票据。",
+          "truth": true,
+          "aliases": [
+            "纸张尺寸不同",
+            "旧票据",
+            "不是A4"
+          ]
+        },
+        {
+          "id": "author-dead",
+          "description": "作者已经去世。",
+          "truth": true,
+          "aliases": [
+            "作者死了",
+            "作者去世",
+            "不在世了"
+          ]
+        },
+        {
+          "id": "ghost-edited",
+          "description": "作者变成鬼改动了文件。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "鬼改文件",
+            "幽灵作者"
+          ]
+        },
+        {
+          "id": "scanner-scaled",
+          "description": "扫描件因为纸张尺寸不同产生了缩放。",
+          "truth": true,
+          "aliases": [
+            "扫描缩放",
+            "打印比例",
+            "系统自动缩放"
+          ]
+        },
+        {
+          "id": "editing-remembered-wrong",
+          "description": "编辑误把票据和普通纸张当成了一样大。",
+          "truth": true,
+          "aliases": [
+            "记忆错误",
+            "看错了",
+            "票据夹在手稿"
+          ]
+        }
+      ],
+      "hints": [
+        "变化发生在纸上，不是发生在字里。",
+        "作者留下的不只有文字，还有一张旧票据。"
+      ],
+      "suggestions": [
+        "字体真的变了吗？",
+        "是谁改了文件？",
+        "票据为什么会夹在手稿里？"
+      ]
+    },
+    {
+      "id": "plant-grows-sideways",
+      "title": "横着长的绿萝",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "植物",
+        "镜子",
+        "光线"
+      ],
+      "warnings": [],
+      "surface": "办公室的绿萝总是朝门口长，大家都说它喜欢看人进出。保洁阿姨换了两次方向，第二天叶子还是会转回去。直到有人把门口的镜子挪走，绿萝才停止转向。",
+      "bottom": "绿萝并不是喜欢看人，而是在追光。门口镜子的位置会把走廊灯光反射到盆栽侧面，植物持续向光源生长。镜子挪走后，光线方向改变，叶子才恢复正常。",
+      "facts": [
+        {
+          "id": "plant-phototropism",
+          "description": "绿萝转向是因为追逐光源。",
+          "truth": true,
+          "aliases": [
+            "追光",
+            "向光生长",
+            "喜欢光"
+          ]
+        },
+        {
+          "id": "mirror-reflects-light",
+          "description": "门口的镜子把灯光反射到了植物侧面。",
+          "truth": true,
+          "aliases": [
+            "镜子反光",
+            "灯光反射",
+            "光从门口来"
+          ]
+        },
+        {
+          "id": "plant-watches-people",
+          "description": "绿萝喜欢看人进出。",
+          "truth": false,
+          "aliases": [
+            "喜欢看人",
+            "通人性",
+            "会认人"
+          ]
+        },
+        {
+          "id": "cleaner-rotated",
+          "description": "保洁阿姨曾经换过盆栽方向。",
+          "truth": true,
+          "aliases": [
+            "保洁换方向",
+            "转过花盆",
+            "调整位置"
+          ]
+        },
+        {
+          "id": "plant-magical",
+          "description": "绿萝发生了超自然现象。",
+          "truth": false,
+          "aliases": [
+            "超自然",
+            "灵异",
+            "魔法"
+          ]
+        }
+      ],
+      "hints": [
+        "植物不是在看人，而是在看光。",
+        "门口有一个会改变光线方向的东西。"
+      ],
+      "suggestions": [
+        "绿萝为什么转向？",
+        "植物成精了吗？",
+        "镜子有什么作用？"
+      ]
+    },
+    {
+      "id": "clock-always-five-minutes-fast",
+      "title": "永远快五分钟的钟",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "挂钟",
+        "爷爷",
+        "记忆"
+      ],
+      "warnings": [],
+      "surface": "爷爷家的挂钟总是快五分钟，家人多次校准都无效。一天，钟坏了，维修师傅却说这不是普通故障，而是有人故意把摆锤调短了。",
+      "bottom": "爷爷年轻时在火车站工作，习惯提前五分钟到达。后来他患上记忆障碍，常常忘记约会时间。为了让爷爷不再迟到，家人把钟调快五分钟。爷爷并不知道钟有问题，维修师傅发现的是家人长期留下的痕迹。",
+      "facts": [
+        {
+          "id": "clock-intentionally-fast",
+          "description": "挂钟被家人故意调快了五分钟。",
+          "truth": true,
+          "aliases": [
+            "故意调快",
+            "家人调钟",
+            "不是故障"
+          ]
+        },
+        {
+          "id": "grandfather-railway",
+          "description": "爷爷年轻时在火车站工作。",
+          "truth": true,
+          "aliases": [
+            "火车站工作",
+            "铁路职工",
+            "以前在车站"
+          ]
+        },
+        {
+          "id": "clock-broken",
+          "description": "挂钟坏掉是唯一原因。",
+          "truth": false,
+          "aliases": [
+            "钟坏了",
+            "自然故障",
+            "没有人为"
+          ]
+        },
+        {
+          "id": "grandfather-memory",
+          "description": "爷爷后来出现了记忆问题。",
+          "truth": true,
+          "aliases": [
+            "记忆障碍",
+            "忘记时间",
+            "记性不好"
+          ]
+        },
+        {
+          "id": "family-makes-him-late",
+          "description": "家人调钟是为了让爷爷迟到。",
+          "truth": false,
+          "aliases": [
+            "让他迟到",
+            "故意捉弄"
+          ]
+        }
+      ],
+      "hints": [
+        "快五分钟不是钟的问题，而是家里人对爷爷的照顾。",
+        "这个习惯和爷爷年轻时的工作有关。"
+      ],
+      "suggestions": [
+        "钟为什么会快？",
+        "钟坏了吗？",
+        "家人为什么这样做？"
+      ]
+    },
+    {
+      "id": "restaurant-table-for-three",
+      "title": "永远订三人桌",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "餐厅",
+        "消防员",
+        "纪念"
+      ],
+      "warnings": [],
+      "surface": "一家小餐馆每天都有一位先生订三人桌，但他总是一个人吃饭。服务员问他要不要改成两人桌，他笑着说“等他们忙完就来”。时间久了，服务员发现他每次都把两套餐具摆得很整齐。",
+      "bottom": "先生是消防员的家属。他的两个孩子和妻子在一次火灾救援后牺牲，餐馆老板是当年被救者之一。老板一直为他保留三人桌，不是为了等他家人出现，而是让他有一个可以公开怀念他们的地方。先生摆餐具，是在维持自己的告别仪式。",
+      "facts": [
+        {
+          "id": "family-died",
+          "description": "先生的妻子和孩子已经去世。",
+          "truth": true,
+          "aliases": [
+            "家人死了",
+            "妻儿去世",
+            "家属去世"
+          ]
+        },
+        {
+          "id": "restaurant-owner-rescued",
+          "description": "餐馆老板曾被他的家人救过。",
+          "truth": true,
+          "aliases": [
+            "老板被救",
+            "消防员救人",
+            "报恩"
+          ]
+        },
+        {
+          "id": "family-coming",
+          "description": "家人只是还没来，稍后会到。",
+          "truth": false,
+          "aliases": [
+            "家人会来",
+            "只是迟到",
+            "在等人"
+          ]
+        },
+        {
+          "id": "three-table-memory",
+          "description": "三人桌是老板为他保留的纪念方式。",
+          "truth": true,
+          "aliases": [
+            "老板保留桌子",
+            "纪念家人",
+            "三人桌"
+          ]
+        },
+        {
+          "id": "he-lies",
+          "description": "他故意欺骗服务员。",
+          "truth": false,
+          "aliases": [
+            "撒谎",
+            "骗服务员",
+            "故意隐瞒"
+          ]
+        }
+      ],
+      "hints": [
+        "他不是在等迟到的人，而是在保留一种共同生活的形式。",
+        "餐馆老板知道他的故事。"
+      ],
+      "suggestions": [
+        "他为什么订三人桌？",
+        "家人真的会来吗？",
+        "老板知道原因吗？"
+      ]
+    },
+    {
+      "id": "piano-lesson-at-midnight",
+      "title": "午夜钢琴课",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "钢琴",
+        "午夜",
+        "学校"
+      ],
+      "warnings": [],
+      "surface": "一栋老居民楼每晚十二点都会传出钢琴声，邻居投诉了半年，琴声却从未停止。物业撬开房门后，发现屋里没有人，钢琴却真的在响。",
+      "bottom": "弹琴的是隔壁盲人学校的学生。他们白天不能使用这架旧钢琴，老师便录下了学生的练习曲，用自动演奏装置在午夜播放。装置只在夜间启动，是为了避开白天课程和邻居的休息时间。所谓“没有人”只是物业没有注意墙壁另一侧的通道。",
+      "facts": [
+        {
+          "id": "automatic-player",
+          "description": "钢琴由自动演奏装置播放。",
+          "truth": true,
+          "aliases": [
+            "自动演奏",
+            "播放录音",
+            "机械装置"
+          ]
+        },
+        {
+          "id": "blind-school-students",
+          "description": "演奏内容来自盲人学校的学生练习。",
+          "truth": true,
+          "aliases": [
+            "盲人学生",
+            "学生练习",
+            "学校录音"
+          ]
+        },
+        {
+          "id": "haunted-piano",
+          "description": "钢琴被鬼魂操控。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "幽灵",
+            "鬼弹琴"
+          ]
+        },
+        {
+          "id": "midnight-avoids-noise",
+          "description": "午夜播放是为了避开白天课程。",
+          "truth": true,
+          "aliases": [
+            "避开白天",
+            "晚上播放",
+            "不影响上课"
+          ]
+        },
+        {
+          "id": "no-one-inside",
+          "description": "屋里当时确实没有任何人。",
+          "truth": true,
+          "aliases": [
+            "屋里没人",
+            "现场没人",
+            "没有人"
+          ]
+        }
+      ],
+      "hints": [
+        "声音不是从活人手下发出来的。",
+        "这架钢琴连接着另一所学校的时间安排。"
+      ],
+      "suggestions": [
+        "钢琴为什么会响？",
+        "屋里有鬼吗？",
+        "为什么偏偏在午夜响？"
+      ]
+    },
+    {
+      "id": "mirror-shows-yesterday",
+      "title": "镜子里的旧衣服",
+      "primary_genre": "轻松脑洞",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "镜子",
+        "摄像头",
+        "智能家居"
+      ],
+      "warnings": [],
+      "surface": "女人搬进新房后发现，卧室镜子里偶尔会映出她前一天穿过的衣服。她确认自己没有做梦，也不敢再照镜子。朋友来住一晚后，却说这是房屋里唯一正常的镜子。",
+      "bottom": "镜子背后是一台旧智能家居显示屏，房东没有拆除。显示屏每天凌晨会同步门禁摄像头拍到的画面，因此反射出了她前一天出门的样子。朋友看到的“正常”画面，是因为那天门禁摄像头断电，显示屏没有更新。",
+      "facts": [
+        {
+          "id": "old-display",
+          "description": "镜子后面有一台旧智能显示屏。",
+          "truth": true,
+          "aliases": [
+            "旧显示屏",
+            "镜子后面有屏幕",
+            "智能家居"
+          ]
+        },
+        {
+          "id": "camera-sync",
+          "description": "屏幕同步了门禁摄像头的画面。",
+          "truth": true,
+          "aliases": [
+            "门禁摄像头",
+            "同步监控",
+            "摄像头画面"
+          ]
+        },
+        {
+          "id": "mirror-supernatural",
+          "description": "镜子里出现了前世或鬼魂。",
+          "truth": false,
+          "aliases": [
+            "前世",
+            "鬼魂",
+            "超自然"
+          ]
+        },
+        {
+          "id": "power-outage",
+          "description": "门禁摄像头曾经断电。",
+          "truth": true,
+          "aliases": [
+            "摄像头断电",
+            "停电",
+            "没有更新"
+          ]
+        },
+        {
+          "id": "friend-lies",
+          "description": "朋友故意骗她。",
+          "truth": false,
+          "aliases": [
+            "朋友撒谎",
+            "故意欺骗"
+          ]
+        }
+      ],
+      "hints": [
+        "镜子显示的不是过去，而是别处摄像头的延迟画面。",
+        "朋友看到正常画面，是因为某个设备停电了。"
+      ],
+      "suggestions": [
+        "镜子里为什么有旧衣服？",
+        "房子闹鬼吗？",
+        "朋友看到了什么？"
+      ]
+    },
+    {
+      "id": "factory-whistle-sunday",
+      "title": "周日的工厂汽笛",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "工厂",
+        "汽笛",
+        "集体记忆"
+      ],
+      "warnings": [],
+      "surface": "老工厂早就停产，周日下午却总会响起汽笛。附近居民以为工厂偷偷复工，环保部门上门后，发现厂里只有一位退休工人。",
+      "bottom": "退休工人是在替当年的工友守约。工厂关闭前，大家约定每年停产纪念日由最后离厂的人拉一次汽笛。老人独自保留钥匙，不是为了复工，而是为了完成一次告别。环保部门没有查到生产，却听到了他对一段集体记忆的坚持。",
+      "facts": [
+        {
+          "id": "factory-closed",
+          "description": "工厂早已停产关闭。",
+          "truth": true,
+          "aliases": [
+            "工厂停产",
+            "没有复工",
+            "已经关闭"
+          ]
+        },
+        {
+          "id": "retired-worker",
+          "description": "拉汽笛的是一位退休工人。",
+          "truth": true,
+          "aliases": [
+            "退休工人",
+            "老工人",
+            "最后离厂的人"
+          ]
+        },
+        {
+          "id": "whistle-memory",
+          "description": "汽笛是工友们约定的纪念仪式。",
+          "truth": true,
+          "aliases": [
+            "纪念工友",
+            "约定",
+            "告别仪式"
+          ]
+        },
+        {
+          "id": "factory-secretly-running",
+          "description": "工厂偷偷恢复了生产。",
+          "truth": false,
+          "aliases": [
+            "偷偷复工",
+            "还在生产",
+            "违法开工"
+          ]
+        },
+        {
+          "id": "environmental-problem",
+          "description": "汽笛是因为环保设备故障。",
+          "truth": false,
+          "aliases": [
+            "设备故障",
+            "环保问题"
+          ]
+        }
+      ],
+      "hints": [
+        "工厂没有复工，汽笛是在完成一个旧约定。",
+        "最后离开工厂的人一直保留着钥匙。"
+      ],
+      "suggestions": [
+        "工厂重新生产了吗？",
+        "谁在拉汽笛？",
+        "为什么要周日拉？"
+      ]
+    },
+    {
+      "id": "bus-route-without-stops",
+      "title": "没有站牌的公交线",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "公交",
+        "社区",
+        "通勤"
+      ],
+      "warnings": [],
+      "surface": "城郊有一条公交线没有站牌，地图上也查不到。每天清晨，老人和穿校服的学生却在同一个路口排队，上车后从不报站。",
+      "bottom": "这条线是社区为偏远居民临时协调的通勤车，不属于正式公交系统，所以没有站牌。司机只接送固定乘客，路线根据当天目的地调整。地图上没有标记，是为了避免被当成正式线路投诉；老人和学生靠车头的一块旧布作为暗号。",
+      "facts": [
+        {
+          "id": "temporary-commute-line",
+          "description": "这是社区临时协调的通勤车。",
+          "truth": true,
+          "aliases": [
+            "社区通勤车",
+            "临时线路",
+            "不是正式公交"
+          ]
+        },
+        {
+          "id": "fixed-passengers",
+          "description": "车上主要是固定路线的老人和学生。",
+          "truth": true,
+          "aliases": [
+            "固定乘客",
+            "老人学生",
+            "附近居民"
+          ]
+        },
+        {
+          "id": "driver-decides-route",
+          "description": "司机根据当天目的地调整路线。",
+          "truth": true,
+          "aliases": [
+            "路线会变",
+            "司机决定",
+            "按目的地走"
+          ]
+        },
+        {
+          "id": "official-bus-secret",
+          "description": "这是公交公司隐瞒的正式线路。",
+          "truth": false,
+          "aliases": [
+            "正式公交",
+            "公交公司隐瞒",
+            "秘密线路"
+          ]
+        },
+        {
+          "id": "marker-cloth",
+          "description": "车头的旧布是乘客辨认车辆的暗号。",
+          "truth": true,
+          "aliases": [
+            "旧布",
+            "车头标记",
+            "暗号"
+          ]
+        }
+      ],
+      "hints": [
+        "它不在公交系统里，却被居民当作每天必须赶上的车。",
+        "没有站牌不代表没有固定人群。"
+      ],
+      "suggestions": [
+        "为什么没有站牌？",
+        "这是正式公交吗？",
+        "司机怎么知道去哪里？"
+      ]
+    },
+    {
+      "id": "village-well-closed",
+      "title": "被锁住的村井",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "村井",
+        "名单",
+        "纪念"
+      ],
+      "warnings": [],
+      "surface": "村里的老井突然被锁起来。老人们每天路过都要看一眼，年轻人却觉得井早就没用了。一天，一个外地人想打开井盖，十几个老人同时站起来阻止他。",
+      "bottom": "井里没有水，而是埋着几十年前一封没有寄出的名单。名单记录的是村里在外地事故中去世的劳工，家属当年不敢公开纪念。老人锁井，是为了保护这份名单，同时也是为了不让下一代忘记那段历史。外地人只是想取水，却被误会成要破坏纪念物。",
+      "facts": [
+        {
+          "id": "well-not-water",
+          "description": "井里没有水，而是保存着旧名单。",
+          "truth": true,
+          "aliases": [
+            "井里有名单",
+            "不是水井",
+            "名单"
+          ]
+        },
+        {
+          "id": "laborers-died",
+          "description": "名单记录的是在外地事故中去世的劳工。",
+          "truth": true,
+          "aliases": [
+            "劳工去世",
+            "事故",
+            "遇难者"
+          ]
+        },
+        {
+          "id": "old-people-protect",
+          "description": "老人锁井是为了保护纪念物。",
+          "truth": true,
+          "aliases": [
+            "保护名单",
+            "纪念",
+            "不让破坏"
+          ]
+        },
+        {
+          "id": "treasure-in-well",
+          "description": "井里有宝藏。",
+          "truth": false,
+          "aliases": [
+            "宝藏",
+            "金子",
+            "财宝"
+          ]
+        },
+        {
+          "id": "outsider-knows-secret",
+          "description": "外地人知道井里的秘密。",
+          "truth": false,
+          "aliases": [
+            "外地人知道",
+            "故意来拿",
+            "知情者"
+          ]
+        }
+      ],
+      "hints": [
+        "老人守的不是水，而是一些不能被忘记的名字。",
+        "外地人只是想要水，并没有恶意。"
+      ],
+      "suggestions": [
+        "井里有什么？",
+        "老人为什么阻止他？",
+        "外地人是来偷东西的吗？"
+      ]
+    },
+    {
+      "id": "man-buys-two-train-tickets",
+      "title": "买两张火车票的人",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "火车站",
+        "志愿者",
+        "走失"
+      ],
+      "warnings": [],
+      "surface": "男人每天去车站买两张目的地相同的火车票，却只坐其中一张。售票员觉得奇怪，直到有一天看见他把另一张票放进站台的失物招领箱。",
+      "bottom": "另一张票是给一位走失老人的家人准备的。老人患病后总想回老家，却在车站迷路。男人的工作是社区志愿者，他每天提前买好两张票：一张陪老人坐，一张留给老人的家属随时赶来。失物招领箱其实是家属之间传递信息的交接点。",
+      "facts": [
+        {
+          "id": "volunteer",
+          "description": "男人是帮助走失老人的社区志愿者。",
+          "truth": true,
+          "aliases": [
+            "志愿者",
+            "社区工作",
+            "帮助老人"
+          ]
+        },
+        {
+          "id": "second-ticket-family",
+          "description": "第二张票是给老人家属准备的。",
+          "truth": true,
+          "aliases": [
+            "家属的票",
+            "给家人",
+            "备用票"
+          ]
+        },
+        {
+          "id": "ticket-for-mistress",
+          "description": "第二张票是给婚外情人的。",
+          "truth": false,
+          "aliases": [
+            "情人",
+            "婚外情",
+            "给女人"
+          ]
+        },
+        {
+          "id": "lost-box-message",
+          "description": "失物招领箱是家属传递信息的交接点。",
+          "truth": true,
+          "aliases": [
+            "交接信息",
+            "失物招领箱",
+            "留言"
+          ]
+        },
+        {
+          "id": "old-man-dead",
+          "description": "走失老人已经死了。",
+          "truth": false,
+          "aliases": [
+            "老人死了",
+            "已经去世",
+            "死亡"
+          ]
+        }
+      ],
+      "hints": [
+        "他不是坐两趟车，而是在为另一个人保留一张随时能上车的票。",
+        "失物招领箱里不只是失物，还有人和人之间的约定。"
+      ],
+      "suggestions": [
+        "为什么买两张票？",
+        "第二张给谁？",
+        "老人已经死了吗？"
+      ]
+    },
+    {
+      "id": "school-bus-arrives-early",
+      "title": "提前到站的校车",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "校车",
+        "安全",
+        "高架桥"
+      ],
+      "warnings": [],
+      "surface": "校车每天都会提前十分钟到站，司机却从不催促学生。校长查了路线后，发现司机每次都绕远一段路，正好经过一片新修的高架桥。",
+      "bottom": "司机绕行是因为高架桥下曾经发生过一次交通事故。事故中一名学生为了赶校车横穿马路，后来司机们约定宁可提前出发，也要走安全的慢路线。孩子们不知道原因，只知道司机总是等他们站稳才关门。",
+      "facts": [
+        {
+          "id": "driver-safety-detour",
+          "description": "司机绕行是为了避开危险路口。",
+          "truth": true,
+          "aliases": [
+            "安全路线",
+            "绕开路口",
+            "怕出事故"
+          ]
+        },
+        {
+          "id": "past-accident",
+          "description": "高架桥下曾发生过学生交通事故。",
+          "truth": true,
+          "aliases": [
+            "以前出事故",
+            "学生受伤",
+            "车祸"
+          ]
+        },
+        {
+          "id": "bus-late",
+          "description": "校车经常迟到。",
+          "truth": false,
+          "aliases": [
+            "迟到",
+            "不守时",
+            "司机偷懒"
+          ]
+        },
+        {
+          "id": "driver-reports-students",
+          "description": "司机提前到是为了观察学生。",
+          "truth": true,
+          "aliases": [
+            "等学生",
+            "看学生过马路",
+            "确认安全"
+          ]
+        },
+        {
+          "id": "principal-angry",
+          "description": "校长调查是为了处罚司机。",
+          "truth": false,
+          "aliases": [
+            "处罚",
+            "开除",
+            "惩罚"
+          ]
+        }
+      ],
+      "hints": [
+        "司机不是绕路偷懒，而是在避开一个发生过悲剧的地方。",
+        "提前到站和孩子的安全有关。"
+      ],
+      "suggestions": [
+        "司机为什么绕路？",
+        "校车为什么提前到？",
+        "校长要处罚他吗？"
+      ]
+    },
+    {
+      "id": "streetlight-repaired-next-corner",
+      "title": "只修拐角的路灯",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "路灯",
+        "视障",
+        "社区"
+      ],
+      "warnings": [],
+      "surface": "小区里坏了很多路灯，维修队却只修拐角那一盏。居民投诉后，维修队说这是规定。直到某个雨夜，大家才发现拐角站着一个不撑伞的女人。",
+      "bottom": "女人是一位视觉障碍者的妻子。丈夫每天下班要走那段路，拐角处没有路灯就会撞到旧台阶。妻子向社区申请后，维修队优先修复了这盏灯，并在旁边加了反光条。她站在雨里不是等人，而是在确认灯是否亮着。",
+      "facts": [
+        {
+          "id": "blind-husband",
+          "description": "女人的丈夫有视觉障碍。",
+          "truth": true,
+          "aliases": [
+            "丈夫看不见",
+            "视障丈夫",
+            "盲人"
+          ]
+        },
+        {
+          "id": "corner-dangerous",
+          "description": "拐角有旧台阶，容易撞到。",
+          "truth": true,
+          "aliases": [
+            "旧台阶",
+            "容易摔倒",
+            "危险"
+          ]
+        },
+        {
+          "id": "lamp-priority",
+          "description": "这盏灯优先修复是为了丈夫的安全。",
+          "truth": true,
+          "aliases": [
+            "保护丈夫",
+            "为了安全",
+            "特殊申请"
+          ]
+        },
+        {
+          "id": "woman-waiting-lover",
+          "description": "女人在等情人。",
+          "truth": false,
+          "aliases": [
+            "等情人",
+            "等人",
+            "婚外情"
+          ]
+        },
+        {
+          "id": "reflective-strip",
+          "description": "维修队还加了反光条。",
+          "truth": true,
+          "aliases": [
+            "反光条",
+            "增加标记",
+            "夜间提示"
+          ]
+        }
+      ],
+      "hints": [
+        "这盏灯不是更重要，而是对某一个人特别重要。",
+        "女人站在雨里只是在确认一件事。"
+      ],
+      "suggestions": [
+        "为什么只修这盏灯？",
+        "女人在等谁？",
+        "拐角为什么危险？"
+      ]
+    },
+    {
+      "id": "anonymous-lunchbox",
+      "title": "没有署名的饭盒",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "工地",
+        "饭盒",
+        "家属"
+      ],
+      "warnings": [],
+      "surface": "工地门口每天都会出现一个没有署名的饭盒，里面的菜每天不同。工人们以为是老板发的福利，直到饭盒里出现一张写着“别告诉他是我”的纸条。",
+      "bottom": "饭盒来自一位曾受伤的工人妻子。她丈夫在工地事故中失去劳动能力，却不愿接受赔偿以外的帮助。妻子每天偷偷做饭送给仍在那里工作的工友，纸条是叮嘱他们不要把这件事告诉她的丈夫。",
+      "facts": [
+        {
+          "id": "injured-worker-wife",
+          "description": "饭盒来自一位受伤工人的妻子。",
+          "truth": true,
+          "aliases": [
+            "受伤工人家属",
+            "妻子做饭",
+            "事故家属"
+          ]
+        },
+        {
+          "id": "husband-refuses-help",
+          "description": "丈夫不愿接受额外帮助。",
+          "truth": true,
+          "aliases": [
+            "不接受帮助",
+            "自尊心强",
+            "只拿赔偿"
+          ]
+        },
+        {
+          "id": "employer-welfare",
+          "description": "饭盒是老板发的福利。",
+          "truth": false,
+          "aliases": [
+            "老板福利",
+            "公司发的",
+            "工地补贴"
+          ]
+        },
+        {
+          "id": "secret-from-husband",
+          "description": "妻子不想让丈夫知道她在送饭。",
+          "truth": true,
+          "aliases": [
+            "别告诉他",
+            "瞒着丈夫",
+            "不想让他知道"
+          ]
+        },
+        {
+          "id": "poison-food",
+          "description": "饭盒里曾经被人下毒。",
+          "truth": false,
+          "aliases": [
+            "下毒",
+            "饭有问题",
+            "害人"
+          ]
+        }
+      ],
+      "hints": [
+        "饭盒不是福利，而是有人不想让丈夫知道自己在帮助别人。",
+        "纸条上的“别告诉他”指的是一个受伤的工人。"
+      ],
+      "suggestions": [
+        "饭盒是谁送的？",
+        "是老板发的吗？",
+        "为什么要保密？"
+      ]
+    },
+    {
+      "id": "river-letter-bottle",
+      "title": "河里的回信瓶",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "河",
+        "信",
+        "老师"
+      ],
+      "warnings": [],
+      "surface": "河边每天都会漂来一个瓶子，里面装着不同人的回信。有人说是恶作剧，直到一位老人连续收了七天瓶子，最后把瓶子全部埋在河堤下。",
+      "bottom": "老人年轻时是一位乡村教师，曾让学生把写给未来自己的信装进瓶子。学校拆迁后，信被埋在河边。多年后河道清淤，瓶子重新浮出水面。老人不是在收陌生人的信，而是在回收学生们的未来。埋回去，是他为那届学生补上的毕业仪式。",
+      "facts": [
+        {
+          "id": "teacher-student-letters",
+          "description": "老人曾让学生写下给未来的信。",
+          "truth": true,
+          "aliases": [
+            "老师的信",
+            "学生写信",
+            "未来信"
+          ]
+        },
+        {
+          "id": "school-demolished",
+          "description": "学校拆迁后信件被埋在河边。",
+          "truth": true,
+          "aliases": [
+            "学校拆了",
+            "埋在河边",
+            "清淤发现"
+          ]
+        },
+        {
+          "id": "stranger-prank",
+          "description": "瓶子是陌生人恶作剧放的。",
+          "truth": false,
+          "aliases": [
+            "恶作剧",
+            "陌生人",
+            "故意扔瓶"
+          ]
+        },
+        {
+          "id": "elderly-buries-again",
+          "description": "老人再次埋瓶是为了完成毕业仪式。",
+          "truth": true,
+          "aliases": [
+            "完成仪式",
+            "重新埋葬",
+            "毕业纪念"
+          ]
+        },
+        {
+          "id": "one-student-wrote-all",
+          "description": "所有信都是同一个人写的。",
+          "truth": false,
+          "aliases": [
+            "一个人写的",
+            "同一个人",
+            "造假"
+          ]
+        }
+      ],
+      "hints": [
+        "瓶子里的信不是漂流物，而是很久以前写下的未来。",
+        "老人认识写信的人。"
+      ],
+      "suggestions": [
+        "信是谁写的？",
+        "这是恶作剧吗？",
+        "老人为什么埋回去？"
+      ]
+    },
+    {
+      "id": "same-time-maintenance",
+      "title": "总在同一时间维修",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "商场",
+        "清洁工",
+        "孩子"
+      ],
+      "warnings": [],
+      "surface": "商场扶梯每周三下午都会停二十分钟。维修工准时出现，但只擦一擦扶手，从不拆机器。顾客投诉后，经理说这天不能安排维修。",
+      "bottom": "那段时间是商场为清洁工安排的安静时段。清洁工是一位单亲母亲，孩子每周三放学早，却不能在商场等她。经理把扶梯停掉，让她可以利用二十分钟去接孩子，再回来继续工作。维修工只是用维修牌为她争取时间。",
+      "facts": [
+        {
+          "id": "cleaner-child",
+          "description": "清洁工需要周三接孩子放学。",
+          "truth": true,
+          "aliases": [
+            "接孩子",
+            "单亲母亲",
+            "放学"
+          ]
+        },
+        {
+          "id": "manager-arranged-break",
+          "description": "经理安排停梯是为了给她时间。",
+          "truth": true,
+          "aliases": [
+            "经理帮忙",
+            "争取时间",
+            "临时休息"
+          ]
+        },
+        {
+          "id": "lift-broken",
+          "description": "扶梯真的每周三会坏。",
+          "truth": false,
+          "aliases": [
+            "扶梯故障",
+            "机器坏了",
+            "维修正常"
+          ]
+        },
+        {
+          "id": "repairman-clean-only",
+          "description": "维修工只是摆牌子，没有真正维修。",
+          "truth": true,
+          "aliases": [
+            "没修机器",
+            "擦扶手",
+            "只是做样子"
+          ]
+        },
+        {
+          "id": "child-works-there",
+          "description": "孩子在商场里打工。",
+          "truth": false,
+          "aliases": [
+            "孩子打工",
+            "童工",
+            "在商场工作"
+          ]
+        }
+      ],
+      "hints": [
+        "停梯不是为了修设备，而是为了让一个人有时间做别的事。",
+        "经理知道扶梯并没有故障。"
+      ],
+      "suggestions": [
+        "扶梯真的坏了吗？",
+        "维修工在修什么？",
+        "经理知道吗？"
+      ]
+    },
+    {
+      "id": "missing-dog-poster",
+      "title": "覆盖旧告示的寻狗启事",
+      "primary_genre": "社会派",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "重口",
+      "tags": [
+        "寻狗启事",
+        "公告栏",
+        "寻人"
+      ],
+      "warnings": [],
+      "surface": "小区公告栏上贴满了寻狗启事，却没有人真的见过那只狗。保安撕掉几张后，贴启事的老人反而哭着求他不要撕。",
+      "bottom": "老人并不是在找狗。启事背面写着他儿子多年前走失的线索，他把寻狗启事贴在公告栏，是为了让邻居不要撕掉背后的信息。儿子后来被找到，但老人仍保留着那些纸张，作为那段寻人经历的纪念。",
+      "facts": [
+        {
+          "id": "not-dog-search",
+          "description": "老人贴启事并不是为了找狗。",
+          "truth": true,
+          "aliases": [
+            "不是找狗",
+            "寻找儿子",
+            "狗是伪装"
+          ]
+        },
+        {
+          "id": "son-was-missing",
+          "description": "老人的儿子曾经走失。",
+          "truth": true,
+          "aliases": [
+            "儿子失踪",
+            "走失",
+            "找人"
+          ]
+        },
+        {
+          "id": "clues-on-back",
+          "description": "启事背面有寻人的线索。",
+          "truth": true,
+          "aliases": [
+            "背面有线索",
+            "线索",
+            "写着信息"
+          ]
+        },
+        {
+          "id": "dog-never-existed",
+          "description": "那条狗从来不存在。",
+          "truth": true,
+          "aliases": [
+            "没有狗",
+            "狗是假的",
+            "虚构狗"
+          ]
+        },
+        {
+          "id": "son-still-missing",
+          "description": "儿子现在仍然没有被找到。",
+          "truth": false,
+          "aliases": [
+            "还没找到",
+            "一直失踪",
+            "没有消息"
+          ]
+        }
+      ],
+      "hints": [
+        "告示的表面是狗，背面才是他真正想让人看到的东西。",
+        "老人哭不是因为狗，而是因为一段寻人经历。"
+      ],
+      "suggestions": [
+        "他在找狗吗？",
+        "启事背面有什么？",
+        "儿子最后找到了吗？"
+      ]
+    },
+    {
+      "id": "voice-in-baby-monitor",
+      "title": "婴儿监视器里的声音",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "婴儿房",
+        "监视器",
+        "邻居"
+      ],
+      "warnings": [],
+      "surface": "父母每晚都能从婴儿监视器里听到一个女人唱摇篮曲，但婴儿房里只有孩子。关掉设备后声音仍会从邻居家传来，他们才发现两间婴儿房隔着一面旧墙。",
+      "bottom": "邻居家也有一台老式监视器，频率和他们的设备相同。唱歌的是邻居的保姆，她照顾的其实是邻居家已经去世多年的孩子。保姆无法接受孩子离开，每晚仍会在空房间里唱同一首歌；父母听到的是信号串频，不是自己孩子房里的声音。",
+      "facts": [
+        {
+          "id": "neighbor-nanny",
+          "description": "唱歌的人是邻居家的保姆。",
+          "truth": true,
+          "aliases": [
+            "邻居保姆",
+            "隔壁女人",
+            "唱摇篮曲的人"
+          ]
+        },
+        {
+          "id": "deceased-child",
+          "description": "邻居家的孩子早已去世。",
+          "truth": true,
+          "aliases": [
+            "邻居孩子死了",
+            "孩子去世",
+            "空房间"
+          ]
+        },
+        {
+          "id": "signal-crosstalk",
+          "description": "监视器声音来自信号串频。",
+          "truth": true,
+          "aliases": [
+            "串频",
+            "信号干扰",
+            "设备互通"
+          ]
+        },
+        {
+          "id": "ghost-sings",
+          "description": "唱歌的是一个鬼魂。",
+          "truth": false,
+          "aliases": [
+            "鬼魂",
+            "幽灵",
+            "闹鬼"
+          ]
+        },
+        {
+          "id": "own-child-sings",
+          "description": "他们自己的孩子会唱歌。",
+          "truth": false,
+          "aliases": [
+            "婴儿唱歌",
+            "孩子会唱",
+            "自己的宝宝"
+          ]
+        }
+      ],
+      "hints": [
+        "声音来自墙的另一边，而不是自己孩子的房间。",
+        "邻居家的房间里没有活着的孩子。"
+      ],
+      "suggestions": [
+        "摇篮曲是谁唱的？",
+        "婴儿房里闹鬼吗？",
+        "为什么关掉监视器还有声音？"
+      ]
+    },
+    {
+      "id": "tape-under-bed",
+      "title": "床底下的胶带",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "惊悚",
+      "tags": [
+        "租房",
+        "胶带",
+        "夜盲"
+      ],
+      "warnings": [],
+      "surface": "租客搬进新家后发现床底贴着一圈黑色胶带。他撕开胶带，里面是一张写给“下一个住客”的纸条：不要关灯睡觉。",
+      "bottom": "前租客患有夜盲症，黑暗中容易因低血糖摔倒。胶带是他留下的安全提醒，纸条不是恐吓，而是希望新住客晚上保持一盏小灯。房东误以为是灵异警告，才一直没有解释。",
+      "facts": [
+        {
+          "id": "night-blindness",
+          "description": "前租客患有夜盲症。",
+          "truth": true,
+          "aliases": [
+            "夜盲",
+            "看不清黑暗",
+            "低血糖"
+          ]
+        },
+        {
+          "id": "warning-not-ghost",
+          "description": "纸条是安全提醒，不是闹鬼留言。",
+          "truth": true,
+          "aliases": [
+            "安全提醒",
+            "不是鬼",
+            "防止摔倒"
+          ]
+        },
+        {
+          "id": "landlord-hides",
+          "description": "房东故意隐瞒了死亡事件。",
+          "truth": false,
+          "aliases": [
+            "房东隐瞒",
+            "死过人",
+            "凶宅"
+          ]
+        },
+        {
+          "id": "keep-light",
+          "description": "前租客希望有人保持小灯。",
+          "truth": true,
+          "aliases": [
+            "开灯睡觉",
+            "保留小灯",
+            "晚上亮灯"
+          ]
+        },
+        {
+          "id": "tape-traps-ghost",
+          "description": "胶带用来封印鬼魂。",
+          "truth": false,
+          "aliases": [
+            "封印鬼魂",
+            "驱鬼",
+            "灵异胶带"
+          ]
+        }
+      ],
+      "hints": [
+        "纸条不是恐吓，而是一个病人留下的生活提醒。",
+        "前租客不是被鬼吓走的，而是担心下一个住客同样摔倒。"
+      ],
+      "suggestions": [
+        "纸条为什么说不要关灯？",
+        "房子里死过人吗？",
+        "胶带是谁贴的？"
+      ]
+    },
+    {
+      "id": "footsteps-above-top-floor",
+      "title": "顶楼上面的脚步声",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "顶楼",
+        "脚步",
+        "设备层"
+      ],
+      "warnings": [],
+      "surface": "公寓顶楼没有天台，天花板却在每晚两点传来脚步声。住户报警后，警察打开检修口，发现上面只有一层狭窄的设备夹层和一双旧鞋。",
+      "bottom": "脚步声来自维修人员。公寓的通风系统在夜间自动启动，维修员必须定期进入夹层更换滤网。旧鞋是维修员的工作鞋，被遗落在设备旁。住户听到的规律脚步声其实是风机振动和金属管传导形成的节奏。",
+      "facts": [
+        {
+          "id": "maintenance-space",
+          "description": "顶楼上面有设备夹层。",
+          "truth": true,
+          "aliases": [
+            "夹层",
+            "设备层",
+            "检修口"
+          ]
+        },
+        {
+          "id": "worker-at-night",
+          "description": "维修员会在夜间进入夹层换滤网。",
+          "truth": true,
+          "aliases": [
+            "换滤网",
+            "夜里维修",
+            "工作人员"
+          ]
+        },
+        {
+          "id": "footsteps-vibration",
+          "description": "脚步声由风机振动和管道传导形成。",
+          "truth": true,
+          "aliases": [
+            "风机振动",
+            "管道传声",
+            "不是脚步"
+          ]
+        },
+        {
+          "id": "ghost-top-floor",
+          "description": "顶楼有鬼在走路。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "鬼走路",
+            "幽灵"
+          ]
+        },
+        {
+          "id": "shoes-of-dead",
+          "description": "旧鞋属于已经死去的人。",
+          "truth": false,
+          "aliases": [
+            "死人的鞋",
+            "遗物",
+            "鬼鞋"
+          ]
+        }
+      ],
+      "hints": [
+        "顶层之上不是天空，而是一个很少开放的设备空间。",
+        "声音有规律，是因为它来自机器，而不是走来走去的人。"
+      ],
+      "suggestions": [
+        "脚步声是谁的？",
+        "顶楼闹鬼吗？",
+        "旧鞋是谁的？"
+      ]
+    },
+    {
+      "id": "hospital-bed-number",
+      "title": "不能说的床号",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "医院",
+        "病床",
+        "捐献"
+      ],
+      "warnings": [],
+      "surface": "医院里有张病床，病人住进去后都会要求换房。护士说床号不吉利，但医生检查后只说床位没有任何问题。直到一位病人家属发现，每晚换药车都会在那张床前停一下。",
+      "bottom": "那张床曾是一位器官捐献者的床位。家属在病人去世后仍每天推着换药车经过，向当年的医护表达感谢。病人们看到车停住，误以为床位有灵异传说。医院没有公开故事，是为了保护捐献者家属的隐私。",
+      "facts": [
+        {
+          "id": "organ-donor",
+          "description": "那张床曾住过一位器官捐献者。",
+          "truth": true,
+          "aliases": [
+            "器官捐献",
+            "捐献者",
+            "去世病人"
+          ]
+        },
+        {
+          "id": "family-returns",
+          "description": "捐献者家属每天推车经过那张床。",
+          "truth": true,
+          "aliases": [
+            "家属经过",
+            "换药车",
+            "每天来"
+          ]
+        },
+        {
+          "id": "bed-haunted",
+          "description": "病床被鬼魂诅咒。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "诅咒",
+            "灵异病床"
+          ]
+        },
+        {
+          "id": "doctor-hides",
+          "description": "医生隐瞒了医疗事故。",
+          "truth": false,
+          "aliases": [
+            "医疗事故",
+            "医生隐瞒",
+            "病人死亡"
+          ]
+        },
+        {
+          "id": "cart-stops-memory",
+          "description": "换药车停下是家属的纪念行为。",
+          "truth": true,
+          "aliases": [
+            "纪念",
+            "停一下",
+            "感谢医护"
+          ]
+        }
+      ],
+      "hints": [
+        "病床没有诅咒，停下的车来自一段家属的感谢。",
+        "医院不解释，是因为那段故事属于个人隐私。"
+      ],
+      "suggestions": [
+        "病床真的有问题吗？",
+        "换药车为什么停下？",
+        "医生在隐瞒什么？"
+      ]
+    },
+    {
+      "id": "photo-extra-person",
+      "title": "多出来的人",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "合照",
+        "镜子",
+        "摄影"
+      ],
+      "warnings": [],
+      "surface": "毕业合照里多出一个模糊的人影。同学们都说从未见过他，摄影师却坚持每次按下快门时，操场上只有班级学生。",
+      "bottom": "多出来的人影是操场边的一面旧镜子反射出的摄影师。学校正在拆除旧器材室，镜子被临时靠在树下。摄影师在相机取景框里没有注意到反光，照片洗出来后，镜中的自己叠加在人群后方，看起来像陌生学生。",
+      "facts": [
+        {
+          "id": "mirror-reflection",
+          "description": "照片多出的人影是镜子里的摄影师。",
+          "truth": true,
+          "aliases": [
+            "镜子反光",
+            "摄影师倒影",
+            "不是学生"
+          ]
+        },
+        {
+          "id": "old-mirror",
+          "description": "旧器材室拆下的镜子靠在操场边。",
+          "truth": true,
+          "aliases": [
+            "旧镜子",
+            "器材室",
+            "靠在树下"
+          ]
+        },
+        {
+          "id": "dead-student",
+          "description": "照片里是已故学生。",
+          "truth": false,
+          "aliases": [
+            "死去的同学",
+            "亡灵",
+            "失踪学生"
+          ]
+        },
+        {
+          "id": "photographer-lied",
+          "description": "摄影师故意合成了一名学生。",
+          "truth": false,
+          "aliases": [
+            "合成照片",
+            "故意伪造",
+            "骗人"
+          ]
+        },
+        {
+          "id": "only-one-photo",
+          "description": "只有一张照片多出人影。",
+          "truth": true,
+          "aliases": [
+            "一张照片",
+            "只有合照",
+            "单独出现"
+          ]
+        }
+      ],
+      "hints": [
+        "人影没有站在操场上，而是站在某个反光表面里。",
+        "摄影师本人也在画面中。"
+      ],
+      "suggestions": [
+        "多出来的人是谁？",
+        "照片是合成的吗？",
+        "摄影师知道吗？"
+      ]
+    },
+    {
+      "id": "bricked-basement-door",
+      "title": "被封住的地下室门",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "地下室",
+        "砖墙",
+        "老宅"
+      ],
+      "warnings": [],
+      "surface": "老宅的地下室门被砖封死，房主却从不允许拆除。新住客夜里总能听到门后有人敲三下墙。房主说那只是老鼠，但砖缝里塞着一张新的便条。",
+      "bottom": "地下室曾用作战争时期的防空洞，后来被改成储藏室。砖墙后是隔壁建筑的地下通道，维修人员每次进入都会敲三下墙面确认位置。便条是维修员留下的工作记录。房主不拆墙，是因为门后通道属于历史保护结构。",
+      "facts": [
+        {
+          "id": "air-raid-shelter",
+          "description": "地下室曾是防空洞和储藏室。",
+          "truth": true,
+          "aliases": [
+            "防空洞",
+            "储藏室",
+            "旧通道"
+          ]
+        },
+        {
+          "id": "maintenance-knocks",
+          "description": "敲墙的是隔壁通道的维修人员。",
+          "truth": true,
+          "aliases": [
+            "维修员",
+            "敲三下",
+            "隔壁通道"
+          ]
+        },
+        {
+          "id": "trapped-person",
+          "description": "墙后关着一个人。",
+          "truth": false,
+          "aliases": [
+            "关着人",
+            "被困",
+            "囚禁"
+          ]
+        },
+        {
+          "id": "mouse-only",
+          "description": "声音只是老鼠造成的。",
+          "truth": false,
+          "aliases": [
+            "老鼠",
+            "动物",
+            "自然声音"
+          ]
+        },
+        {
+          "id": "protected-structure",
+          "description": "砖墙后通道属于历史保护结构。",
+          "truth": true,
+          "aliases": [
+            "历史保护",
+            "不能拆",
+            "老建筑"
+          ]
+        }
+      ],
+      "hints": [
+        "敲墙声有固定次数，说明它来自一种工作习惯。",
+        "房主不拆门，是因为门后不是普通房间。"
+      ],
+      "suggestions": [
+        "墙后有人吗？",
+        "为什么敲三下？",
+        "房主为什么不拆墙？"
+      ]
+    },
+    {
+      "id": "radio-announces-deaths",
+      "title": "预报死亡的收音机",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "收音机",
+        "医院",
+        "名单"
+      ],
+      "warnings": [],
+      "surface": "老人每天深夜听同一档广播。广播会念出第二天去世者的名字，邻居因此不敢靠近他。一天，广播念出了老人的名字，他却笑着关掉了收音机。",
+      "bottom": "广播其实是医院临终关怀病房的内部频道。老人曾是那里的一名护理员，频道每天播报的是需要家属探望的病人姓名，不是死亡名单。老人听到自己的名字，说明医院把他误列为需要探望的人员，他以笑回应的是旧同事们还记得他。",
+      "facts": [
+        {
+          "id": "hospital-channel",
+          "description": "广播是临终关怀病房的内部频道。",
+          "truth": true,
+          "aliases": [
+            "医院频道",
+            "内部广播",
+            "探视名单"
+          ]
+        },
+        {
+          "id": "names-not-deaths",
+          "description": "广播念的是需要家属探望的病人，不是死亡名单。",
+          "truth": true,
+          "aliases": [
+            "探望名单",
+            "不是死亡",
+            "病人名字"
+          ]
+        },
+        {
+          "id": "radio-predicts-death",
+          "description": "收音机真的能预测死亡。",
+          "truth": false,
+          "aliases": [
+            "预报死亡",
+            "超能力",
+            "死亡名单"
+          ]
+        },
+        {
+          "id": "old-man-nurse",
+          "description": "老人曾经是病房护理员。",
+          "truth": true,
+          "aliases": [
+            "护理员",
+            "在医院工作",
+            "老护士"
+          ]
+        },
+        {
+          "id": "mistaken-name",
+          "description": "医院把他的名字误列了进去。",
+          "truth": true,
+          "aliases": [
+            "误列",
+            "弄错了",
+            "系统错误"
+          ]
+        }
+      ],
+      "hints": [
+        "名单不是预告死亡，而是提醒家属去看望病人。",
+        "老人熟悉那家医院的工作流程。"
+      ],
+      "suggestions": [
+        "收音机真的能预报死亡吗？",
+        "老人为什么笑？",
+        "名单是谁发布的？"
+      ]
+    },
+    {
+      "id": "shadow-under-door",
+      "title": "门缝下的影子",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "惊悚",
+      "tags": [
+        "宿舍",
+        "影子",
+        "晾衣架"
+      ],
+      "warnings": [],
+      "surface": "女生每晚回宿舍都能看到门缝下有一道黑影。她以为有人在等她开门，室友却说自己一直不在房间。后来她把手机伸到门外拍照，发现影子其实是晾衣架。",
+      "bottom": "晾衣架被挂在走廊灯下，风一吹就会移动，投影到门缝位置。室友不在房间，是因为她当晚在图书馆。女生独自在黑暗走廊里放大了影子，误以为是站着的人。",
+      "facts": [
+        {
+          "id": "shadow-clothes-rack",
+          "description": "门缝下的影子是走廊里的晾衣架。",
+          "truth": true,
+          "aliases": [
+            "晾衣架",
+            "衣服架",
+            "不是人"
+          ]
+        },
+        {
+          "id": "roommate-away",
+          "description": "室友当晚在图书馆，不在房间。",
+          "truth": true,
+          "aliases": [
+            "室友不在",
+            "去图书馆",
+            "没人等"
+          ]
+        },
+        {
+          "id": "stalker",
+          "description": "门外一直有人跟踪女生。",
+          "truth": false,
+          "aliases": [
+            "跟踪",
+            "有人等",
+            "变态"
+          ]
+        },
+        {
+          "id": "wind-moves-rack",
+          "description": "风让晾衣架移动形成了影子。",
+          "truth": true,
+          "aliases": [
+            "风吹",
+            "移动",
+            "投影"
+          ]
+        },
+        {
+          "id": "camera-flash",
+          "description": "手机拍照的闪光吸引了影子。",
+          "truth": false,
+          "aliases": [
+            "闪光引鬼",
+            "照片有鬼",
+            "灵异"
+          ]
+        }
+      ],
+      "hints": [
+        "影子没有身体，它的形状来自走廊里的一件普通物品。",
+        "室友不是因为害怕才撒谎，她确实不在房间。"
+      ],
+      "suggestions": [
+        "门外有人吗？",
+        "影子是什么？",
+        "室友为什么不在？"
+      ]
+    },
+    {
+      "id": "red-thread-on-wrist",
+      "title": "手腕上的红线",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "宿舍",
+        "红线",
+        "消防演习"
+      ],
+      "warnings": [],
+      "surface": "宿舍里四个人同时梦见有人给她们系红线。醒来后她们手腕上真的有红痕。第五个人却说，那不是梦，因为她的红痕在梦里就已经存在了。",
+      "bottom": "红痕是宿舍楼消防演习留下的标记。演习时每个人都被贴过红色腕带，腕带在皮肤上留下轻微压痕。第五个人提前见过通知，所以在梦里想象出了标记。所谓“同时梦见”是她们睡前讨论过演习话题，产生了共同暗示。",
+      "facts": [
+        {
+          "id": "fire-drill-marks",
+          "description": "红痕是消防演习腕带留下的压痕。",
+          "truth": true,
+          "aliases": [
+            "消防演习",
+            "腕带压痕",
+            "红色标记"
+          ]
+        },
+        {
+          "id": "shared-suggestion",
+          "description": "四个人因为睡前讨论产生了共同暗示。",
+          "truth": true,
+          "aliases": [
+            "共同暗示",
+            "讨论过",
+            "心理作用"
+          ]
+        },
+        {
+          "id": "curse-red-thread",
+          "description": "红线是诅咒或灵异标记。",
+          "truth": false,
+          "aliases": [
+            "诅咒",
+            "灵异",
+            "红线法术"
+          ]
+        },
+        {
+          "id": "fifth-knew-drill",
+          "description": "第五个人提前知道了演习通知。",
+          "truth": true,
+          "aliases": [
+            "第五人知道",
+            "看到通知",
+            "提前知道"
+          ]
+        },
+        {
+          "id": "wristband-removed",
+          "description": "腕带已经被工作人员收走。",
+          "truth": true,
+          "aliases": [
+            "腕带被收走",
+            "演习结束",
+            "没有留下物品"
+          ]
+        }
+      ],
+      "hints": [
+        "四个人并不是被同一种力量标记，而是共享了一个现实事件。",
+        "第五个人知道的比其他人多一点。"
+      ],
+      "suggestions": [
+        "红线是谁系的？",
+        "这是诅咒吗？",
+        "第五个人为什么不一样？"
+      ]
+    },
+    {
+      "id": "house-humidifies",
+      "title": "一直潮湿的房间",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "潮湿",
+        "排水管",
+        "旧楼"
+      ],
+      "warnings": [],
+      "surface": "新房主发现最里面的房间总是潮湿，墙角甚至长出黑斑。除湿机开了一周也没有用，直到他拆开地板，发现下面是一条仍在使用的排水管。",
+      "bottom": "房间曾经是旧楼的水泵间，后来被违规改成卧室。楼的排水管穿过房间地下，接口有慢漏。房主一直以为房子闹鬼或发霉，实际上问题来自老旧管道。黑斑不是尸水，而是长期渗漏造成的霉变。",
+      "facts": [
+        {
+          "id": "old-pump-room",
+          "description": "房间原本是旧楼的水泵间。",
+          "truth": true,
+          "aliases": [
+            "水泵间",
+            "设备房",
+            "改建房"
+          ]
+        },
+        {
+          "id": "leaking-pipe",
+          "description": "地板下有长期渗漏的排水管。",
+          "truth": true,
+          "aliases": [
+            "排水管漏水",
+            "地下管道",
+            "慢漏"
+          ]
+        },
+        {
+          "id": "house-cursed",
+          "description": "房间被诅咒导致潮湿。",
+          "truth": false,
+          "aliases": [
+            "诅咒",
+            "灵异",
+            "鬼屋"
+          ]
+        },
+        {
+          "id": "black-mold",
+          "description": "黑斑是霉菌，不是尸体痕迹。",
+          "truth": true,
+          "aliases": [
+            "霉菌",
+            "发霉",
+            "不是尸水"
+          ]
+        },
+        {
+          "id": "previous-owner-died",
+          "description": "前任房主死在房间里。",
+          "truth": false,
+          "aliases": [
+            "前任死亡",
+            "凶宅",
+            "死过人"
+          ]
+        }
+      ],
+      "hints": [
+        "潮湿不是超自然现象，而是建筑结构留下的问题。",
+        "地板下面连接着整栋楼的设施。"
+      ],
+      "suggestions": [
+        "房间为什么潮湿？",
+        "房子里死过人吗？",
+        "黑斑是什么？"
+      ]
+    },
+    {
+      "id": "three-am-server-rack",
+      "title": "凌晨三点的机柜",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "服务器",
+        "定时任务",
+        "芯片"
+      ],
+      "warnings": [],
+      "surface": "凌晨三点，实验室的服务器机柜自动亮起。保安赶到时没有发现任何人，但第二天的芯片测试结果却比所有人预计的都快。",
+      "bottom": "一名学生把长时间的芯片可靠性回归测试写成了定时任务，安排在凌晨自动运行。机柜亮起是任务启动和状态灯工作，不是有人闯入。白天测试设备经常被占用，夜间正好可以连续跑完两轮。第二天大家看到的“更快结果”，其实是凌晨任务已经完成了大部分计算。",
+      "facts": [
+        {
+          "id": "scheduled-task",
+          "description": "机柜由定时任务自动启动。",
+          "truth": true,
+          "aliases": [
+            "定时任务",
+            "自动运行",
+            "凌晨启动"
+          ]
+        },
+        {
+          "id": "no-intruder",
+          "description": "实验室没有人闯入。",
+          "truth": false,
+          "aliases": [
+            "有人闯入",
+            "有人进入",
+            "闯入实验室"
+          ]
+        },
+        {
+          "id": "night-test",
+          "description": "测试在夜间完成了大部分计算。",
+          "truth": true,
+          "aliases": [
+            "夜间计算",
+            "凌晨跑完",
+            "提前完成"
+          ]
+        },
+        {
+          "id": "data-tampered",
+          "description": "测试数据被篡改了。",
+          "truth": false,
+          "aliases": [
+            "数据被改",
+            "篡改数据",
+            "造假"
+          ]
+        },
+        {
+          "id": "device-idle",
+          "description": "白天设备紧张，凌晨资源空闲。",
+          "truth": true,
+          "aliases": [
+            "设备空闲",
+            "白天被占用",
+            "夜里可用"
+          ]
+        }
+      ],
+      "hints": [
+        "机柜亮起不代表必须有人在现场操作。",
+        "白天设备紧张，而凌晨的计算资源正好是空闲的。"
+      ],
+      "suggestions": [
+        "有人闯入实验室吗？",
+        "机柜为什么会自动亮起？",
+        "测试数据被篡改了吗？"
+      ]
+    },
+    {
+      "id": "cleaner-blocks-lab-door",
+      "title": "清洁机器人堵门",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "机器人",
+        "安全门",
+        "废液"
+      ],
+      "warnings": [],
+      "surface": "实验室的清洁机器人每天下午都会停在安全门前，门因此无法关闭。工程师检查了传感器，发现机器人只在周三出现故障。",
+      "bottom": "周三下午有学生搬运废液，安全门会被临时打开。机器人识别到门口有未登记的物体，按程序停在原地等待人工确认。它不是在故障，而是在执行避免碰撞的保护逻辑。工程师看到的“故障”只是它过于谨慎。",
+      "facts": [
+        {
+          "id": "safety-lock",
+          "description": "机器人停门是安全保护程序。",
+          "truth": true,
+          "aliases": [
+            "安全程序",
+            "避障",
+            "等待确认"
+          ]
+        },
+        {
+          "id": "wednesday-waste",
+          "description": "周三下午学生搬运废液。",
+          "truth": true,
+          "aliases": [
+            "搬运废液",
+            "周三下午",
+            "门口有物体"
+          ]
+        },
+        {
+          "id": "robot-broken",
+          "description": "机器人真的发生了硬件故障。",
+          "truth": false,
+          "aliases": [
+            "机器故障",
+            "坏了",
+            "传感器损坏"
+          ]
+        },
+        {
+          "id": "door-blocked-on-purpose",
+          "description": "机器人不是故意堵门。",
+          "truth": true,
+          "aliases": [
+            "不是故意",
+            "程序行为",
+            "避障等待"
+          ]
+        },
+        {
+          "id": "no-one-notices-waste",
+          "description": "没有人发现废液，所以机器人一直等待。",
+          "truth": true,
+          "aliases": [
+            "没人确认",
+            "一直停",
+            "人工没来"
+          ]
+        }
+      ],
+      "hints": [
+        "它不是在堵门，而是在等待一个安全检查。",
+        "周三下午门口会有额外的物体。"
+      ],
+      "suggestions": [
+        "机器人为什么停住？",
+        "机器人坏了吗？",
+        "为什么偏偏周三出现？"
+      ]
+    },
+    {
+      "id": "frozen-sample-thawed",
+      "title": "自己解冻的样本",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "样本",
+        "冷藏柜",
+        "电源"
+      ],
+      "warnings": [],
+      "surface": "冷藏柜里的一份样本在无人操作的情况下解冻了。监控显示柜门没有被打开，研究员却坚持样本不应该自己升温。第二天，同一柜子的另一份样本也出现了相同情况。",
+      "bottom": "冷藏柜的备用电源被接到了实验室夜间的基因测序设备上。设备启动时会短暂抽取大量电流，导致冷藏柜温度波动。样本没有“自己解冻”，而是供电策略把设备优先级排在了保存样本之前。",
+      "facts": [
+        {
+          "id": "power-priority",
+          "description": "备用电源优先供给夜间测序设备。",
+          "truth": true,
+          "aliases": [
+            "电源优先级",
+            "测序耗电",
+            "供电不足"
+          ]
+        },
+        {
+          "id": "temperature-fluctuation",
+          "description": "设备启动造成冷藏柜温度波动。",
+          "truth": true,
+          "aliases": [
+            "温度波动",
+            "短暂升温",
+            "电流不足"
+          ]
+        },
+        {
+          "id": "sample-alive",
+          "description": "样本自己恢复了活性。",
+          "truth": false,
+          "aliases": [
+            "样本活了",
+            "自己升温",
+            "生物反应"
+          ]
+        },
+        {
+          "id": "door-opened",
+          "description": "冷藏柜门被人在夜里打开过。",
+          "truth": false,
+          "aliases": [
+            "有人开柜",
+            "柜门打开",
+            "偷样本"
+          ]
+        },
+        {
+          "id": "two-samples-same-cause",
+          "description": "两份样本受影响的原因是同一个。",
+          "truth": true,
+          "aliases": [
+            "同一原因",
+            "都是电源",
+            "相同情况"
+          ]
+        }
+      ],
+      "hints": [
+        "样本没有意识，温度变化来自实验室的供电策略。",
+        "夜间启动的另一个设备抢走了电力。"
+      ],
+      "suggestions": [
+        "样本为什么会解冻？",
+        "有人开过柜门吗？",
+        "两份样本有关联吗？"
+      ]
+    },
+    {
+      "id": "satellite-photo-home",
+      "title": "卫星传来的老照片",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "卫星",
+        "地图",
+        "缓存"
+      ],
+      "warnings": [],
+      "surface": "卫星每天都会传回一张地面照片，其中有一张拍到了研究员小时候的家乡。问题是她从未向系统输入过家乡坐标，卫星也没有改变轨道。",
+      "bottom": "照片是公开地图缓存拼接而成的。研究员的家乡刚好位于卫星另一项气象观测任务的边缘，系统自动把历史地图贴到了当前数据上。她看到的“家乡”不是卫星实时拍摄，而是多年前的公开影像。",
+      "facts": [
+        {
+          "id": "cached-map",
+          "description": "照片来自公开地图的历史缓存。",
+          "truth": true,
+          "aliases": [
+            "地图缓存",
+            "旧影像",
+            "历史照片"
+          ]
+        },
+        {
+          "id": "weather-mission-edge",
+          "description": "家乡位于另一项气象任务的边缘。",
+          "truth": true,
+          "aliases": [
+            "气象任务",
+            "边缘区域",
+            "顺带拍到"
+          ]
+        },
+        {
+          "id": "satellite-spies-her",
+          "description": "卫星专门跟踪研究员。",
+          "truth": false,
+          "aliases": [
+            "跟踪",
+            "监视",
+            "专门拍她"
+          ]
+        },
+        {
+          "id": "location-input",
+          "description": "系统曾经输入过她的家乡坐标。",
+          "truth": false,
+          "aliases": [
+            "输入坐标",
+            "泄露信息",
+            "有人设置"
+          ]
+        },
+        {
+          "id": "not-live-photo",
+          "description": "照片不是实时拍摄的。",
+          "truth": true,
+          "aliases": [
+            "不是实时",
+            "旧照片",
+            "缓存画面"
+          ]
+        }
+      ],
+      "hints": [
+        "卫星没有认识她，只是拍到了另一项任务边缘的区域。",
+        "照片来自过去，而不是当下。"
+      ],
+      "suggestions": [
+        "卫星为什么拍到家乡？",
+        "有人在监视她吗？",
+        "照片是实时的吗？"
+      ]
+    },
+    {
+      "id": "mice-run-maze-backwards",
+      "title": "倒着跑迷宫的老鼠",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "小鼠",
+        "迷宫",
+        "红外灯"
+      ],
+      "warnings": [],
+      "surface": "实验小鼠突然开始倒着跑迷宫，而且比正着跑更快。研究员检查了奖励装置，发现食物并没有换位置。",
+      "bottom": "迷宫出口的红外灯被更换成了新型号，光线频率让小鼠更愿意朝向出口。它们倒着跑时视野更宽，能同时看到两侧标记。所谓“倒着”并不是迷路，而是它们在用更适合新灯光的方式移动。",
+      "facts": [
+        {
+          "id": "new-infrared-light",
+          "description": "迷宫使用了新的红外灯。",
+          "truth": true,
+          "aliases": [
+            "红外灯",
+            "新灯",
+            "光线改变"
+          ]
+        },
+        {
+          "id": "wider-vision",
+          "description": "倒着跑能让小鼠看到更宽的标记。",
+          "truth": true,
+          "aliases": [
+            "视野更宽",
+            "看到两侧",
+            "适合灯光"
+          ]
+        },
+        {
+          "id": "food-moved",
+          "description": "奖励食物被换到了迷宫入口。",
+          "truth": false,
+          "aliases": [
+            "食物换位置",
+            "入口有食物",
+            "奖励改变"
+          ]
+        },
+        {
+          "id": "mice-sick",
+          "description": "小鼠倒着跑是因为生病。",
+          "truth": false,
+          "aliases": [
+            "生病",
+            "神经异常",
+            "身体出问题"
+          ]
+        },
+        {
+          "id": "still-learn-reward",
+          "description": "小鼠仍然是在寻找奖励。",
+          "truth": true,
+          "aliases": [
+            "找奖励",
+            "为了食物",
+            "完成迷宫"
+          ]
+        }
+      ],
+      "hints": [
+        "变化来自灯光，而不是奖励位置。",
+        "小鼠选择倒着跑，是因为那样看得更清楚。"
+      ],
+      "suggestions": [
+        "老鼠为什么倒着跑？",
+        "食物换位置了吗？",
+        "老鼠生病了吗？"
+      ]
+    },
+    {
+      "id": "lab-clock-slow",
+      "title": "慢了十分钟的实验室钟",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "钟",
+        "干扰",
+        "设备"
+      ],
+      "warnings": [],
+      "surface": "实验室的钟每天都会慢十分钟，换了电池也无效。研究员发现，当高功率设备运行时，钟会短暂停一下，设备关闭后又恢复正常。",
+      "bottom": "钟是通过无线网络校时的。高功率设备启动时产生电磁干扰，导致校时信号短暂丢失。钟并没有坏，只是每次实验高峰都会错过一次时间同步。研究员把设备开机时间记录下来后，发现了规律。",
+      "facts": [
+        {
+          "id": "wireless-time-sync",
+          "description": "实验室钟依靠无线信号校时。",
+          "truth": true,
+          "aliases": [
+            "无线校时",
+            "网络校时",
+            "信号同步"
+          ]
+        },
+        {
+          "id": "electromagnetic-interference",
+          "description": "高功率设备造成电磁干扰。",
+          "truth": true,
+          "aliases": [
+            "电磁干扰",
+            "设备干扰",
+            "信号丢失"
+          ]
+        },
+        {
+          "id": "battery-problem",
+          "description": "钟慢是因为电池没有电。",
+          "truth": false,
+          "aliases": [
+            "电池没电",
+            "电池故障",
+            "换电池没用"
+          ]
+        },
+        {
+          "id": "clock-broken",
+          "description": "钟的机械结构损坏了。",
+          "truth": false,
+          "aliases": [
+            "机械损坏",
+            "钟坏了",
+            "内部故障"
+          ]
+        },
+        {
+          "id": "high-power-routine",
+          "description": "高功率设备每天在固定时间运行。",
+          "truth": true,
+          "aliases": [
+            "固定时间",
+            "每天运行",
+            "实验设备"
+          ]
+        }
+      ],
+      "hints": [
+        "钟没有被谁拨慢，它只是偶尔收不到校时信号。",
+        "高功率设备是问题的关键。"
+      ],
+      "suggestions": [
+        "钟为什么会慢？",
+        "钟坏了吗？",
+        "为什么设备一开就出问题？"
+      ]
+    },
+    {
+      "id": "researcher-hears-own-voice",
+      "title": "听见自己的声音",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "隔音室",
+        "录音",
+        "回声"
+      ],
+      "warnings": [],
+      "surface": "研究员在隔音室里测试设备时，听见耳机里传来自己的声音，但她说的话与嘴型不一致。她关掉设备后，声音仍然持续了十秒。",
+      "bottom": "声音来自设备之前录下的测试样本。隔音室的自动回声消除没有完全关闭，旧音频被错误地当作实时输入播放出来。嘴型不一致，是因为播放的是她上一次测试时说过的话，而不是当下的话。",
+      "facts": [
+        {
+          "id": "old-audio-loop",
+          "description": "耳机播放的是之前录下的旧音频。",
+          "truth": true,
+          "aliases": [
+            "旧录音",
+            "之前的声音",
+            "缓存音频"
+          ]
+        },
+        {
+          "id": "echo-cancellation-bug",
+          "description": "回声消除程序错误地播放了缓存。",
+          "truth": true,
+          "aliases": [
+            "程序错误",
+            "回声消除",
+            "错误输入"
+          ]
+        },
+        {
+          "id": "another-person",
+          "description": "隔音室里还有另一个人在说话。",
+          "truth": false,
+          "aliases": [
+            "另一个人",
+            "躲在隔音室",
+            "陌生人"
+          ]
+        },
+        {
+          "id": "voice-unrelated",
+          "description": "声音和研究员过去的测试有关。",
+          "truth": true,
+          "aliases": [
+            "过去测试",
+            "她说过的话",
+            "旧样本"
+          ]
+        },
+        {
+          "id": "device-supernatural",
+          "description": "设备连接了另一个世界。",
+          "truth": false,
+          "aliases": [
+            "超自然",
+            "另一个世界",
+            "灵异"
+          ]
+        }
+      ],
+      "hints": [
+        "耳机里的声音是过去留下的，不是当下有人在说。",
+        "嘴型对不上，是因为音频和画面来自不同时间。"
+      ],
+      "suggestions": [
+        "声音是谁的？",
+        "隔音室里有别人吗？",
+        "为什么持续十秒？"
+      ]
+    },
+    {
+      "id": "plant-in-vacuum-chamber",
+      "title": "真空室里的叶子",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "真空室",
+        "叶子",
+        "手套"
+      ],
+      "warnings": [],
+      "surface": "真空实验结束后，舱内多出一片绿色叶子。研究员确认实验过程中舱门一直关闭，也没有任何人进入。叶子的表面还沾着水珠。",
+      "bottom": "叶子来自实验前工作人员手套上的植物组织。手套在操作时接触过样本，叶片的细胞被真空低温环境保存下来，随后在解压后吸水膨胀。水珠是舱内残留冷凝水，不是植物在真空里生长。",
+      "facts": [
+        {
+          "id": "leaf-from-glove",
+          "description": "叶子来自工作人员手套上的植物组织。",
+          "truth": true,
+          "aliases": [
+            "手套带来",
+            "操作带入",
+            "不是舱内生长"
+          ]
+        },
+        {
+          "id": "condensation-water",
+          "description": "水珠是舱内冷凝水。",
+          "truth": true,
+          "aliases": [
+            "冷凝水",
+            "残留水",
+            "不是植物分泌"
+          ]
+        },
+        {
+          "id": "plant-grew-in-vacuum",
+          "description": "植物在真空舱里生长。",
+          "truth": false,
+          "aliases": [
+            "真空生长",
+            "植物自己长",
+            "叶子出现"
+          ]
+        },
+        {
+          "id": "door-opened",
+          "description": "实验过程中舱门被打开过。",
+          "truth": false,
+          "aliases": [
+            "舱门打开",
+            "有人进入",
+            "门没关"
+          ]
+        },
+        {
+          "id": "cold-preserved",
+          "description": "低温环境保存了植物组织。",
+          "truth": true,
+          "aliases": [
+            "低温保存",
+            "细胞保存",
+            "真空环境"
+          ]
+        }
+      ],
+      "hints": [
+        "叶子不是从舱里长出来的，而是从外面被带进去的。",
+        "水珠和植物的生长没有关系。"
+      ],
+      "suggestions": [
+        "叶子怎么出现的？",
+        "植物在真空里生长了吗？",
+        "水珠从哪里来？"
+      ]
+    },
+    {
+      "id": "chip-test-twice",
+      "title": "重复了两次的芯片测试",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "芯片",
+        "缓存",
+        "测试"
+      ],
+      "warnings": [],
+      "surface": "同一批芯片的测试结果出现了两套完全不同的数据。系统记录显示两次测试都在同一时间完成，但实验室的日志上却只有一次开机记录。",
+      "bottom": "第二次结果来自缓存目录中未清理的旧文件。测试软件在读取结果时把一批旧芯片数据按相同文件名合并进来，导致两套数据看起来同时生成。实验室确实只开了一次机，实际运行也没有重复。",
+      "facts": [
+        {
+          "id": "stale-cache",
+          "description": "第二套结果来自未清理的缓存文件。",
+          "truth": true,
+          "aliases": [
+            "缓存文件",
+            "旧数据",
+            "未清理"
+          ]
+        },
+        {
+          "id": "same-filename",
+          "description": "新旧数据文件使用了相同文件名。",
+          "truth": true,
+          "aliases": [
+            "文件名相同",
+            "覆盖失败",
+            "读取旧文件"
+          ]
+        },
+        {
+          "id": "two-runs",
+          "description": "同一时间真的运行了两次测试。",
+          "truth": false,
+          "aliases": [
+            "运行两次",
+            "重复测试",
+            "并行测试"
+          ]
+        },
+        {
+          "id": "log-missing",
+          "description": "实验室日志记录了两次开机但被删除。",
+          "truth": false,
+          "aliases": [
+            "删除日志",
+            "隐瞒运行",
+            "造假"
+          ]
+        },
+        {
+          "id": "only-one-run",
+          "description": "当天实际只有一次有效测试。",
+          "truth": true,
+          "aliases": [
+            "一次测试",
+            "只开一次",
+            "没有重复运行"
+          ]
+        }
+      ],
+      "hints": [
+        "两套数据不是两次实验，而是一次实验加一批错过清理的旧结果。",
+        "文件名相同造成了读取错误。"
+      ],
+      "suggestions": [
+        "为什么有两套数据？",
+        "真的跑了两次吗？",
+        "日志被删了吗？"
+      ]
+    },
+    {
+      "id": "empty-cryo-tank",
+      "title": "空掉的低温罐",
+      "primary_genre": "科幻实验室",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "低温罐",
+        "样本",
+        "除霜"
+      ],
+      "warnings": [],
+      "surface": "一台低温罐在夜里自动打开，里面却什么都没有。报警系统没有记录到断电或入侵，只有地面留下了一道很短的白色划痕。",
+      "bottom": "低温罐里原本保存的是一份已经完成检测的废弃样本。值班员在白天取走样本后，忘记关闭除霜程序，夜间罐内压力变化触发了自动开盖。白色划痕是搬运推车移动时留下的。",
+      "facts": [
+        {
+          "id": "sample-already-removed",
+          "description": "样本在白天已经被值班员取走。",
+          "truth": true,
+          "aliases": [
+            "样本已取走",
+            "白天拿走",
+            "罐子是空的"
+          ]
+        },
+        {
+          "id": "defrost-triggered",
+          "description": "除霜程序触发自动开盖。",
+          "truth": true,
+          "aliases": [
+            "除霜",
+            "程序触发",
+            "自动打开"
+          ]
+        },
+        {
+          "id": "sample-escaped",
+          "description": "样本在夜里逃出了低温罐。",
+          "truth": false,
+          "aliases": [
+            "样本逃跑",
+            "实验体逃出",
+            "活体"
+          ]
+        },
+        {
+          "id": "cart-scratch",
+          "description": "白色划痕是搬运推车留下的。",
+          "truth": true,
+          "aliases": [
+            "推车划痕",
+            "搬运留下",
+            "地面痕迹"
+          ]
+        },
+        {
+          "id": "power-failure",
+          "description": "夜里发生了断电。",
+          "truth": false,
+          "aliases": [
+            "断电",
+            "停电",
+            "电源故障"
+          ]
+        }
+      ],
+      "hints": [
+        "罐子空了，是因为里面的东西白天就已经被拿走了。",
+        "自动开盖和除霜程序有关。"
+      ],
+      "suggestions": [
+        "样本逃走了吗？",
+        "罐子为什么自己打开？",
+        "划痕是谁留下的？"
+      ]
+    },
+    {
+      "id": "classroom-light-flickers",
+      "title": "上课时闪烁的灯",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "教室",
+        "灯光",
+        "篮球场"
+      ],
+      "warnings": [],
+      "surface": "高三教室里，最后一排上方的灯总在自习时闪烁。换了灯泡后仍然如此。班长发现，灯闪的时候，窗外篮球场也会传来一阵很轻的哨声。",
+      "bottom": "灯和篮球场的广播系统共用一条老旧线路。篮球训练结束时，哨声和广播启动会短暂改变电压，导致教室灯闪。班长把声音和灯光联系起来后，学校重新分开了线路。",
+      "facts": [
+        {
+          "id": "shared-circuit",
+          "description": "教室灯和篮球场广播共用线路。",
+          "truth": true,
+          "aliases": [
+            "共用线路",
+            "同一条线",
+            "电路共用"
+          ]
+        },
+        {
+          "id": "whistle-voltage",
+          "description": "哨声启动时造成了电压波动。",
+          "truth": true,
+          "aliases": [
+            "电压波动",
+            "广播启动",
+            "哨声干扰"
+          ]
+        },
+        {
+          "id": "light-broken",
+          "description": "灯坏掉是因为灯泡质量问题。",
+          "truth": false,
+          "aliases": [
+            "灯泡坏了",
+            "质量问题",
+            "换灯泡解决"
+          ]
+        },
+        {
+          "id": "window-reflection",
+          "description": "闪烁是窗外玻璃反射造成的。",
+          "truth": false,
+          "aliases": [
+            "玻璃反射",
+            "影子",
+            "视觉错觉"
+          ]
+        },
+        {
+          "id": "separate-circuit",
+          "description": "学校后来把线路分开了。",
+          "truth": true,
+          "aliases": [
+            "分开线路",
+            "重新布线",
+            "解决问题"
+          ]
+        }
+      ],
+      "hints": [
+        "灯的闪烁和窗外的声音是同一个原因。",
+        "篮球场和教室使用了同一套旧线路。"
+      ],
+      "suggestions": [
+        "灯为什么会闪？",
+        "教室闹鬼吗？",
+        "为什么听到哨声？"
+      ]
+    },
+    {
+      "id": "library-book-returned",
+      "title": "自动回到书架的书",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "图书馆",
+        "还书",
+        "父亲"
+      ],
+      "warnings": [],
+      "surface": "图书馆的一本书每天都会被借走，又总在第二天回到原来的书架。借阅记录里只有一个已经毕业的学号。管理员查看监控后，发现还书的人是夜班保安。",
+      "bottom": "保安曾经是那位毕业生的父亲。毕业生在校时借了这本书，后来因病去世。父亲成为夜班保安后，每晚把书从还书箱放回原来的位置。毕业学号是系统里没有注销的旧记录，借阅并不是发生在当下。",
+      "facts": [
+        {
+          "id": "night-guard-father",
+          "description": "还书的人是毕业生的父亲。",
+          "truth": true,
+          "aliases": [
+            "夜班保安",
+            "父亲还书",
+            "不是学生"
+          ]
+        },
+        {
+          "id": "student-died",
+          "description": "毕业生已经因病去世。",
+          "truth": true,
+          "aliases": [
+            "学生死了",
+            "毕业生去世",
+            "生病死亡"
+          ]
+        },
+        {
+          "id": "old-student-card",
+          "description": "借阅记录使用了一位毕业生的旧学号。",
+          "truth": true,
+          "aliases": [
+            "旧学号",
+            "毕业学号",
+            "记录没注销"
+          ]
+        },
+        {
+          "id": "book-magical",
+          "description": "书会自己回到书架。",
+          "truth": false,
+          "aliases": [
+            "书自己走",
+            "魔法",
+            "灵异"
+          ]
+        },
+        {
+          "id": "guard-keeps-memory",
+          "description": "保安每晚放回书是为了纪念孩子。",
+          "truth": true,
+          "aliases": [
+            "纪念孩子",
+            "保留习惯",
+            "放回原位"
+          ]
+        }
+      ],
+      "hints": [
+        "书没有自己走回去，而是有人每天替它完成一次归还。",
+        "借阅记录来自过去，不属于当前学生。"
+      ],
+      "suggestions": [
+        "书是谁还的？",
+        "书会自己走吗？",
+        "借书记录是真的吗？"
+      ]
+    },
+    {
+      "id": "exam-paper-changed",
+      "title": "换过的试卷",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "考试",
+        "试卷",
+        "笔迹"
+      ],
+      "warnings": [],
+      "surface": "考试结束后，监考老师发现一位学生的答题卡和试卷笔迹不同。学生坚持没有换卷，老师却被要求不要追究。后来学生在抽屉里找到了另一份自己的答案。",
+      "bottom": "考试当天有两套同题不同版式的试卷。学生先拿到一套，因试卷印刷缺陷又换了一套，但答题卡上的草稿没有擦干净。监考老师看到的差异来自版本和修改痕迹，不是替考。学校不追究，是因为已经确认了换卷记录。",
+      "facts": [
+        {
+          "id": "two-versions",
+          "description": "考试当天有两套同题不同版式的试卷。",
+          "truth": true,
+          "aliases": [
+            "两套试卷",
+            "版本不同",
+            "同题"
+          ]
+        },
+        {
+          "id": "print-defect",
+          "description": "学生换卷是因为原试卷有印刷缺陷。",
+          "truth": true,
+          "aliases": [
+            "印刷缺陷",
+            "换试卷",
+            "题目模糊"
+          ]
+        },
+        {
+          "id": "ghostwriter",
+          "description": "有人替学生代考。",
+          "truth": false,
+          "aliases": [
+            "替考",
+            "别人写的",
+            "代写"
+          ]
+        },
+        {
+          "id": "draft-left",
+          "description": "答题卡上残留了之前的草稿。",
+          "truth": true,
+          "aliases": [
+            "旧草稿",
+            "没有擦干净",
+            "修改痕迹"
+          ]
+        },
+        {
+          "id": "teacher-bribed",
+          "description": "老师被学生收买了。",
+          "truth": false,
+          "aliases": [
+            "收买老师",
+            "作弊",
+            "包庇"
+          ]
+        }
+      ],
+      "hints": [
+        "差异来自试卷版本和答题卡上的旧痕迹，不是另一个人。",
+        "学校不追究，因为换卷有正式记录。"
+      ],
+      "suggestions": [
+        "有人替考吗？",
+        "为什么笔迹不同？",
+        "老师为什么放过他？"
+      ]
+    },
+    {
+      "id": "dorm-shoe-at-door",
+      "title": "门口的一只鞋",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "宿舍",
+        "运动鞋",
+        "梦游"
+      ],
+      "warnings": [],
+      "surface": "宿舍门口每天早上都会出现一只运动鞋。室友们以为是恶作剧，直到宿管阿姨说，那只鞋是她在楼道里捡到的。",
+      "bottom": "鞋属于隔壁宿舍一位梦游的学生。学生晚上会无意识走出房间，走到楼梯口又折返。宿管阿姨每次把鞋放在门口，方便他醒来找到。大家看到的“恶作剧”其实是夜间安全提醒。",
+      "facts": [
+        {
+          "id": "sleepwalking-student",
+          "description": "鞋属于一位会梦游的学生。",
+          "truth": true,
+          "aliases": [
+            "梦游",
+            "隔壁学生",
+            "晚上出门"
+          ]
+        },
+        {
+          "id": "cleaner-returns-shoe",
+          "description": "宿管阿姨把捡到的鞋放回门口。",
+          "truth": true,
+          "aliases": [
+            "宿管放鞋",
+            "阿姨捡到",
+            "安全提醒"
+          ]
+        },
+        {
+          "id": "prank",
+          "description": "鞋是室友故意放的恶作剧。",
+          "truth": false,
+          "aliases": [
+            "恶作剧",
+            "室友放鞋",
+            "故意吓人"
+          ]
+        },
+        {
+          "id": "student-sleeps-outside",
+          "description": "学生曾经睡在楼梯口。",
+          "truth": false,
+          "aliases": [
+            "睡楼梯",
+            "没回宿舍",
+            "失踪"
+          ]
+        },
+        {
+          "id": "shoe-different-days",
+          "description": "不同日期出现的是同一只鞋。",
+          "truth": true,
+          "aliases": [
+            "同一只鞋",
+            "同一双中的一只",
+            "每天都是"
+          ]
+        }
+      ],
+      "hints": [
+        "鞋不是被送来的，而是被人捡回来的。",
+        "梦游的人没有意识到自己离开过宿舍。"
+      ],
+      "suggestions": [
+        "鞋是谁的？",
+        "这是恶作剧吗？",
+        "为什么只有一只？"
+      ]
+    },
+    {
+      "id": "teacher-calls-missing-name",
+      "title": "老师点到的最后一个名字",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "点名单",
+        "班主任",
+        "旧杯子"
+      ],
+      "warnings": [],
+      "surface": "班主任每天点名都会念到一个不在名单上的名字。学生问起时，她只说那是之前的学生。毕业多年后，那个名字的主人回到学校，带走了讲台上的一只旧杯子。",
+      "bottom": "那个学生曾经在毕业前转学，后来因事故去世。班主任保留他的名字，是因为当年没能完成他的转学告别。杯子是学生留下的，班主任一直放在讲台上。学生家属回来后取走杯子，完成了迟到的告别。",
+      "facts": [
+        {
+          "id": "transferred-student",
+          "description": "那个学生曾在毕业前转学。",
+          "truth": true,
+          "aliases": [
+            "转学",
+            "离开学校",
+            "之前的学生"
+          ]
+        },
+        {
+          "id": "student-died",
+          "description": "学生在转学后因事故去世。",
+          "truth": true,
+          "aliases": [
+            "事故去世",
+            "学生死了",
+            "意外死亡"
+          ]
+        },
+        {
+          "id": "teacher-kept-cup",
+          "description": "班主任一直保留着学生的旧杯子。",
+          "truth": true,
+          "aliases": [
+            "旧杯子",
+            "讲台上的杯子",
+            "保留纪念"
+          ]
+        },
+        {
+          "id": "ghost-student",
+          "description": "那个名字是鬼魂留下的。",
+          "truth": false,
+          "aliases": [
+            "鬼魂",
+            "幽灵",
+            "闹鬼"
+          ]
+        },
+        {
+          "id": "family-took-cup",
+          "description": "家属回来取走杯子是为了告别。",
+          "truth": true,
+          "aliases": [
+            "家属取走",
+            "完成告别",
+            "拿回遗物"
+          ]
+        }
+      ],
+      "hints": [
+        "老师念的名字属于一位过去的学生，不是在召唤什么。",
+        "讲台上的杯子一直在等家属回来。"
+      ],
+      "suggestions": [
+        "名单外的人是谁？",
+        "老师为什么每天念？",
+        "杯子被谁拿走了？"
+      ]
+    },
+    {
+      "id": "swing-moves-at-night",
+      "title": "夜里自己晃的秋千",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "惊悚",
+      "tags": [
+        "秋千",
+        "排水管",
+        "弹珠"
+      ],
+      "warnings": [],
+      "surface": "小学操场的秋千每天夜里都会轻微晃动。保安看了监控，发现没有风，也没有人经过。第二天，学校在秋千下发现了几颗弹珠。",
+      "bottom": "秋千旁边有一条夜间排水的管道。管道震动通过地面传到秋千支架，使秋千缓慢摆动。弹珠是白天学生遗落的，滚到秋千下面后挡住了部分排水口，让水流冲击更明显。",
+      "facts": [
+        {
+          "id": "drainage-vibration",
+          "description": "排水管震动让秋千摆动。",
+          "truth": true,
+          "aliases": [
+            "排水管",
+            "地面震动",
+            "管道传振"
+          ]
+        },
+        {
+          "id": "marbles-block-drain",
+          "description": "弹珠挡住了部分排水口。",
+          "truth": true,
+          "aliases": [
+            "弹珠",
+            "堵住排水",
+            "水流改变"
+          ]
+        },
+        {
+          "id": "ghost-swing",
+          "description": "秋千是被鬼推的。",
+          "truth": false,
+          "aliases": [
+            "鬼推",
+            "闹鬼",
+            "幽灵"
+          ]
+        },
+        {
+          "id": "wind-strong",
+          "description": "夜里有很大的风。",
+          "truth": false,
+          "aliases": [
+            "刮大风",
+            "风吹秋千",
+            "天气原因"
+          ]
+        },
+        {
+          "id": "student-sneaks-in",
+          "description": "有学生夜里翻墙来玩。",
+          "truth": false,
+          "aliases": [
+            "学生翻墙",
+            "晚上来玩",
+            "闯入"
+          ]
+        }
+      ],
+      "hints": [
+        "秋千的晃动来自地面下的震动。",
+        "弹珠虽然小，却改变了水流的路径。"
+      ],
+      "suggestions": [
+        "秋千为什么晃？",
+        "学校闹鬼吗？",
+        "弹珠从哪里来？"
+      ]
+    },
+    {
+      "id": "student-always-late",
+      "title": "总是迟到的学生",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "迟到",
+        "猫",
+        "宠物医院"
+      ],
+      "warnings": [],
+      "surface": "一名学生每天早自习都迟到十分钟，班主任多次批评也没有用。后来老师发现，他每天都会在校门口的长椅旁捡起一只猫，再把它送回对面的宠物医院。",
+      "bottom": "学生在帮助一只走失的猫。猫每天清晨都会从医院溜出来，蹲在校门口。学生担心它被车撞，就绕路送它回去，因此迟到。他不敢解释，是因为医院工作人员曾请求他不要公开主人隐私。",
+      "facts": [
+        {
+          "id": "cat-escapes",
+          "description": "宠物医院的猫每天清晨会溜出来。",
+          "truth": true,
+          "aliases": [
+            "猫跑出来",
+            "走失的猫",
+            "医院猫"
+          ]
+        },
+        {
+          "id": "student-returns-cat",
+          "description": "学生每天把猫送回宠物医院。",
+          "truth": true,
+          "aliases": [
+            "送回医院",
+            "帮助猫",
+            "捡猫"
+          ]
+        },
+        {
+          "id": "student-sleeps-late",
+          "description": "学生迟到是因为睡过头。",
+          "truth": false,
+          "aliases": [
+            "睡过头",
+            "起床晚",
+            "懒"
+          ]
+        },
+        {
+          "id": "hospital-secret",
+          "description": "医院请求他不要公开主人隐私。",
+          "truth": true,
+          "aliases": [
+            "主人隐私",
+            "不要公开",
+            "保密"
+          ]
+        },
+        {
+          "id": "cat-is-his",
+          "description": "猫是学生自己养的。",
+          "truth": false,
+          "aliases": [
+            "自己的猫",
+            "学生养猫",
+            "宠物主人"
+          ]
+        }
+      ],
+      "hints": [
+        "他每天迟到前都会遇到同一个动物。",
+        "绕路的方向通向宠物医院。"
+      ],
+      "suggestions": [
+        "学生为什么迟到？",
+        "他睡过头了吗？",
+        "猫是谁的？"
+      ]
+    },
+    {
+      "id": "graduation-photo-empty-chair",
+      "title": "毕业照里的空椅子",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "毕业照",
+        "空椅子",
+        "转学"
+      ],
+      "warnings": [],
+      "surface": "毕业照拍完后，大家发现最后一排中间有一把空椅子。摄影师说拍的时候座位上明明有人。椅子主人第二天没有来学校，也没有请假记录。",
+      "bottom": "椅子主人是转学生，拍完照片后当天就随家人离开了城市。她没有请假，是因为转学手续在拍照后完成。摄影师看到的人确实是真实的，只是照片冲洗时教室投影仪的光正好遮住了她的下半身，显得像空椅子。",
+      "facts": [
+        {
+          "id": "student-transferred",
+          "description": "椅子主人当天随家人转学离开。",
+          "truth": true,
+          "aliases": [
+            "转学离开",
+            "当天走",
+            "随家人搬家"
+          ]
+        },
+        {
+          "id": "投影仪-light",
+          "description": "投影仪光线遮住了她的下半身。",
+          "truth": true,
+          "aliases": [
+            "投影仪",
+            "光线遮挡",
+            "照片曝光"
+          ]
+        },
+        {
+          "id": "missing-person",
+          "description": "有人失踪或被绑架。",
+          "truth": false,
+          "aliases": [
+            "失踪",
+            "绑架",
+            "出事"
+          ]
+        },
+        {
+          "id": "photo-photoshop",
+          "description": "照片被人故意P掉了。",
+          "truth": false,
+          "aliases": [
+            "P掉",
+            "合成",
+            "故意删除"
+          ]
+        },
+        {
+          "id": "no-leave-record",
+          "description": "没有请假记录是因为转学手续刚完成。",
+          "truth": true,
+          "aliases": [
+            "手续完成",
+            "不算请假",
+            "系统没记录"
+          ]
+        }
+      ],
+      "hints": [
+        "座位上有人，只是照片里被某种光遮住了。",
+        "她没有失踪，而是在拍照后立刻离开了学校。"
+      ],
+      "suggestions": [
+        "椅子上的人是谁？",
+        "她失踪了吗？",
+        "照片为什么看起来像空椅？"
+      ]
+    },
+    {
+      "id": "bell-rings-at-night",
+      "title": "夜里响起的下课铃",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "下课铃",
+        "广播",
+        "消防"
+      ],
+      "warnings": [],
+      "surface": "学校早已放假，夜里却准时响起下课铃。保安巡查后发现广播室锁着，电脑也处于关机状态。铃声来源最终被定位在地下线路。",
+      "bottom": "铃声来自备用消防广播系统。假期线路维护时，自动测试程序每天夜里模拟一次广播，确认扬声器仍然工作。控制电脑关机并不影响消防系统的独立控制器。保安听到的不是闹鬼，而是安全设备自检。",
+      "facts": [
+        {
+          "id": "fire-broadcast-test",
+          "description": "铃声来自消防广播的自动测试。",
+          "truth": true,
+          "aliases": [
+            "消防广播",
+            "自动测试",
+            "安全设备"
+          ]
+        },
+        {
+          "id": "independent-controller",
+          "description": "消防系统有独立控制器。",
+          "truth": true,
+          "aliases": [
+            "独立控制器",
+            "不受电脑影响",
+            "备用系统"
+          ]
+        },
+        {
+          "id": "ghost-bell",
+          "description": "铃声是被鬼魂触发的。",
+          "truth": false,
+          "aliases": [
+            "闹鬼",
+            "鬼按铃",
+            "幽灵"
+          ]
+        },
+        {
+          "id": "maintenance-schedule",
+          "description": "假期线路维护安排了夜间测试。",
+          "truth": true,
+          "aliases": [
+            "维护计划",
+            "假期测试",
+            "夜间"
+          ]
+        },
+        {
+          "id": "someone-in-broadcast-room",
+          "description": "广播室里一直有人偷偷操作。",
+          "truth": false,
+          "aliases": [
+            "广播室有人",
+            "偷偷播放",
+            "学生恶作剧"
+          ]
+        }
+      ],
+      "hints": [
+        "电脑关机不代表广播系统也关机。",
+        "铃声来自一套专门用于安全测试的独立线路。"
+      ],
+      "suggestions": [
+        "谁按了下课铃？",
+        "广播室有人吗？",
+        "为什么电脑关机还会响？"
+      ]
+    },
+    {
+      "id": "chalk-writing",
+      "title": "自己出现的粉笔字",
+      "primary_genre": "校园",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "黑板",
+        "粉笔字",
+        "湿度"
+      ],
+      "warnings": [],
+      "surface": "教室黑板上每天早晨都会出现一行粉笔字，内容都写着同一句“请擦掉昨天的我”。值日生守了一晚，发现凌晨时分黑板上的字确实自己浮现出来。",
+      "bottom": "黑板后面有一位退休教师留下的旧投影膜。夜间湿度升高时，墨水从膜里渗出，被黑板表面吸附，形成和过去板书相似的字迹。字句是那位教师在告别讲台前写下的，已经存在多年。",
+      "facts": [
+        {
+          "id": "old-projection-film",
+          "description": "黑板后藏着旧投影膜。",
+          "truth": true,
+          "aliases": [
+            "投影膜",
+            "旧板书",
+            "黑板后面"
+          ]
+        },
+        {
+          "id": "humidity-reveals-ink",
+          "description": "夜间湿度让旧墨水渗出。",
+          "truth": true,
+          "aliases": [
+            "湿度",
+            "墨水渗出",
+            "受潮"
+          ]
+        },
+        {
+          "id": "ghost-writing",
+          "description": "粉笔字是鬼写的。",
+          "truth": false,
+          "aliases": [
+            "鬼写字",
+            "幽灵",
+            "闹鬼"
+          ]
+        },
+        {
+          "id": "retired-teacher",
+          "description": "字句来自一位退休教师。",
+          "truth": true,
+          "aliases": [
+            "退休教师",
+            "老师写的",
+            "告别讲台"
+          ]
+        },
+        {
+          "id": "student-prank",
+          "description": "是学生半夜来写的。",
+          "truth": false,
+          "aliases": [
+            "学生恶作剧",
+            "偷偷写",
+            "值日生"
+          ]
+        }
+      ],
+      "hints": [
+        "字不是新写的，而是旧字被潮气重新显现。",
+        "这句话来自黑板后面的东西。"
+      ],
+      "suggestions": [
+        "字是谁写的？",
+        "教室闹鬼吗？",
+        "为什么每天出现？"
+      ]
+    },
+    {
+      "id": "light-in-empty-office",
+      "title": "空办公室的灯",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "办公室",
+        "备份",
+        "灯光"
+      ],
+      "warnings": [],
+      "surface": "同事们下班后，财务办公室的灯总会亮到深夜。保安以为有人加班，进去查看时却只看到一台没有关机的电脑。",
+      "bottom": "电脑正在执行夜间自动备份。财务软件设置了固定备份任务，任务完成前屏幕和指示灯不会熄灭。所谓空办公室，其实还有一个没有身体的“值班员”。",
+      "facts": [
+        {
+          "id": "night-backup",
+          "description": "电脑在执行夜间自动备份。",
+          "truth": true,
+          "aliases": [
+            "自动备份",
+            "夜间任务",
+            "程序运行"
+          ]
+        },
+        {
+          "id": "employee-overtime",
+          "description": "有员工偷偷留在办公室加班。",
+          "truth": false,
+          "aliases": [
+            "加班",
+            "有人留下",
+            "偷偷工作"
+          ]
+        },
+        {
+          "id": "screen-keeps-light",
+          "description": "屏幕和指示灯让办公室看起来亮着。",
+          "truth": true,
+          "aliases": [
+            "屏幕亮",
+            "指示灯",
+            "灯光来源"
+          ]
+        },
+        {
+          "id": "power-left-on",
+          "description": "有人忘记关电源导致灯光不灭。",
+          "truth": false,
+          "aliases": [
+            "忘记关灯",
+            "电源没关",
+            "粗心"
+          ]
+        },
+        {
+          "id": "backup-fixed-time",
+          "description": "备份任务每天固定在深夜运行。",
+          "truth": true,
+          "aliases": [
+            "固定时间",
+            "每天运行",
+            "夜间启动"
+          ]
+        }
+      ],
+      "hints": [
+        "办公室里没有人，但有一个程序在按计划工作。",
+        "灯光最可能来自桌上的设备。"
+      ],
+      "suggestions": [
+        "谁在办公室？",
+        "有人加班吗？",
+        "为什么灯一直亮着？"
+      ]
+    },
+    {
+      "id": "meeting-room-always-booked",
+      "title": "永远预订满的会议室",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "会议室",
+        "账号",
+        "行政"
+      ],
+      "warnings": [],
+      "surface": "公司最小的会议室永远显示“已预订”，但同事们从没见里面有人。行政查了系统日志，发现预订人是一个已经离职半年的员工账号。",
+      "bottom": "会议室被用作安静休息室。离职员工的账号权限没有被及时注销，行政临时用这个账号设置了每天连续预订，避免别人占用。所谓幽灵预订，其实是管理制度留下的漏洞。",
+      "facts": [
+        {
+          "id": "rest-room-purpose",
+          "description": "会议室被临时用作安静休息室。",
+          "truth": true,
+          "aliases": [
+            "休息室",
+            "安静房间",
+            "临时使用"
+          ]
+        },
+        {
+          "id": "account-not-deactivated",
+          "description": "离职员工的账号没有被注销。",
+          "truth": true,
+          "aliases": [
+            "账号没注销",
+            "离职账号",
+            "权限遗留"
+          ]
+        },
+        {
+          "id": "ghost-booking",
+          "description": "离职员工偷偷回来预订。",
+          "truth": false,
+          "aliases": [
+            "本人预订",
+            "偷偷回来",
+            "幽灵"
+          ]
+        },
+        {
+          "id": "admin-uses-account",
+          "description": "行政使用旧账号维持预订。",
+          "truth": true,
+          "aliases": [
+            "行政操作",
+            "用旧账号",
+            "连续预订"
+          ]
+        },
+        {
+          "id": "room-never-used",
+          "description": "会议室从来没有被任何人使用。",
+          "truth": false,
+          "aliases": [
+            "没人用",
+            "一直空着",
+            "完全没使用"
+          ]
+        }
+      ],
+      "hints": [
+        "预订记录不是本人留下的，而是系统权限没有清理。",
+        "房间有一个不便公开的用途。"
+      ],
+      "suggestions": [
+        "会议室真的有人用吗？",
+        "预订人是谁？",
+        "账号为什么还在？"
+      ]
+    },
+    {
+      "id": "desk-drawer-key",
+      "title": "抽屉里的备用钥匙",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "钥匙",
+        "抽屉",
+        "档案室"
+      ],
+      "warnings": [],
+      "surface": "新员工发现自己工位的抽屉里有一把钥匙，钥匙上贴着“不要交给下一个”。他把钥匙交给主管后，主管脸色变了，立刻让他把钥匙放回去。",
+      "bottom": "钥匙属于上一任员工，也是一位已经去世的同事。旧员工曾负责保管档案室钥匙，离职前将备用钥匙留在抽屉里，写了“不要交给下一个”是担心档案室无人负责。主管看到钥匙后联系了档案室，最终把钥匙交给正式保管人。",
+      "facts": [
+        {
+          "id": "previous-employee",
+          "description": "钥匙属于上一任员工。",
+          "truth": true,
+          "aliases": [
+            "上任员工",
+            "前任同事",
+            "离职同事"
+          ]
+        },
+        {
+          "id": "archives-key",
+          "description": "钥匙是档案室的备用钥匙。",
+          "truth": true,
+          "aliases": [
+            "档案室",
+            "备用钥匙",
+            "重要钥匙"
+          ]
+        },
+        {
+          "id": "old-employee-died",
+          "description": "上一任员工已经去世。",
+          "truth": true,
+          "aliases": [
+            "前任去世",
+            "同事死了",
+            "已经死亡"
+          ]
+        },
+        {
+          "id": "key-dangerous",
+          "description": "钥匙会打开危险设备。",
+          "truth": false,
+          "aliases": [
+            "危险设备",
+            "炸弹",
+            "危险物品"
+          ]
+        },
+        {
+          "id": "supervisor-contact",
+          "description": "主管联系了档案室。",
+          "truth": true,
+          "aliases": [
+            "联系档案室",
+            "找人处理",
+            "正式保管"
+          ]
+        }
+      ],
+      "hints": [
+        "钥匙不是新员工的东西，它牵连着上一任员工的责任。",
+        "主管紧张，是因为他知道档案室的重要性。"
+      ],
+      "suggestions": [
+        "钥匙属于谁？",
+        "主管害怕什么？",
+        "抽屉里为什么留钥匙？"
+      ]
+    },
+    {
+      "id": "boss-never-drinks-coffee",
+      "title": "不喝咖啡的老板",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "咖啡",
+        "老板",
+        "保安"
+      ],
+      "warnings": [],
+      "surface": "老板每天都会让助理买一杯咖啡，却从不喝。杯子放在办公桌上，下班时仍然满着。新助理偷偷观察，发现老板每天中午都会把咖啡倒进花盆。",
+      "bottom": "咖啡不是给老板喝的，而是给公司门口一位值夜班的保安准备的。老板不想让其他同事知道保安晚上没有热水，便把咖啡倒进花盆，假装自己在喝，然后把空杯交给保安。花盆是他和保安约定的交接点。",
+      "facts": [
+        {
+          "id": "coffee-for-guard",
+          "description": "咖啡是给夜班保安准备的。",
+          "truth": true,
+          "aliases": [
+            "给保安",
+            "保安的咖啡",
+            "夜班人员"
+          ]
+        },
+        {
+          "id": "boss-does-not-drink",
+          "description": "老板故意不喝咖啡。",
+          "truth": true,
+          "aliases": [
+            "不喝",
+            "假装喝",
+            "倒掉"
+          ]
+        },
+        {
+          "id": "flowerpot-handoff",
+          "description": "花盆是交接咖啡的约定地点。",
+          "truth": true,
+          "aliases": [
+            "花盆交接",
+            "倒进花盆",
+            "暗号"
+          ]
+        },
+        {
+          "id": "coffee-waste",
+          "description": "老板只是浪费钱买咖啡。",
+          "truth": false,
+          "aliases": [
+            "浪费",
+            "随便买",
+            "没有用途"
+          ]
+        },
+        {
+          "id": "assistant-secret",
+          "description": "助理知道整个安排。",
+          "truth": false,
+          "aliases": [
+            "助理知道",
+            "助理安排",
+            "共同隐瞒"
+          ]
+        }
+      ],
+      "hints": [
+        "咖啡不是消费品，而是被转交给了另一个人。",
+        "花盆是老板和某个人之间的约定。"
+      ],
+      "suggestions": [
+        "老板为什么不喝咖啡？",
+        "咖啡给谁了？",
+        "助理知道吗？"
+      ]
+    },
+    {
+      "id": "office-plant-dies-friday",
+      "title": "每周五枯萎的绿植",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "绿植",
+        "空调",
+        "周五"
+      ],
+      "warnings": [],
+      "surface": "行政发现办公室的绿植每周五都会枯一点，周一又恢复。没有换植物，也没有人给它浇水。监控显示，周五下班后空调的风会吹到花盆上。",
+      "bottom": "周五晚上清洁班会打开窗户通风，空调出风口正对着绿植。热风让叶片快速失水，周末没有人补水就显得枯萎。周一空调关闭，植物吸收夜间水分后又恢复。",
+      "facts": [
+        {
+          "id": "air-conditioner-wind",
+          "description": "空调风直接吹向绿植。",
+          "truth": true,
+          "aliases": [
+            "空调吹风",
+            "风直吹",
+            "出风口"
+          ]
+        },
+        {
+          "id": "window-cleaning",
+          "description": "清洁班周五开窗通风。",
+          "truth": true,
+          "aliases": [
+            "周五开窗",
+            "通风",
+            "清洁班"
+          ]
+        },
+        {
+          "id": "plant-disease",
+          "description": "绿植感染了疾病。",
+          "truth": false,
+          "aliases": [
+            "植物生病",
+            "感染",
+            "真菌"
+          ]
+        },
+        {
+          "id": "water-schedule",
+          "description": "周末没有人给植物补水。",
+          "truth": true,
+          "aliases": [
+            "周末没人浇水",
+            "缺水",
+            "失水"
+          ]
+        },
+        {
+          "id": "plant-swapped",
+          "description": "有人在周末换了植物。",
+          "truth": false,
+          "aliases": [
+            "换植物",
+            "偷偷替换",
+            "买新的"
+          ]
+        }
+      ],
+      "hints": [
+        "枯萎是环境变化造成的，植物本身没有变化。",
+        "周末办公室的通风和平时不同。"
+      ],
+      "suggestions": [
+        "绿植为什么枯萎？",
+        "有人换植物吗？",
+        "周一为什么恢复？"
+      ]
+    },
+    {
+      "id": "elevator-to-basement",
+      "title": "通往地下的电梯",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "电梯",
+        "地下层",
+        "储能"
+      ],
+      "warnings": [],
+      "surface": "员工发现电梯按钮上有一个没有标识的地下楼层。按下去后电梯会下降很久，门打开却是一片漆黑。有人说那里是废弃的服务器房，也有人说那里从来不存在。",
+      "bottom": "地下层是旧公司留下的档案库，后来改为电池储能间。电梯下降时间长，是因为它实际停在半地下的设备夹层。漆黑不是无人区，而是储能间平时不需要照明。按钮没有标识，是为了避免普通员工误入。",
+      "facts": [
+        {
+          "id": "old-archive",
+          "description": "地下层曾是公司档案库。",
+          "truth": true,
+          "aliases": [
+            "旧档案库",
+            "地下档案",
+            "旧公司"
+          ]
+        },
+        {
+          "id": "battery-room",
+          "description": "后来被改造成电池储能间。",
+          "truth": true,
+          "aliases": [
+            "储能间",
+            "电池房",
+            "设备间"
+          ]
+        },
+        {
+          "id": "no-light",
+          "description": "漆黑是因为储能间平时不开灯。",
+          "truth": true,
+          "aliases": [
+            "没有开灯",
+            "设备房",
+            "不需要照明"
+          ]
+        },
+        {
+          "id": "secret-lab",
+          "description": "地下层藏着秘密实验室。",
+          "truth": false,
+          "aliases": [
+            "秘密实验室",
+            "非法实验",
+            "人体实验"
+          ]
+        },
+        {
+          "id": "button-unlabeled",
+          "description": "按钮无标识是为了避免误入。",
+          "truth": true,
+          "aliases": [
+            "防止误入",
+            "不对外开放",
+            "没有标识"
+          ]
+        }
+      ],
+      "hints": [
+        "电梯确实到达一个楼层，只是那里不是普通办公区。",
+        "下降很久说明它经过了比正常办公层更深的位置。"
+      ],
+      "suggestions": [
+        "地下层是什么？",
+        "那里有人吗？",
+        "为什么按钮没有名字？"
+      ]
+    },
+    {
+      "id": "employee-number-404",
+      "title": "工号404的员工",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "工号",
+        "远程顾问",
+        "系统"
+      ],
+      "warnings": [],
+      "surface": "公司系统里有一个工号404的员工，每个月的工资都会正常发放。人事却找不到这个人的照片和档案，电话也从未打通过。",
+      "bottom": "工号404属于一位长期在家工作的外部顾问。顾问不使用公司邮箱，也不来办公室，工资通过代理账户发放。系统显示为正式员工，是早期录入时的分类错误，不是幽灵员工。",
+      "facts": [
+        {
+          "id": "remote-consultant",
+          "description": "工号404属于远程工作的外部顾问。",
+          "truth": true,
+          "aliases": [
+            "远程顾问",
+            "外部人员",
+            "在家工作"
+          ]
+        },
+        {
+          "id": "proxy-account",
+          "description": "工资通过代理账户发放。",
+          "truth": true,
+          "aliases": [
+            "代理账户",
+            "第三方发放",
+            "工资通道"
+          ]
+        },
+        {
+          "id": "ghost-employee",
+          "description": "公司有一个幽灵员工。",
+          "truth": false,
+          "aliases": [
+            "幽灵员工",
+            "没这个人",
+            "虚构员工"
+          ]
+        },
+        {
+          "id": "recording-error",
+          "description": "系统分类错误导致他显示为正式员工。",
+          "truth": true,
+          "aliases": [
+            "分类错误",
+            "录入错误",
+            "系统问题"
+          ]
+        },
+        {
+          "id": "phone-broken",
+          "description": "电话从未打通是因为号码被注销。",
+          "truth": true,
+          "aliases": [
+            "号码注销",
+            "电话停机",
+            "联系方式失效"
+          ]
+        }
+      ],
+      "hints": [
+        "工号存在，不代表员工按普通入职流程存在。",
+        "工资发放和照片档案走的是不同系统。"
+      ],
+      "suggestions": [
+        "404是谁？",
+        "他是幽灵吗？",
+        "为什么电话打不通？"
+      ]
+    },
+    {
+      "id": "printer-old-emails",
+      "title": "打印旧邮件的打印机",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "打印机",
+        "旧邮件",
+        "归档"
+      ],
+      "warnings": [],
+      "surface": "办公室的打印机每天都会自动打印出一封旧邮件。邮件日期是三年前，收件人早已离职。IT检查后发现，打印任务来自一台还在运行的旧电脑。",
+      "bottom": "旧电脑是会议室备用机，负责自动归档邮件附件。程序配置错误，每天把以前未完成的打印任务重新提交一次。离职员工只是收件人，不是系统操作者。",
+      "facts": [
+        {
+          "id": "old-computer",
+          "description": "旧电脑仍在运行自动任务。",
+          "truth": true,
+          "aliases": [
+            "旧电脑",
+            "备用机",
+            "自动程序"
+          ]
+        },
+        {
+          "id": "retry-print-job",
+          "description": "打印任务被程序重复提交。",
+          "truth": true,
+          "aliases": [
+            "重复打印",
+            "任务重试",
+            "未完成任务"
+          ]
+        },
+        {
+          "id": "ghost-employee",
+          "description": "离职员工回来打印邮件。",
+          "truth": false,
+          "aliases": [
+            "离职员工回来",
+            "偷偷登录",
+            "幽灵"
+          ]
+        },
+        {
+          "id": "email-archive",
+          "description": "旧电脑负责归档邮件附件。",
+          "truth": true,
+          "aliases": [
+            "邮件归档",
+            "附件任务",
+            "自动系统"
+          ]
+        },
+        {
+          "id": "printer-broken",
+          "description": "打印机发生硬件故障。",
+          "truth": false,
+          "aliases": [
+            "打印机坏了",
+            "硬件问题",
+            "乱码"
+          ]
+        }
+      ],
+      "hints": [
+        "邮件是旧的，但打印指令来自一台仍在工作的设备。",
+        "离职员工只是邮件收件人。"
+      ],
+      "suggestions": [
+        "谁在打印邮件？",
+        "离职员工回来了吗？",
+        "打印任务为什么重复？"
+      ]
+    },
+    {
+      "id": "salary-slip-zero",
+      "title": "工资条上的零",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "工资",
+        "银行卡",
+        "系统"
+      ],
+      "warnings": [],
+      "surface": "一位员工这个月收到的工资条显示为零。财务说工资已经发放，银行流水却也没有记录。员工去查考勤时，发现系统把他的工号识别成了另一个已注销账户。",
+      "bottom": "员工换了银行卡后，财务系统仍把工资发到旧账户。旧账户因为长期未使用被银行冻结，工资条显示为零是系统未同步银行回执的结果。财务后来重新发放，真正的工资没有消失。",
+      "facts": [
+        {
+          "id": "old-bank-card",
+          "description": "工资被打到了已经停用的旧银行卡。",
+          "truth": true,
+          "aliases": [
+            "旧银行卡",
+            "旧账户",
+            "银行卡停用"
+          ]
+        },
+        {
+          "id": "bank-frozen",
+          "description": "旧账户因为长期未使用被冻结。",
+          "truth": true,
+          "aliases": [
+            "账户冻结",
+            "长期不用",
+            "银行冻结"
+          ]
+        },
+        {
+          "id": "salary-stolen",
+          "description": "工资被同事盗走了。",
+          "truth": false,
+          "aliases": [
+            "被偷",
+            "盗走",
+            "同事拿走"
+          ]
+        },
+        {
+          "id": "system-sync-error",
+          "description": "工资条为零是系统没有同步回执。",
+          "truth": true,
+          "aliases": [
+            "系统未同步",
+            "回执缺失",
+            "显示错误"
+          ]
+        },
+        {
+          "id": "paid-again",
+          "description": "财务后来重新发放了工资。",
+          "truth": true,
+          "aliases": [
+            "重新发放",
+            "补发",
+            "到账"
+          ]
+        }
+      ],
+      "hints": [
+        "工资没有消失，而是进了一个已经不常用的账户。",
+        "系统显示的金额和银行实际处理结果不同步。"
+      ],
+      "suggestions": [
+        "工资去哪了？",
+        "有人偷工资吗？",
+        "为什么工资条是零？"
+      ]
+    },
+    {
+      "id": "night-shift-woman",
+      "title": "夜班女人的保温杯",
+      "primary_genre": "职场",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "惊悚",
+      "tags": [
+        "夜班",
+        "保温杯",
+        "清洁工"
+      ],
+      "warnings": [],
+      "surface": "公司夜班只有一位女员工，但保安每晚都在茶水间看到两个保温杯。有人怀疑她在办公室藏了人。女员工发现后，把两个杯子并排放在监控前，保安才明白原因。",
+      "bottom": "其中一个杯子是她给清洁工留的热水。清洁工每晚十一点来收垃圾，女员工担心他喝冷水，就提前放一个杯子。另一个杯子是她自己的，两个杯子并排是为了让保安看清内容，不是藏人。",
+      "facts": [
+        {
+          "id": "cup-for-cleaner",
+          "description": "第二个保温杯是给清洁工准备的。",
+          "truth": true,
+          "aliases": [
+            "给清洁工",
+            "另一个杯子",
+            "留热水"
+          ]
+        },
+        {
+          "id": "cleaner-night",
+          "description": "清洁工每晚十一点来收垃圾。",
+          "truth": true,
+          "aliases": [
+            "晚上来",
+            "清洁工",
+            "十一点"
+          ]
+        },
+        {
+          "id": "hidden-person",
+          "description": "办公室藏着第二个人。",
+          "truth": false,
+          "aliases": [
+            "藏着人",
+            "有人躲着",
+            "第二个人"
+          ]
+        },
+        {
+          "id": "own-cup",
+          "description": "另一个杯子是女员工自己的。",
+          "truth": true,
+          "aliases": [
+            "自己的杯子",
+            "她也在喝水",
+            "两个杯子"
+          ]
+        },
+        {
+          "id": "camera-show",
+          "description": "她把杯子放在监控前是为了解释情况。",
+          "truth": true,
+          "aliases": [
+            "给保安看",
+            "监控前",
+            "说明原因"
+          ]
+        }
+      ],
+      "hints": [
+        "两个杯子不代表两个人，其中一个是在替别人准备。",
+        "夜班清洁工有一个固定的到访时间。"
+      ],
+      "suggestions": [
+        "办公室里有别人吗？",
+        "为什么有两个杯子？",
+        "女员工在隐瞒什么吗？"
+      ]
+    },
+    {
+      "id": "father-two-phones",
+      "title": "父亲的两部手机",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "父亲",
+        "手机",
+        "亲人"
+      ],
+      "warnings": [],
+      "surface": "父亲从不离身的两部手机，一部接家人电话，一部只在下班后响起。女儿偷偷看到第二部手机里全是同一个陌生号码，直到母亲住院那天，父亲才把手机交给她。",
+      "bottom": "第二部手机是父亲和一位失散哥哥的联系工具。哥哥当年因家庭矛盾离家，父亲一直偷偷寻找。母亲住院时，哥哥终于同意回来探望。父亲没有告诉家人，是怕母亲情绪激动，也怕再次失望。",
+      "facts": [
+        {
+          "id": "lost-brother",
+          "description": "父亲一直在寻找失散的哥哥。",
+          "truth": true,
+          "aliases": [
+            "寻找哥哥",
+            "失散亲人",
+            "父亲的兄弟"
+          ]
+        },
+        {
+          "id": "family-conflict",
+          "description": "哥哥当年因家庭矛盾离开。",
+          "truth": true,
+          "aliases": [
+            "家庭矛盾",
+            "离家出走",
+            "闹翻"
+          ]
+        },
+        {
+          "id": "mother-hospital",
+          "description": "母亲住院后哥哥同意回来。",
+          "truth": true,
+          "aliases": [
+            "母亲住院",
+            "哥哥回来",
+            "探望"
+          ]
+        },
+        {
+          "id": "father-affair",
+          "description": "父亲有婚外情。",
+          "truth": false,
+          "aliases": [
+            "婚外情",
+            "情人",
+            "出轨"
+          ]
+        },
+        {
+          "id": "secret-phone",
+          "description": "第二部手机只是为了隐瞒。”",
+          "truth": true,
+          "aliases": [
+            "偷偷联系",
+            "不让家人知道",
+            "保密"
+          ]
+        }
+      ],
+      "hints": [
+        "第二部手机连接的不是陌生人，而是父亲一直不敢提的家人。",
+        "时间点落在母亲住院之后。"
+      ],
+      "suggestions": [
+        "父亲在和谁联系？",
+        "他出轨了吗？",
+        "母亲住院后发生了什么？"
+      ]
+    },
+    {
+      "id": "mother-extra-bowl",
+      "title": "母亲多盛的一碗饭",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "母亲",
+        "饭桌",
+        "姐姐"
+      ],
+      "warnings": [],
+      "surface": "母亲每顿饭都会多盛一碗饭，放在餐桌空位上。家人劝她别再这样，她总是笑着说不习惯少一个人。后来，弟弟回家时发现那只碗里放着一张旧车票。",
+      "bottom": "多出的碗是为在外地工作的姐姐准备的。姐姐离开家后多年没有回来，母亲每天照旧摆碗。旧车票是姐姐最后一次回家留下的。弟弟发现票后，才明白母亲不是忘记姐姐走了，而是不肯让家失去她的位置。",
+      "facts": [
+        {
+          "id": "bowl-for-sister",
+          "description": "多出的碗是给在外地的姐姐准备的。",
+          "truth": true,
+          "aliases": [
+            "给姐姐",
+            "姐姐的碗",
+            "多盛一碗"
+          ]
+        },
+        {
+          "id": "sister-left-home",
+          "description": "姐姐离家后多年没有回来。",
+          "truth": true,
+          "aliases": [
+            "姐姐离家长大",
+            "外地工作",
+            "很久没回"
+          ]
+        },
+        {
+          "id": "sister-dead",
+          "description": "姐姐已经死了。",
+          "truth": false,
+          "aliases": [
+            "姐姐死了",
+            "去世",
+            "死亡"
+          ]
+        },
+        {
+          "id": "old-ticket",
+          "description": "旧车票是姐姐最后一次回家留下的。",
+          "truth": true,
+          "aliases": [
+            "旧车票",
+            "最后一次回家",
+            "姐姐留下"
+          ]
+        },
+        {
+          "id": "mother-forgetful",
+          "description": "母亲患有失忆症，忘了姐姐离开。",
+          "truth": false,
+          "aliases": [
+            "失忆",
+            "忘记",
+            "老年痴呆"
+          ]
+        }
+      ],
+      "hints": [
+        "碗是留给一个不在家却仍然被记住的人。",
+        "车票记录了她最后一次回来。"
+      ],
+      "suggestions": [
+        "碗是给谁的？",
+        "姐姐死了吗？",
+        "车票代表什么？"
+      ]
+    },
+    {
+      "id": "child-draws-house",
+      "title": "孩子画的三层房子",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "孩子",
+        "画",
+        "出租屋"
+      ],
+      "warnings": [],
+      "surface": "孩子画了一座三层房子，每层都有不同的窗户，却没有门。父母问他门在哪里，他说门藏在最下面，因为“那个人不让我们从上面走”。",
+      "bottom": "孩子画的是他小时候住过的旧房子。房子被改成三层出租屋后，房东把一楼入口封住，让租客从地下通道进出。孩子记得的不是危险，而是那段拥挤、复杂的生活。所谓“那个人”是当年的房东。",
+      "facts": [
+        {
+          "id": "old-rental-house",
+          "description": "画的是孩子小时候住过的出租屋。",
+          "truth": true,
+          "aliases": [
+            "旧房子",
+            "出租屋",
+            "小时候住"
+          ]
+        },
+        {
+          "id": "landlord-blocked-door",
+          "description": "房东封住了一楼入口。",
+          "truth": true,
+          "aliases": [
+            "房东封门",
+            "一楼入口",
+            "不让走"
+          ]
+        },
+        {
+          "id": "basement-entrance",
+          "description": "住户从地下通道进出。",
+          "truth": true,
+          "aliases": [
+            "地下通道",
+            "最下面进门",
+            "入口改变"
+          ]
+        },
+        {
+          "id": "child-abused",
+          "description": "孩子曾被房东虐待。",
+          "truth": false,
+          "aliases": [
+            "虐待",
+            "打孩子",
+            "伤害"
+          ]
+        },
+        {
+          "id": "house-in-dream",
+          "description": "这是孩子凭空想象的房子。",
+          "truth": false,
+          "aliases": [
+            "想象",
+            "梦境",
+            "不是真的"
+          ]
+        }
+      ],
+      "hints": [
+        "房子不是想象出来的，它来自孩子真实住过的地方。",
+        "没有门不是因为门消失，而是入口被改了位置。"
+      ],
+      "suggestions": [
+        "房子是真实的吗？",
+        "门在哪里？",
+        "孩子害怕那个人吗？"
+      ]
+    },
+    {
+      "id": "grandmother-two-cakes",
+      "title": "奶奶买两个蛋糕",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "奶奶",
+        "蛋糕",
+        "爷爷"
+      ],
+      "warnings": [],
+      "surface": "奶奶每次生日都买两个蛋糕，一个放在桌上，一个放进冰箱。家人问她为什么，她总说“另一个等会儿再吃”。直到孙女发现冰箱里的蛋糕每年都是同一个口味。",
+      "bottom": "冰箱里的蛋糕是留给爷爷的。爷爷在奶奶生日前一天去世，生前最喜欢那个口味。奶奶每年仍买两个，是为了让生日里保留爷爷的位置。蛋糕最后会被她分给邻居，不是浪费。",
+      "facts": [
+        {
+          "id": "grandfather-dead",
+          "description": "爷爷已经去世。",
+          "truth": true,
+          "aliases": [
+            "爷爷死了",
+            "爷爷去世",
+            "不在世"
+          ]
+        },
+        {
+          "id": "grandfather-birthday",
+          "description": "爷爷在奶奶生日前去世。",
+          "truth": true,
+          "aliases": [
+            "生日前去世",
+            "前一天",
+            "时间接近"
+          ]
+        },
+        {
+          "id": "cake-for-neighbors",
+          "description": "多买的蛋糕最后分给了邻居。",
+          "truth": true,
+          "aliases": [
+            "分给邻居",
+            "送给别人",
+            "没有浪费"
+          ]
+        },
+        {
+          "id": "grandmother-forgetful",
+          "description": "奶奶忘记爷爷已经去世。",
+          "truth": false,
+          "aliases": [
+            "忘记",
+            "失忆",
+            "不知道"
+          ]
+        },
+        {
+          "id": "same-flavor",
+          "description": "冰箱里的蛋糕一直是爷爷喜欢的口味。",
+          "truth": true,
+          "aliases": [
+            "爷爷喜欢的口味",
+            "同一个口味",
+            "专属口味"
+          ]
+        }
+      ],
+      "hints": [
+        "第二个蛋糕对应的不是未来，而是过去。",
+        "奶奶没有忘记，只是每年都保留了爷爷的位置。"
+      ],
+      "suggestions": [
+        "第二个蛋糕给谁？",
+        "奶奶忘了吗？",
+        "蛋糕最后怎么处理？"
+      ]
+    },
+    {
+      "id": "family-lock-old-room",
+      "title": "家里上锁的旧房间",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "旧房间",
+        "纸箱",
+        "成长"
+      ],
+      "warnings": [],
+      "surface": "家里有一间房一直锁着，父母从不让兄妹进去。兄妹以为里面藏着财产或秘密。父母去世后，他们打开房门，发现里面只有几十个贴着日期的纸箱。",
+      "bottom": "纸箱里是父母为孩子们记录的生活物品。每箱对应一年，装着旧玩具、奖状、照片和信件。父母不是隐瞒财富，而是想在孩子成年后留给他们一份完整的成长档案。夫妻俩一直没找到合适时机交出去。",
+      "facts": [
+        {
+          "id": "growth-archives",
+          "description": "房间里是父母保存的成长档案。",
+          "truth": true,
+          "aliases": [
+            "成长记录",
+            "旧物品",
+            "纸箱"
+          ]
+        },
+        {
+          "id": "parents-kept-secret",
+          "description": "父母想等孩子成年后再交出来。",
+          "truth": true,
+          "aliases": [
+            "成年后给",
+            "等时机",
+            "准备礼物"
+          ]
+        },
+        {
+          "id": "hidden-treasure",
+          "description": "房间里藏着金钱或财宝。",
+          "truth": false,
+          "aliases": [
+            "财宝",
+            "钱",
+            "遗产"
+          ]
+        },
+        {
+          "id": "family-secret",
+          "description": "房间里记录着家庭丑闻。",
+          "truth": false,
+          "aliases": [
+            "黑历史",
+            "丑闻",
+            "秘密罪案"
+          ]
+        },
+        {
+          "id": "boxes-by-year",
+          "description": "纸箱按孩子的年龄和年份整理。",
+          "truth": true,
+          "aliases": [
+            "按年份",
+            "每年一个",
+            "贴着日期"
+          ]
+        }
+      ],
+      "hints": [
+        "锁住的不是财富，而是父母长期积累的另一种东西。",
+        "纸箱上的日期说明它们与孩子们的成长有关。"
+      ],
+      "suggestions": [
+        "房间里有什么？",
+        "父母藏了钱吗？",
+        "为什么要锁起来？"
+      ]
+    },
+    {
+      "id": "sister-borrowed-dress",
+      "title": "姐姐借走的旧裙子",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "姐姐",
+        "裙子",
+        "面试"
+      ],
+      "warnings": [],
+      "surface": "妹妹发现自己最喜欢的一条裙子被姐姐借走了，却一直没有还。姐姐说已经放在柜子里。妹妹打开柜子，只看到一件和裙子颜色很像的外套。",
+      "bottom": "姐姐把裙子改成了妹妹面试时穿的职业外套。妹妹曾经说过想参加一个重要面试，却没有合适的衣服。姐姐悄悄改衣服，是怕妹妹拒绝。颜色相似是因为外套本来就是用那条旧裙子裁成的。",
+      "facts": [
+        {
+          "id": "dress-remade",
+          "description": "裙子被改成了外套。",
+          "truth": true,
+          "aliases": [
+            "改成外套",
+            "裁剪",
+            "改造衣服"
+          ]
+        },
+        {
+          "id": "sister-prepared-interview",
+          "description": "姐姐是为妹妹面试准备衣服。",
+          "truth": true,
+          "aliases": [
+            "面试衣服",
+            "准备面试",
+            "帮妹妹"
+          ]
+        },
+        {
+          "id": "sister-sold-dress",
+          "description": "姐姐把裙子卖掉了。",
+          "truth": false,
+          "aliases": [
+            "卖掉",
+            "丢了",
+            "偷走"
+          ]
+        },
+        {
+          "id": "sister-hid-intention",
+          "description": "姐姐不说是怕妹妹拒绝。",
+          "truth": true,
+          "aliases": [
+            "怕拒绝",
+            "偷偷准备",
+            "不告诉她"
+          ]
+        },
+        {
+          "id": "similar-color",
+          "description": "颜色相似是因为原料相同。",
+          "truth": true,
+          "aliases": [
+            "同一块布",
+            "原料相同",
+            "旧裙子"
+          ]
+        }
+      ],
+      "hints": [
+        "裙子没有消失，而是变成了另一件更实用的衣服。",
+        "这件事和妹妹即将面对的一个场合有关。"
+      ],
+      "suggestions": [
+        "裙子去哪了？",
+        "姐姐卖了吗？",
+        "为什么颜色这么像？"
+      ]
+    },
+    {
+      "id": "father-never-enters-kitchen",
+      "title": "父亲从不进厨房",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "父亲",
+        "厨房",
+        "创伤"
+      ],
+      "warnings": [],
+      "surface": "父亲从来不在家里进厨房，连倒水都让家人帮忙。孩子以为他讨厌做饭。一次母亲不在家，孩子发现父亲站在厨房门口很久，最后只是把一道菜端了出来。",
+      "bottom": "父亲年轻时是一名厨师，一次厨房火灾让他留下了严重烧伤和创伤后应激反应。他不是不会做饭，而是无法面对炉火和封闭空间。那天他戴着隔热手套，是为了给孩子热一道已经做好的菜。",
+      "facts": [
+        {
+          "id": "father-former-chef",
+          "description": "父亲年轻时是一名厨师。",
+          "truth": true,
+          "aliases": [
+            "以前是厨师",
+            "厨师",
+            "会做饭"
+          ]
+        },
+        {
+          "id": "kitchen-trauma",
+          "description": "厨房火灾让他留下创伤后应激反应。",
+          "truth": true,
+          "aliases": [
+            "火灾创伤",
+            "害怕厨房",
+            "应激"
+          ]
+        },
+        {
+          "id": "father-cannot-cook",
+          "description": "父亲完全不会做饭。",
+          "truth": false,
+          "aliases": [
+            "不会做饭",
+            "厨艺差",
+            "不会进厨房"
+          ]
+        },
+        {
+          "id": "heating-left-food",
+          "description": "那天他只是热了已经做好的菜。",
+          "truth": true,
+          "aliases": [
+            "热熟菜",
+            "提前做好",
+            "不是做饭"
+          ]
+        },
+        {
+          "id": "mother-forbids",
+          "description": "母亲禁止他进入厨房。",
+          "truth": false,
+          "aliases": [
+            "母亲禁止",
+            "不让他进",
+            "家人限制"
+          ]
+        }
+      ],
+      "hints": [
+        "他不是讨厌厨房，而是对某段经历产生了回避。",
+        "他会做饭，但不能面对厨房里的某些东西。"
+      ],
+      "suggestions": [
+        "父亲为什么远离厨房？",
+        "他不会做饭吗？",
+        "那天他做了什么？"
+      ]
+    },
+    {
+      "id": "son-returns-weekly",
+      "title": "每周回来的儿子",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "儿子",
+        "饭菜",
+        "老师"
+      ],
+      "warnings": [],
+      "surface": "儿子每周都会回老家一次，却从不在家里吃饭。母亲以为他嫌弃家里的饭，直到邻居看到他把带来的饭菜放进了后院的旧信箱。",
+      "bottom": "儿子每周回来是为了给住在隔壁的独居老人送饭。老人是母亲年轻时的老师，儿子知道母亲一直想照顾她，却因身体不便无法做到。把饭放进信箱，是为了不让老人因为受助而尴尬。",
+      "facts": [
+        {
+          "id": "meal-for-neighbor",
+          "description": "饭菜是送给隔壁独居老人的。",
+          "truth": true,
+          "aliases": [
+            "给老人",
+            "邻居饭",
+            "独居老人"
+          ]
+        },
+        {
+          "id": "old-teacher",
+          "description": "老人是母亲年轻时的老师。",
+          "truth": true,
+          "aliases": [
+            "母亲的老师",
+            "旧老师",
+            "教育过母亲"
+          ]
+        },
+        {
+          "id": "son-dislikes-home-food",
+          "description": "儿子嫌弃家里的饭。",
+          "truth": false,
+          "aliases": [
+            "嫌弃",
+            "不爱吃",
+            "讨厌家里"
+          ]
+        },
+        {
+          "id": "mailbox-handoff",
+          "description": "旧信箱是交接饭菜的地方。",
+          "truth": true,
+          "aliases": [
+            "信箱交接",
+            "放信箱",
+            "不敲门"
+          ]
+        },
+        {
+          "id": "mother-asked-him",
+          "description": "母亲明确要求儿子送饭。",
+          "truth": false,
+          "aliases": [
+            "母亲要求",
+            "被安排",
+            "听母亲的话"
+          ]
+        }
+      ],
+      "hints": [
+        "儿子不是不吃饭，而是把饭交给了另一个人。",
+        "母亲没有直接参与这次送饭。"
+      ],
+      "suggestions": [
+        "儿子为什么回来？",
+        "他嫌弃家里的饭吗？",
+        "饭菜送给谁了？"
+      ]
+    },
+    {
+      "id": "mother-keeps-raincoat",
+      "title": "母亲留下的雨衣",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "雨衣",
+        "母亲",
+        "旧地址"
+      ],
+      "warnings": [],
+      "surface": "母亲去世后，家人整理遗物时发现一件从未穿过的儿童雨衣。雨衣口袋里有一张公交卡和一行地址。地址属于一座早已拆迁的幼儿园。",
+      "bottom": "雨衣是母亲为第一个孩子准备的。那个孩子幼年因病去世，家人后来搬离旧城。母亲一直没有丢掉雨衣，是因为那是她第一次准备送孩子上学的记忆。公交卡是当年去幼儿园的路线卡。",
+      "facts": [
+        {
+          "id": "first-child-died",
+          "description": "母亲曾经失去过一个幼年孩子。",
+          "truth": true,
+          "aliases": [
+            "第一个孩子去世",
+            "孩子死了",
+            "夭折"
+          ]
+        },
+        {
+          "id": "raincoat-for-first-child",
+          "description": "雨衣是为那个孩子准备的。",
+          "truth": true,
+          "aliases": [
+            "给第一个孩子",
+            "儿童雨衣",
+            "准备上学"
+          ]
+        },
+        {
+          "id": "old-kindergarten",
+          "description": "地址是孩子原本要去的幼儿园。",
+          "truth": true,
+          "aliases": [
+            "幼儿园",
+            "准备上学",
+            "旧学校"
+          ]
+        },
+        {
+          "id": "mother-hoarded-money",
+          "description": "雨衣里藏着大量钱财。",
+          "truth": false,
+          "aliases": [
+            "藏钱",
+            "财产",
+            "现金"
+          ]
+        },
+        {
+          "id": "raincoat-new",
+          "description": "雨衣从未被孩子穿过。",
+          "truth": true,
+          "aliases": [
+            "没穿过",
+            "新雨衣",
+            "还没用"
+          ]
+        }
+      ],
+      "hints": [
+        "雨衣从未被使用，却承载着一个没有实现的计划。",
+        "公交卡和地址指向孩子原本要去的学校。"
+      ],
+      "suggestions": [
+        "雨衣是谁的？",
+        "里面有钱吗？",
+        "为什么从来没穿过？"
+      ]
+    },
+    {
+      "id": "family-photo-cut",
+      "title": "被剪掉的全家福",
+      "primary_genre": "家庭伦理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "全家福",
+        "剪照片",
+        "前夫"
+      ],
+      "warnings": [],
+      "surface": "家里的全家福右边被剪掉了一个人影。孩子问那是谁，父母总说“照片坏了”。多年后，孩子在外婆遗物里找到了完整的照片，剪掉的人是母亲的前夫。",
+      "bottom": "母亲的前夫曾在家庭冲突中伤害过外婆。家人剪掉照片，是为了避免重新提起那段暴力经历。孩子长大后看到完整照片，才明白父母的沉默不是隐瞒亲戚，而是在保护母亲。",
+      "facts": [
+        {
+          "id": "mother-ex-husband",
+          "description": "被剪掉的人是母亲的前夫。",
+          "truth": true,
+          "aliases": [
+            "前夫",
+            "母亲前夫",
+            "剪掉的人"
+          ]
+        },
+        {
+          "id": "past-violence",
+          "description": "前夫曾经伤害过外婆。",
+          "truth": true,
+          "aliases": [
+            "伤害外婆",
+            "家庭暴力",
+            "冲突"
+          ]
+        },
+        {
+          "id": "photo-damaged",
+          "description": "照片只是自然损坏。",
+          "truth": false,
+          "aliases": [
+            "照片坏了",
+            "自然破损",
+            "没有剪"
+          ]
+        },
+        {
+          "id": "family-protects-mother",
+          "description": "家人不提是为了保护母亲。",
+          "truth": true,
+          "aliases": [
+            "保护母亲",
+            "不揭伤疤",
+            "避免回忆"
+          ]
+        },
+        {
+          "id": "person-still-present",
+          "description": "被剪掉的人一直住在外婆家。",
+          "truth": false,
+          "aliases": [
+            "住在家里",
+            "没离开",
+            "藏在屋里"
+          ]
+        }
+      ],
+      "hints": [
+        "照片不是坏了，而是有人主动切掉了过去。",
+        "家人沉默是为了保护照片里的另一个人。"
+      ],
+      "suggestions": [
+        "照片里的人是谁？",
+        "为什么剪掉？",
+        "父母在隐瞒什么？"
+      ]
+    },
+    {
+      "id": "telegraph-empty-message",
+      "title": "只发空白的电报",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "电报",
+        "药铺",
+        "情报"
+      ],
+      "warnings": [],
+      "surface": "民国电报局里，一位先生每天都会发一封空白电报。收报人始终是同一家药铺。战争结束后，药铺老板才说那不是空白，而是最安全的密信。",
+      "bottom": "空白电报是约定好的平安信号。先生是地下交通员，药铺负责接收情报。没有内容的电报说明他当天安全，若有内容则代表转移或危险。战争结束后，药铺老板才把真相说出来。",
+      "facts": [
+        {
+          "id": "underground-courier",
+          "description": "发电报的先生是地下交通员。",
+          "truth": true,
+          "aliases": [
+            "交通员",
+            "地下工作",
+            "情报人员"
+          ]
+        },
+        {
+          "id": "blank-means-safe",
+          "description": "空白电报代表当天安全。",
+          "truth": true,
+          "aliases": [
+            "平安信号",
+            "安全暗号",
+            "没有危险"
+          ]
+        },
+        {
+          "id": "pharmacy-contact",
+          "description": "药铺是情报联络点。",
+          "truth": true,
+          "aliases": [
+            "药铺联络",
+            "接收情报",
+            "秘密据点"
+          ]
+        },
+        {
+          "id": "wrong-address",
+          "description": "电报只是发错了地址。",
+          "truth": false,
+          "aliases": [
+            "发错了",
+            "地址错误",
+            "误发"
+          ]
+        },
+        {
+          "id": "message-hidden-ink",
+          "description": "空白电报纸上其实有隐形墨水。",
+          "truth": false,
+          "aliases": [
+            "隐形墨水",
+            "密写",
+            "纸上暗号"
+          ]
+        }
+      ],
+      "hints": [
+        "空白不是没有信息，而是信息本身。",
+        "同一家药铺持续接收电报，说明它们之间有约定。"
+      ],
+      "suggestions": [
+        "电报为什么是空白的？",
+        "药铺知道吗？",
+        "纸上藏了字吗？"
+      ]
+    },
+    {
+      "id": "old-pharmacy-prescription",
+      "title": "药铺里的旧处方",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "药铺",
+        "处方",
+        "秘密"
+      ],
+      "warnings": [],
+      "surface": "城南药铺一直保留着一张没有姓名的处方。方子上的药并不稀奇，但老板从不丢弃。多年后，一位军官进店，只看了一眼就把处方烧掉。",
+      "bottom": "处方是一位战地医生留下的。药方里的几味药对应的是伤员转移路线，药店是当年秘密救治点。军官是那位医生救过的伤员，烧掉处方是为了销毁最后一条可能暴露同伴的线索。",
+      "facts": [
+        {
+          "id": "prescription-code",
+          "description": "处方上的药名对应伤员转移路线。",
+          "truth": true,
+          "aliases": [
+            "药名暗号",
+            "路线",
+            "秘密编码"
+          ]
+        },
+        {
+          "id": "field-doctor",
+          "description": "处方来自一位战地医生。",
+          "truth": true,
+          "aliases": [
+            "战地医生",
+            "军医",
+            "医生"
+          ]
+        },
+        {
+          "id": "burn-to-protect",
+          "description": "军官烧处方是为了保护旧同伴。",
+          "truth": true,
+          "aliases": [
+            "保护同伴",
+            "销毁线索",
+            "保密"
+          ]
+        },
+        {
+          "id": "prescription-poison",
+          "description": "处方其实是一张毒药配方。",
+          "truth": false,
+          "aliases": [
+            "毒药",
+            "害人",
+            "杀人"
+          ]
+        },
+        {
+          "id": "officer-owns-pharmacy",
+          "description": "军官是药铺老板。",
+          "truth": false,
+          "aliases": [
+            "老板是他",
+            "他的药铺",
+            "同一个人"
+          ]
+        }
+      ],
+      "hints": [
+        "处方本身不是医疗文件，而是一张只有特定的人能读懂的地图。",
+        "烧掉它不是为了泄愤，而是为了结束一条秘密路线。"
+      ],
+      "suggestions": [
+        "处方为什么重要？",
+        "军官为什么烧掉？",
+        "药铺老板知道吗？"
+      ]
+    },
+    {
+      "id": "photo-studio-shadow",
+      "title": "照相馆里的多余人影",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "照相馆",
+        "底片",
+        "反光"
+      ],
+      "warnings": [],
+      "surface": "老照相馆的许多顾客照片里，左侧都站着一个模糊的影子。老板坚持没有拍过这个人。一次火灾后，影子从所有底片中消失了。",
+      "bottom": "影子是照相馆门框上的招牌反光。招牌在特定时间会映在玻璃上，被相机拍进照片。火灾烧掉了招牌，之后照片里的影子便不再出现。老板不承认拍过人，是因为他从未看清反射来源。",
+      "facts": [
+        {
+          "id": "sign-reflection",
+          "description": "影子是门框招牌的反光。",
+          "truth": true,
+          "aliases": [
+            "招牌反光",
+            "玻璃倒影",
+            "不是人"
+          ]
+        },
+        {
+          "id": "store-sign-burned",
+          "description": "火灾烧毁了照相馆的招牌。",
+          "truth": true,
+          "aliases": [
+            "招牌烧了",
+            "火灾",
+            "消失原因"
+          ]
+        },
+        {
+          "id": "dead-customer",
+          "description": "影子是死在照相馆的顾客。",
+          "truth": false,
+          "aliases": [
+            "死人影子",
+            "鬼魂",
+            "顾客死亡"
+          ]
+        },
+        {
+          "id": "same-time-photos",
+          "description": "照片多数在相同时间段拍摄。",
+          "truth": true,
+          "aliases": [
+            "同一时间",
+            "特定光线",
+            "下午拍摄"
+          ]
+        },
+        {
+          "id": "boss-hides-person",
+          "description": "老板故意藏起一个人。",
+          "truth": false,
+          "aliases": [
+            "藏人",
+            "老板隐瞒",
+            "共犯"
+          ]
+        }
+      ],
+      "hints": [
+        "影子在每张照片里的位置都一样，说明它属于照相馆本身。",
+        "火灾之后，影子消失，因为反光源不存在了。"
+      ],
+      "suggestions": [
+        "影子是谁？",
+        "照相馆闹鬼吗？",
+        "为什么火灾后就没了？"
+      ]
+    },
+    {
+      "id": "missing-train-passenger",
+      "title": "火车上消失的乘客",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "火车",
+        "乘客",
+        "药品"
+      ],
+      "warnings": [],
+      "surface": "一列火车进站后，乘务员发现八号车厢少了一名乘客，但行李还在座位上。铁路警察检查车票，发现那张票根本没有售出记录。",
+      "bottom": "乘客在上一站临时换乘了货运列车，为了把一批药品送到前线。车票是旧票根，检票员没有记录。行李留在车上，是为了让同行者以为他仍在原车，从而掩护换乘。",
+      "facts": [
+        {
+          "id": "passenger-switched-train",
+          "description": "乘客在上一站换乘了货运列车。",
+          "truth": true,
+          "aliases": [
+            "换车",
+            "货运列车",
+            "中途下车"
+          ]
+        },
+        {
+          "id": "medicine-for-front",
+          "description": "他运送的是前线需要的药品。",
+          "truth": true,
+          "aliases": [
+            "运药",
+            "前线物资",
+            "药品"
+          ]
+        },
+        {
+          "id": "passenger-murdered",
+          "description": "乘客在车上被杀害。",
+          "truth": false,
+          "aliases": [
+            "被杀",
+            "谋杀",
+            "尸体消失"
+          ]
+        },
+        {
+          "id": "seat-makes-cover",
+          "description": "行李留在座位是为了掩护同行者。",
+          "truth": true,
+          "aliases": [
+            "掩护",
+            "让同伴以为他在",
+            "行李留下"
+          ]
+        },
+        {
+          "id": "ticket-never-sold",
+          "description": "车票确实没有售出，因为它是一张旧票根。",
+          "truth": true,
+          "aliases": [
+            "旧票根",
+            "票没记录",
+            "不是真票"
+          ]
+        }
+      ],
+      "hints": [
+        "他不是在车上消失，而是在上一站换了交通工具。",
+        "留下的行李不是遗物，而是为了让别人误会。"
+      ],
+      "suggestions": [
+        "乘客去哪了？",
+        "他被杀了吗？",
+        "车票为什么查不到？"
+      ]
+    },
+    {
+      "id": "seamstress-red-thread",
+      "title": "裁缝铺的红线",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "裁缝",
+        "红线",
+        "接头"
+      ],
+      "warnings": [],
+      "surface": "裁缝铺的衣服里总藏着一根红线。顾客都说这是老板娘的手艺标记。后来一位客人剪开衣服，发现红线连着一张写有地址的小布条。",
+      "bottom": "红线是裁缝与地下联络人之间的识别方式。布条上的地址是安全屋，只有特定顾客会剪开内衬。老板娘用针线传递消息，不靠纸笔，也不容易被人发现。",
+      "facts": [
+        {
+          "id": "seamstress-message",
+          "description": "红线用来传递秘密消息。",
+          "truth": true,
+          "aliases": [
+            "秘密消息",
+            "联络方式",
+            "暗号"
+          ]
+        },
+        {
+          "id": "address-safehouse",
+          "description": "布条上的地址是安全屋。",
+          "truth": true,
+          "aliases": [
+            "安全屋",
+            "地址",
+            "避难所"
+          ]
+        },
+        {
+          "id": "decoration-only",
+          "description": "红线只是装饰。",
+          "truth": false,
+          "aliases": [
+            "装饰",
+            "手艺标记",
+            "没有含义"
+          ]
+        },
+        {
+          "id": "customer-tailor-accomplice",
+          "description": "剪开衣服的客人是裁缝的联络人。",
+          "truth": true,
+          "aliases": [
+            "联络人",
+            "接头顾客",
+            "合作者"
+          ]
+        },
+        {
+          "id": "thread-poisoned",
+          "description": "红线浸过毒药。",
+          "truth": false,
+          "aliases": [
+            "毒线",
+            "害人",
+            "暗杀"
+          ]
+        }
+      ],
+      "hints": [
+        "红线不是手艺标记，而是针线铺传递信息的工具。",
+        "剪开衣服的人知道该找什么。"
+      ],
+      "suggestions": [
+        "红线有什么用？",
+        "地址代表什么？",
+        "客人是普通人吗？"
+      ]
+    },
+    {
+      "id": "clockmaker-stopped-clock",
+      "title": "钟表匠停下的一只钟",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "怀表",
+        "钟表匠",
+        "战友"
+      ],
+      "warnings": [],
+      "surface": "钟表匠修好过无数钟，却有一只旧怀表永远停在三点十七分。他从不让人碰它。有人出高价购买，他只说“时间不对”。",
+      "bottom": "怀表的主人是一位在三点十七分牺牲的战友。钟表匠保留停表，是为了记住对方最后的时间。他不让买，是因为怀表不是商品，而是一份私人纪念。有人出高价，让他再次面对那段记忆。",
+      "facts": [
+        {
+          "id": "comrade-died",
+          "description": "怀表主人是一位牺牲的战友。",
+          "truth": true,
+          "aliases": [
+            "战友牺牲",
+            "朋友去世",
+            "战争中死亡"
+          ]
+        },
+        {
+          "id": "time-of-death",
+          "description": "三点十七分是战友去世的时间。",
+          "truth": true,
+          "aliases": [
+            "死亡时间",
+            "三点十七",
+            "最后时刻"
+          ]
+        },
+        {
+          "id": "clock-repair-fail",
+          "description": "怀表修不好是因为零件缺失。",
+          "truth": false,
+          "aliases": [
+            "修不好",
+            "零件坏了",
+            "技术问题"
+          ]
+        },
+        {
+          "id": "private-memory",
+          "description": "钟表匠保留怀表是为了纪念。",
+          "truth": true,
+          "aliases": [
+            "纪念",
+            "私人物品",
+            "不想卖"
+          ]
+        },
+        {
+          "id": "buyer-is-relative",
+          "description": "想买表的人其实是战友的亲属。",
+          "truth": false,
+          "aliases": [
+            "亲属",
+            "家属来买",
+            "认识战友"
+          ]
+        }
+      ],
+      "hints": [
+        "表停住不是故障，而是被刻意保留。",
+        "这个时刻对钟表匠有特殊意义。"
+      ],
+      "suggestions": [
+        "表为什么停在三点十七？",
+        "修不好吗？",
+        "他为什么不卖？"
+      ]
+    },
+    {
+      "id": "newspaper-tomorrow",
+      "title": "明天出的报纸",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "报纸",
+        "寻人",
+        "日期"
+      ],
+      "warnings": [],
+      "surface": "报童卖出一份署着明天日期的报纸。街上的人都说这是印刷错误。第二天报纸上的一条寻人启事竟然真的应验，报馆却否认提前知道消息。",
+      "bottom": "报纸是提前印刷的寻人广告底稿，日期是排版时写错。寻人启事中的失踪者第二天恰好因为看到报纸主动回家。所谓应验，是巧合加上家属连续刊登带来的结果，不是报馆预知未来。",
+      "facts": [
+        {
+          "id": "date-misprint",
+          "description": "报纸日期是排版错误。",
+          "truth": true,
+          "aliases": [
+            "日期写错",
+            "排版错误",
+            "印错"
+          ]
+        },
+        {
+          "id": "missing-person-returns",
+          "description": "失踪者看到报纸后主动回家。",
+          "truth": true,
+          "aliases": [
+            "看到报纸回家",
+            "主动回来",
+            "寻人成功"
+          ]
+        },
+        {
+          "id": "newspaper-predicts",
+          "description": "报馆预知了未来。",
+          "truth": false,
+          "aliases": [
+            "预知未来",
+            "预言报纸",
+            "超能力"
+          ]
+        },
+        {
+          "id": "family-kept-ad",
+          "description": "家属连续刊登寻人广告。",
+          "truth": true,
+          "aliases": [
+            "连续登广告",
+            "长期寻找",
+            "家属刊登"
+          ]
+        },
+        {
+          "id": "reporters-hid-person",
+          "description": "报馆故意藏起失踪者。",
+          "truth": false,
+          "aliases": [
+            "藏人",
+            "绑架",
+            "记者作案"
+          ]
+        }
+      ],
+      "hints": [
+        "报纸没有预言能力，只是寻人信息在第二天产生了效果。",
+        "日期错误来自排版，不是提前印制。"
+      ],
+      "suggestions": [
+        "报纸真的能预知吗？",
+        "失踪者为什么回来？",
+        "日期为什么错了？"
+      ]
+    },
+    {
+      "id": "opera-mask",
+      "title": "戏班里的面具",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "戏班",
+        "面具",
+        "替身"
+      ],
+      "warnings": [],
+      "surface": "戏班后台有一只从不摘下的面具。班主说演员戴着它唱了十年，没人见过他的脸。一次演出事故后，面具掉落，观众才发现演员始终在幕后配音。",
+      "bottom": "戏班的名角多年前因事故毁容，不愿再面对观众。班主安排替身在台前戴面具演出，名角在幕后唱完整场。观众看到的是表演形式，不是灵异。事故后秘密暴露，班主才公开真相。",
+      "facts": [
+        {
+          "id": "singer-behind-stage",
+          "description": "名角一直在幕后配音。",
+          "truth": true,
+          "aliases": [
+            "幕后唱",
+            "配音",
+            "没上台"
+          ]
+        },
+        {
+          "id": "face-disfigured",
+          "description": "名角因为事故毁容。",
+          "truth": true,
+          "aliases": [
+            "毁容",
+            "事故受伤",
+            "不敢见人"
+          ]
+        },
+        {
+          "id": "mask-ghost",
+          "description": "面具里寄居着鬼魂。",
+          "truth": false,
+          "aliases": [
+            "鬼魂",
+            "面具灵异",
+            "闹鬼"
+          ]
+        },
+        {
+          "id": "stand-in-actor",
+          "description": "台前演员是替身。",
+          "truth": true,
+          "aliases": [
+            "替身",
+            "别人戴面具",
+            "不是本人"
+          ]
+        },
+        {
+          "id": "audience-knew-secret",
+          "description": "观众早就知道幕后配音。",
+          "truth": false,
+          "aliases": [
+            "观众知道",
+            "公开秘密",
+            "大家知情"
+          ]
+        }
+      ],
+      "hints": [
+        "大家看到的脸和听到的声音来自两个人。",
+        "名角不是不愿唱，而是不愿被看见。"
+      ],
+      "suggestions": [
+        "面具下是谁？",
+        "演员为什么不摘？",
+        "声音是谁的？"
+      ]
+    },
+    {
+      "id": "teacher-hidden-books",
+      "title": "教室地板下的书",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "教师",
+        "书",
+        "战乱"
+      ],
+      "warnings": [],
+      "surface": "战乱时期，乡村教师每天都会搬开讲台木板。孩子们以为那里藏着粮食，后来才发现是一摞被禁止流通的书。",
+      "bottom": "教师把书藏在地板下，是为了在搜查时保护学生。书不是禁书，而是外地传来的新式教材。教师白天照常上课，晚上把书借给愿意学习的孩子，局势稳定后才公开。",
+      "facts": [
+        {
+          "id": "hidden-textbooks",
+          "description": "地板下藏的是新式教材。",
+          "truth": true,
+          "aliases": [
+            "新教材",
+            "课本",
+            "外地书"
+          ]
+        },
+        {
+          "id": "avoid-search",
+          "description": "藏起来是为了躲避搜查。",
+          "truth": true,
+          "aliases": [
+            "躲搜查",
+            "保护学生",
+            "战乱"
+          ]
+        },
+        {
+          "id": "hidden-food",
+          "description": "地板下其实是粮食。",
+          "truth": false,
+          "aliases": [
+            "粮食",
+            "米面",
+            "食物"
+          ]
+        },
+        {
+          "id": "loan-at-night",
+          "description": "教师晚上把书借给学生。",
+          "truth": true,
+          "aliases": [
+            "晚上借书",
+            "学生阅读",
+            "秘密学习"
+          ]
+        },
+        {
+          "id": "teacher-rebel",
+          "description": "教师是武装反叛者。",
+          "truth": false,
+          "aliases": [
+            "反叛",
+            "武装人员",
+            "组织成员"
+          ]
+        }
+      ],
+      "hints": [
+        "藏起来的不是口粮，而是能改变孩子想法的东西。",
+        "教师只在夜里把东西交给学生。"
+      ],
+      "suggestions": [
+        "地板下有什么？",
+        "是粮食吗？",
+        "教师为什么要藏？"
+      ]
+    },
+    {
+      "id": "bank-vault-key",
+      "title": "银行金库的旧钥匙",
+      "primary_genre": "历史民国",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "无怖",
+      "tags": [
+        "银行",
+        "钥匙",
+        "钱庄"
+      ],
+      "warnings": [],
+      "surface": "旧银行拆迁时，人们找到一把金库钥匙，钥匙上刻着一个已经关闭的钱庄名字。银行经理说它打不开任何金库。几天后，一位老太太带着另一半钥匙来到银行。",
+      "bottom": "钥匙属于战乱时期合并的钱庄。两把钥匙必须同时使用才能打开一个地下保险柜。老太太是钱庄老板的后人，她来是为了取出存放在里面的客户名单，并归还给后人。经理不承认，是因为他不是原始保管人。",
+      "facts": [
+        {
+          "id": "two-keys",
+          "description": "打开金库需要两把钥匙。",
+          "truth": true,
+          "aliases": [
+            "两把钥匙",
+            "另一半钥匙",
+            "同时使用"
+          ]
+        },
+        {
+          "id": "merged-bank",
+          "description": "钱庄后来并入旧银行。",
+          "truth": true,
+          "aliases": [
+            "钱庄合并",
+            "并入银行",
+            "旧银行"
+          ]
+        },
+        {
+          "id": "customer-list",
+          "description": "保险柜里放着客户名单。",
+          "truth": true,
+          "aliases": [
+            "客户名单",
+            "储户资料",
+            "名单"
+          ]
+        },
+        {
+          "id": "gold-only",
+          "description": "保险柜里只有黄金。",
+          "truth": false,
+          "aliases": [
+            "黄金",
+            "财宝",
+            "钱"
+          ]
+        },
+        {
+          "id": "manager-lies",
+          "description": "经理故意否认钥匙用途。",
+          "truth": true,
+          "aliases": [
+            "经理撒谎",
+            "故意隐瞒",
+            "不是原保管人"
+          ]
+        }
+      ],
+      "hints": [
+        "钥匙不是单独使用的，它还需要另一半。",
+        "老太太带来的东西和钱庄的历史有关。"
+      ],
+      "suggestions": [
+        "钥匙能打开什么？",
+        "里面有黄金吗？",
+        "老太太是谁？"
+      ]
+    },
+    {
+      "id": "jewelry-mirror",
+      "title": "珠宝店里的镜子",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "珠宝",
+        "镜子",
+        "维修工"
+      ],
+      "warnings": [],
+      "surface": "珠宝店失窃后，警方发现监控里窃贼始终背对镜头。店主坚持店里没有后门，窃贼不可能凭空消失。侦探注意到展示柜后有一面镜子，镜中倒影比柜子里的珠宝少了一件。",
+      "bottom": "窃贼是店里的维修工。他利用镜子反光挡住真正的监控角度，在倒影中留下了伪造的空柜画面。少掉的那件珠宝被藏在维修工具箱里，从后门离开时没有触发报警。",
+      "facts": [
+        {
+          "id": "repairman-thief",
+          "description": "窃贼是店里的维修工。",
+          "truth": true,
+          "aliases": [
+            "维修工",
+            "店里的工人",
+            "内部人员"
+          ]
+        },
+        {
+          "id": "mirror-trick",
+          "description": "镜子被用来制造虚假画面。",
+          "truth": true,
+          "aliases": [
+            "镜子反光",
+            "伪造画面",
+            "遮挡监控"
+          ]
+        },
+        {
+          "id": "back-door-exists",
+          "description": "店里有通向后巷的后门。",
+          "truth": true,
+          "aliases": [
+            "后门",
+            "后巷",
+            "维修通道"
+          ]
+        },
+        {
+          "id": "customer-stole",
+          "description": "窃贼是当天的顾客。",
+          "truth": false,
+          "aliases": [
+            "顾客偷的",
+            "陌生人",
+            "客人作案"
+          ]
+        },
+        {
+          "id": "jewel-hidden-toolbox",
+          "description": "珠宝藏在维修工具箱里。",
+          "truth": true,
+          "aliases": [
+            "工具箱",
+            "藏珠宝",
+            "带走"
+          ]
+        }
+      ],
+      "hints": [
+        "监控里的空缺不是实际画面，而是被反光制造出来的。",
+        "能把工具带进店的人，也能把东西带出去。"
+      ],
+      "suggestions": [
+        "谁偷了珠宝？",
+        "镜子有什么作用？",
+        "店里有后门吗？"
+      ]
+    },
+    {
+      "id": "locked-room-fire",
+      "title": "上锁房间里的火",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "火灾",
+        "密室",
+        "实验"
+      ],
+      "warnings": [],
+      "surface": "一间从内部反锁的房间发生火灾，门没有被破坏。现场只有一具尸体和一只烧焦的台灯。侦探说这不是谋杀，但死者也不是意外死亡。",
+      "bottom": "死者是独自在房间里进行实验的学生。他使用易燃酒精加热样品，台灯电线老化短路点燃了酒精。房间反锁是因为他不想被打扰。死亡原因是实验事故，不是他人纵火，也不是自杀。",
+      "facts": [
+        {
+          "id": "alcohol-experiment",
+          "description": "死者在房间里用酒精做实验。",
+          "truth": true,
+          "aliases": [
+            "酒精实验",
+            "加热样品",
+            "学生实验"
+          ]
+        },
+        {
+          "id": "old-lamp-short",
+          "description": "台灯电线老化发生短路。",
+          "truth": true,
+          "aliases": [
+            "电线短路",
+            "台灯老化",
+            "起火"
+          ]
+        },
+        {
+          "id": "door-locked-by-victim",
+          "description": "门是死者自己反锁的。",
+          "truth": true,
+          "aliases": [
+            "自己锁门",
+            "不想被打扰",
+            "反锁"
+          ]
+        },
+        {
+          "id": "arson-murder",
+          "description": "有人从门外纵火。",
+          "truth": false,
+          "aliases": [
+            "门外纵火",
+            "谋杀",
+            "有人点火"
+          ]
+        },
+        {
+          "id": "suicide",
+          "description": "死者是自杀。",
+          "truth": false,
+          "aliases": [
+            "自杀",
+            "故意点火",
+            "结束生命"
+          ]
+        }
+      ],
+      "hints": [
+        "房间反锁不等于有凶手，死者可能只是不想被打扰。",
+        "起火点集中在台灯和实验用品附近。"
+      ],
+      "suggestions": [
+        "这是谋杀吗？",
+        "门为什么反锁？",
+        "死者是自杀吗？"
+      ]
+    },
+    {
+      "id": "missing-painting-frame",
+      "title": "只剩画框的画",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "画廊",
+        "名画",
+        "调包"
+      ],
+      "warnings": [],
+      "surface": "画廊里一幅名画被偷，现场只留下画框。报警系统没有响，窗户也锁着。保安说当天只有清洁工进入过展厅，而清洁工推着一辆带盖的垃圾车。",
+      "bottom": "清洁工不是窃贼，他只是被人利用。画作在白天已经被替换成复制品，真正的画早已通过运输通道离开。垃圾车盖子是窃贼留下的伪装，用来让调查者把注意力放在清洁工身上。",
+      "facts": [
+        {
+          "id": "replica-swap",
+          "description": "名画在白天被换成了复制品。",
+          "truth": true,
+          "aliases": [
+            "复制品",
+            "提前替换",
+            "赝品"
+          ]
+        },
+        {
+          "id": "transport-through-service",
+          "description": "真画通过运输通道离开。",
+          "truth": true,
+          "aliases": [
+            "运输通道",
+            "服务通道",
+            "提前运走"
+          ]
+        },
+        {
+          "id": "cleaner-thief",
+          "description": "清洁工偷走了画。",
+          "truth": false,
+          "aliases": [
+            "清洁工偷画",
+            "垃圾车偷画",
+            "内部盗窃"
+          ]
+        },
+        {
+          "id": "alarm-disabled",
+          "description": "报警系统被人为关闭。",
+          "truth": false,
+          "aliases": [
+            "关报警",
+            "系统失效",
+            "人为破坏"
+          ]
+        },
+        {
+          "id": "cart-distraction",
+          "description": "垃圾车是用来制造误导的。",
+          "truth": true,
+          "aliases": [
+            "误导调查",
+            "掩护",
+            "假线索"
+          ]
+        }
+      ],
+      "hints": [
+        "画不是当天被拿走的，现场留下的线索反而太明显了。",
+        "垃圾车更像是一条刻意留下的假线索。"
+      ],
+      "suggestions": [
+        "清洁工是窃贼吗？",
+        "画什么时候被换的？",
+        "垃圾车为什么出现？"
+      ]
+    },
+    {
+      "id": "poisoned-tea",
+      "title": "没有喝完的茶",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "茶",
+        "毒杀",
+        "壶嘴"
+      ],
+      "warnings": [],
+      "surface": "客人喝茶后倒下，桌上只有一只杯子，杯壁上没有毒。主人坚持自己先喝了一半，侦探却指出，毒不在杯子里，而在茶壶的壶嘴。",
+      "bottom": "毒被涂在茶壶嘴的内侧，只有倒给客人时流出的茶才会带毒。主人事前喝的那一半来自另一只壶，或者已经用清水冲过。凶手是熟悉主人待客习惯的人，知道客人会坐在固定位置。",
+      "facts": [
+        {
+          "id": "poison-on-spout",
+          "description": "毒涂在茶壶嘴上。",
+          "truth": true,
+          "aliases": [
+            "壶嘴有毒",
+            "茶壶",
+            "外侧涂毒"
+          ]
+        },
+        {
+          "id": "host-drinks-first",
+          "description": "主人先喝的那杯来自另一只壶。",
+          "truth": true,
+          "aliases": [
+            "另一只壶",
+            "先喝的没事",
+            "两把壶"
+          ]
+        },
+        {
+          "id": "cup-poisoned",
+          "description": "毒在客人的杯子里。",
+          "truth": false,
+          "aliases": [
+            "杯子有毒",
+            "杯壁有毒",
+            "直接下杯"
+          ]
+        },
+        {
+          "id": "guest-suicide",
+          "description": "客人自己带毒自杀。",
+          "truth": false,
+          "aliases": [
+            "自杀",
+            "自带毒药",
+            "自己喝毒"
+          ]
+        },
+        {
+          "id": "killer-knows-seat",
+          "description": "凶手知道客人固定坐的位置。",
+          "truth": true,
+          "aliases": [
+            "固定座位",
+            "了解习惯",
+            "熟悉主人"
+          ]
+        }
+      ],
+      "hints": [
+        "毒不在杯子里，而在茶离开壶的地方。",
+        "主人先喝了一杯，却仍然没事。"
+      ],
+      "suggestions": [
+        "毒下在哪里？",
+        "杯子有毒吗？",
+        "凶手熟悉茶具吗？"
+      ]
+    },
+    {
+      "id": "fake-alibi-camera",
+      "title": "监控里的不在场证明",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "监控",
+        "不在场证明",
+        "时间"
+      ],
+      "warnings": [],
+      "surface": "嫌疑人案发时出现在便利店监控里，看起来有完美不在场证明。侦探却发现监控时间比实际时间慢了十分钟，而店员的手机时间正常。",
+      "bottom": "便利店监控被人提前调整了系统时间，录像中的十分钟延迟让嫌疑人看起来案发时仍在店里。店员没有参与，只是没有注意到监控时间。侦探通过收银小票和手机时间还原了真实时刻。",
+      "facts": [
+        {
+          "id": "camera-time-shifted",
+          "description": "监控系统时间被提前调慢。",
+          "truth": true,
+          "aliases": [
+            "时间调慢",
+            "监控错误",
+            "系统时间"
+          ]
+        },
+        {
+          "id": "receipt-time",
+          "description": "收银小票证明真实时间不同。",
+          "truth": true,
+          "aliases": [
+            "小票时间",
+            "真实时间",
+            "收银记录"
+          ]
+        },
+        {
+          "id": "clerk-helped",
+          "description": "店员帮嫌疑人伪造不在场证明。",
+          "truth": false,
+          "aliases": [
+            "店员帮忙",
+            "共犯",
+            "收买店员"
+          ]
+        },
+        {
+          "id": "camera-broken",
+          "description": "监控设备单纯坏了。",
+          "truth": false,
+          "aliases": [
+            "设备坏了",
+            "随机故障",
+            "录像丢失"
+          ]
+        },
+        {
+          "id": "suspect-arrived-later",
+          "description": "嫌疑人其实在案发后才到便利店。",
+          "truth": true,
+          "aliases": [
+            "案发后到店",
+            "迟到",
+            "时间差来源"
+          ]
+        }
+      ],
+      "hints": [
+        "不在场证明不是看画面，而是看画面里的时间。",
+        "监控时间和收银机时间出现了矛盾。"
+      ],
+      "suggestions": [
+        "监控是假的吗？",
+        "嫌疑人真的在店里吗？",
+        "时间为什么不对？"
+      ]
+    },
+    {
+      "id": "bicycle-bell",
+      "title": "不响的车铃",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "入门",
+      "scale": "无怖",
+      "tags": [
+        "自行车",
+        "车铃",
+        "换零件"
+      ],
+      "warnings": [],
+      "surface": "一辆自行车在小区里被盗，失主听见车铃响过。保安追到门口，只看到一辆没有车铃的自行车。失主确认车座和划痕都对，唯独车铃不见了。",
+      "bottom": "车铃被窃贼拆下后扔在楼道里，因为他知道失主会靠铃声辨认。失主听到的声音来自邻居自行车的车铃。盗贼没有骑走失主的车，而是换了车座和轮子，让自行车看起来像另一辆。",
+      "facts": [
+        {
+          "id": "bell-removed",
+          "description": "车铃被拆下扔在楼道里。",
+          "truth": true,
+          "aliases": [
+            "拆车铃",
+            "铃铛不见",
+            "扔楼道"
+          ]
+        },
+        {
+          "id": "parts-swapped",
+          "description": "窃贼交换了车座和轮子。",
+          "truth": true,
+          "aliases": [
+            "换零件",
+            "车座轮子",
+            "改装"
+          ]
+        },
+        {
+          "id": "bell-from-neighbor",
+          "description": "失主听到的车铃声来自邻居的车。",
+          "truth": true,
+          "aliases": [
+            "邻居的车铃",
+            "别的声音",
+            "不是这辆"
+          ]
+        },
+        {
+          "id": "bike-different",
+          "description": "门口自行车不是失主那辆。",
+          "truth": false,
+          "aliases": [
+            "不是原车",
+            "完全另一辆",
+            "没找回"
+          ]
+        },
+        {
+          "id": "security-thief",
+          "description": "保安参与了盗窃。",
+          "truth": false,
+          "aliases": [
+            "保安偷车",
+            "监守自盗",
+            "共犯"
+          ]
+        }
+      ],
+      "hints": [
+        "失主用声音认车，但声音可能来自别的自行车。",
+        "车子看起来像原来的，是因为部分零件被换了。"
+      ],
+      "suggestions": [
+        "车是谁偷的？",
+        "车铃去哪了？",
+        "保安是小偷吗？"
+      ]
+    },
+    {
+      "id": "umbrella-weapon",
+      "title": "雨伞做的凶器",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "雨伞",
+        "冰锥",
+        "凶器"
+      ],
+      "warnings": [],
+      "surface": "雨夜里发生一起命案，现场没有凶器。嫌疑人手里只有一把滴水的雨伞。侦探检查伞尖后说，凶器不是刀，而是冻硬的冰锥。",
+      "bottom": "凶器是冰锥，行凶后融化在水里。嫌疑人用雨伞携带冰锥，伞面遮挡监控。冰锥不是雨伞本体，但伞尖上的划痕证明了它与凶器接触过。",
+      "facts": [
+        {
+          "id": "ice-awl",
+          "description": "凶器是一根冰锥。",
+          "truth": true,
+          "aliases": [
+            "冰锥",
+            "结冰凶器",
+            "融化凶器"
+          ]
+        },
+        {
+          "id": "umbrella-carries",
+          "description": "雨伞被用来携带和遮挡冰锥。",
+          "truth": true,
+          "aliases": [
+            "伞里藏冰",
+            "遮挡",
+            "携带"
+          ]
+        },
+        {
+          "id": "umbrella-blade",
+          "description": "雨伞本身藏着刀。",
+          "truth": false,
+          "aliases": [
+            "伞里藏刀",
+            "伞尖是刀",
+            "改装雨伞"
+          ]
+        },
+        {
+          "id": "snow-melted",
+          "description": "冰锥在雨中融化。",
+          "truth": true,
+          "aliases": [
+            "融化了",
+            "被雨冲走",
+            "消失"
+          ]
+        },
+        {
+          "id": "victim-frozen",
+          "description": "死者是被冻死的。",
+          "truth": false,
+          "aliases": [
+            "冻死",
+            "低温",
+            "没有伤口"
+          ]
+        }
+      ],
+      "hints": [
+        "凶器没有留下，因为它会在雨里变成水。",
+        "嫌疑人的伞不是凶器，但它接触过凶器。"
+      ],
+      "suggestions": [
+        "凶器是什么？",
+        "雨伞是凶器吗？",
+        "为什么现场找不到凶器？"
+      ]
+    },
+    {
+      "id": "bank-robber-note",
+      "title": "字迹模糊的纸条",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "进阶",
+      "scale": "无怖",
+      "tags": [
+        "银行",
+        "纸条",
+        "误导"
+      ],
+      "warnings": [],
+      "surface": "银行劫案现场留下一张要求交出现金的纸条。字迹被水泡过，无法辨认。警方在监控里看到劫匪离开时把一瓶水放回柜台，侦探却说纸条是被雨淋的。",
+      "bottom": "纸条不是劫匪带进来的，而是柜员事先准备的普通取款单。真正的威胁写在劫匪手机上，离开时手机被雨水浸湿。瓶装水只是劫匪买来的，放在柜台上是为了制造错误线索。",
+      "facts": [
+        {
+          "id": "note-normal-withdrawal",
+          "description": "纸条原本是一张普通取款单。",
+          "truth": true,
+          "aliases": [
+            "取款单",
+            "普通纸条",
+            "不是威胁"
+          ]
+        },
+        {
+          "id": "threat-on-phone",
+          "description": "真正的威胁写在手机里。",
+          "truth": true,
+          "aliases": [
+            "手机威胁",
+            "电子消息",
+            "不是纸"
+          ]
+        },
+        {
+          "id": "water-distraction",
+          "description": "瓶装水是故意留下的误导。",
+          "truth": true,
+          "aliases": [
+            "误导",
+            "瓶装水",
+            "假线索"
+          ]
+        },
+        {
+          "id": "robber-wrote-note",
+          "description": "劫匪亲手写了威胁纸条。",
+          "truth": false,
+          "aliases": [
+            "劫匪写纸条",
+            "亲笔威胁",
+            "事先写"
+          ]
+        },
+        {
+          "id": "rain-outside",
+          "description": "劫匪离开时外面在下雨。",
+          "truth": true,
+          "aliases": [
+            "下雨",
+            "雨水",
+            "湿手机"
+          ]
+        }
+      ],
+      "hints": [
+        "纸质线索看起来失效，是因为关键信息从一开始就不在纸上。",
+        "那瓶水的位置不合理，反而像故意留下的。"
+      ],
+      "suggestions": [
+        "纸条是谁写的？",
+        "为什么被水泡了？",
+        "水瓶有什么作用？"
+      ]
+    },
+    {
+      "id": "witness-heard-clock",
+      "title": "证人听到的钟声",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "钟声",
+        "证人",
+        "教堂"
+      ],
+      "warnings": [],
+      "surface": "证人说自己听到午夜钟声后不久看到嫌疑人离开。警方却发现那口钟在案发前三天就坏了。证人的证词因此被怀疑，直到侦探查到钟声来自隔壁教堂。",
+      "bottom": "证人在隔壁教堂听到了替代钟声。教堂的钟因为主钟维修临时启用，声音传播方向和时钟相似。证人没有撒谎，只是把两个钟声来源混为一谈，时间也因此差了十分钟。",
+      "facts": [
+        {
+          "id": "church-clock",
+          "description": "钟声来自隔壁教堂。",
+          "truth": true,
+          "aliases": [
+            "教堂钟声",
+            "另一个钟",
+            "替代钟"
+          ]
+        },
+        {
+          "id": "main-clock-broken",
+          "description": "主钟在案发前三天坏了。",
+          "truth": true,
+          "aliases": [
+            "主钟坏了",
+            "维修",
+            "没有响"
+          ]
+        },
+        {
+          "id": "witness-lied",
+          "description": "证人故意撒谎作伪证。",
+          "truth": false,
+          "aliases": [
+            "撒谎",
+            "伪证",
+            "故意隐瞒"
+          ]
+        },
+        {
+          "id": "two-clocks-different",
+          "description": "两口钟的时间有十分钟差异。",
+          "truth": true,
+          "aliases": [
+            "时间差",
+            "十分钟",
+            "钟不准"
+          ]
+        },
+        {
+          "id": "hearing-error",
+          "description": "证人听力有问题。",
+          "truth": false,
+          "aliases": [
+            "听力差",
+            "听错",
+            "耳聋"
+          ]
+        }
+      ],
+      "hints": [
+        "证人听到的是真的钟声，只是钟不一定来自他以为的地方。",
+        "关键不是声音有无，而是两个时间系统不一致。"
+      ],
+      "suggestions": [
+        "证人撒谎了吗？",
+        "钟声从哪里来？",
+        "时间为什么不对？"
+      ]
+    },
+    {
+      "id": "cold-case-photo",
+      "title": "旧案里的照片",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "冷案",
+        "照片",
+        "茶杯"
+      ],
+      "warnings": [],
+      "surface": "旧案的证物照片里，桌上摆着一杯冒热气的茶。案件记录显示拍摄时间是案发后第二天。侦探说这杯茶不是证物，而是后来有人进入现场留下的。",
+      "bottom": "进入现场的是当年的清洁人员。他们在警方拍照后清理了茶杯，又因害怕破坏证物，放回了一只相似的杯子。冒热气说明照片不是案发当天拍的，而是整理证物时的二次拍摄。",
+      "facts": [
+        {
+          "id": "second-photo",
+          "description": "照片是清理后二次拍摄的。",
+          "truth": true,
+          "aliases": [
+            "二次拍摄",
+            "整理证物",
+            "不是案发当天"
+          ]
+        },
+        {
+          "id": "cleaner-returned-cup",
+          "description": "清洁人员放回了相似的杯子。",
+          "truth": true,
+          "aliases": [
+            "清洁人员",
+            "放回杯子",
+            "相似茶具"
+          ]
+        },
+        {
+          "id": "victim-drank-tea",
+          "description": "死者案发前喝了热茶。",
+          "truth": false,
+          "aliases": [
+            "死者喝茶",
+            "案发前喝茶",
+            "杯里有毒"
+          ]
+        },
+        {
+          "id": "photo-forged",
+          "description": "照片被人故意伪造。",
+          "truth": false,
+          "aliases": [
+            "伪造照片",
+            "合成",
+            "故意造假"
+          ]
+        },
+        {
+          "id": "case-reopened",
+          "description": "案件因为照片矛盾被重新调查。",
+          "truth": true,
+          "aliases": [
+            "重新调查",
+            "矛盾",
+            "旧案"
+          ]
+        }
+      ],
+      "hints": [
+        "热气说明拍摄时距案发已经很久，记录却指向另一种时间。",
+        "杯子和现场环境有关，但不是原始证物。"
+      ],
+      "suggestions": [
+        "死者喝了茶吗？",
+        "照片是伪造的吗？",
+        "为什么茶是热的？"
+      ]
+    }
+  ]
+}

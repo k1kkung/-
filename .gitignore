@@ -1,0 +1,36 @@
+# Python virtual environment and bytecode
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Local caches and logs
+cache/
+logs/
+
+# Large local model files
+models/*.gguf
+models/*.bin
+
+# llama.cpp runtime binaries and DLLs
+runtime/*.exe
+runtime/*.dll
+runtime/*.lib
+
+# Generated SQLite database and WAL files
+backend/stories.db
+backend/stories.db-*
+
+# Local environment and editor files
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local temporary test output
+*.tmp
+*.bak

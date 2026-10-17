@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="一个不依赖网络与真实 AI 服务的单机海龟汤推理网页。"
+    />
+    <title>SOUP.AI 海龟汤</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="app-header">
+        <button
+          id="brandButton"
+          class="brand"
+          type="button"
+          aria-label="返回题库"
+        >
+          <span class="brand-mark" aria-hidden="true">汤</span>
+          <span class="brand-copy">
+            <strong>SOUP.AI</strong>
+            <small>海龟汤推理</small>
+          </span>
+        </button>
+        <span
+          id="aiStatus"
+          class="mode-label"
+          aria-live="polite"
+          data-ai-status="loading"
+        >
+          正在加载本地模型
+        </span>
+      </header>
+
+      <main class="app-main">
+        <section id="libraryView" class="view">
+          <div class="library-intro">
+            <p class="eyebrow">配置推理</p>
+            <h1>先设定条件，再抽一盅汤</h1>
+            <p class="intro-copy">
+              从本地故事库中筛选题材、难度和尺度，抽到不喜欢的故事可以立即更换。
+            </p>
+          </div>
+
+          <div class="mode-tabs" role="tablist" aria-label="故事入口">
+            <button
+              id="drawTab"
+              class="mode-tab mode-tab--active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+            >
+              按条件抽题
+            </button>
+            <button
+              id="browseTab"
+              class="mode-tab"
+              type="button"
+              role="tab"
+              aria-selected="false"
+            >
+              浏览题库
+            </button>
+          </div>
+
+          <section id="configPanel" class="config-panel">
+            <div class="filter-groups">
+              <div class="filter-group">
+                <div class="panel-label">题材</div>
+                <div id="genreFilters" class="filter-options"></div>
+              </div>
+              <div class="filter-group">
+                <div class="panel-label">难度</div>
+                <div id="difficultyFilters" class="filter-options"></div>
+              </div>
+              <div class="filter-group">
+                <div class="panel-label">尺度</div>
+                <div id="scaleFilters" class="filter-options"></div>
+              </div>
+            </div>
+
+            <div class="config-footer">
+              <label class="toggle-control" for="aiHintToggle">
+                <input id="aiHintToggle" type="checkbox" checked />
+                <span class="toggle-control__track" aria-hidden="true"></span>
+                <span>
+                  <strong>允许 AI 提示</strong>
+                  <small id="aiHintHint">模型不可用时自动使用题库提示</small>
+                </span>
+              </label>
+              <div class="config-actions">
+                <button id="clearPreferencesButton" class="text-button" type="button">
+                  清空偏好记录
+                </button>
+                <button id="drawButton" class="action-button action-button--emphasis" type="button">
+                  开始抽题
+                </button>
+              </div>
+            </div>
+
+            <p id="configStatus" class="config-status" hidden></p>
+          </section>
+
+          <section id="previewPanel" class="preview-panel" hidden>
+            <div class="preview-copy">
+              <div id="previewMeta" class="story-meta"></div>
+              <h2 id="previewTitle"></h2>
+              <p id="previewSurface"></p>
+              <p id="previewWarning" class="content-warning" hidden></p>
+            </div>
+            <div class="preview-actions">
+              <button id="previewSwitchButton" class="action-button" type="button">
+                换一题
+              </button>
+              <button id="previewDislikeButton" class="action-button" type="button">
+                不喜欢，不再推荐
+              </button>
+              <button id="previewStartButton" class="action-button action-button--emphasis" type="button">
+                开始推理
+              </button>
+            </div>
+          </section>
+
+          <section id="browsePanel" class="browse-panel" hidden>
+            <div class="browse-toolbar">
+              <label class="sr-only" for="browseSearch">搜索故事</label>
+              <input
+                id="browseSearch"
+                class="browse-search"
+                type="search"
+                placeholder="搜索标题、汤面或标签..."
+                autocomplete="off"
+              />
+              <span id="browseCount" class="browse-count"></span>
+            </div>
+            <div id="storyGrid" class="story-grid" aria-label="海龟汤题库"></div>
+            <div class="pagination">
+              <button id="browsePrevButton" class="text-button" type="button">
+                上一页
+              </button>
+              <span id="browsePageLabel">第 1 页</span>
+              <button id="browseNextButton" class="text-button" type="button">
+                下一页
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section id="gameView" class="view" hidden>
+          <div class="game-toolbar">
+            <button id="backToLibraryButton" class="text-button" type="button">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m12 19-7-7 7-7" />
+                <path d="M19 12H5" />
+              </svg>
+              返回题库
+            </button>
+
+            <div class="game-heading">
+              <span id="gameGenre" class="eyebrow"></span>
+              <h2 id="gameTitle"></h2>
+            </div>
+
+            <div class="game-stats" aria-label="本局统计">
+              <span><strong id="questionCount">0</strong> 次提问</span>
+              <span><strong id="hintCount">2</strong> 次提示</span>
+            </div>
+          </div>
+
+          <div class="game-shortcuts">
+            <span id="gameScale" class="tag tag--scale"></span>
+            <div class="game-shortcut-actions">
+              <button id="switchStoryButton" class="text-button" type="button">
+                换一题
+              </button>
+              <button id="dislikeStoryButton" class="text-button" type="button">
+                不再推荐
+              </button>
+            </div>
+          </div>
+
+          <div class="game-layout">
+            <aside class="story-panel">
+              <div class="panel-label">汤面</div>
+              <div id="storyMeta" class="story-meta"></div>
+              <p id="storySurface" class="story-surface"></p>
+
+              <div class="answer-key" aria-label="裁判回答规则">
+                <span class="answer-chip answer-chip--yes">是</span>
+                <span class="answer-chip answer-chip--no">不是</span>
+                <span class="answer-chip answer-chip--irrelevant">与此无关</span>
+              </div>
+
+              <div id="suggestionBox" class="suggestion-box" hidden>
+                <div class="panel-label">示例提问</div>
+                <div id="suggestionList" class="suggestion-list"></div>
+              </div>
+
+              <div id="hintBox" class="hint-box" hidden>
+                <div class="panel-label">最新提示</div>
+                <p id="hintText"></p>
+              </div>
+            </aside>
+
+            <section class="chat-panel" aria-label="提问与裁判回答">
+              <div
+                id="chatLog"
+                class="chat-log"
+                role="log"
+                aria-live="polite"
+                aria-relevant="additions"
+              ></div>
+
+              <form id="questionForm" class="question-form">
+                <label class="sr-only" for="questionInput">输入你的问题</label>
+                <textarea
+                  id="questionInput"
+                  rows="1"
+                  maxlength="160"
+                  placeholder="输入你的问题..."
+                  autocomplete="off"
+                ></textarea>
+                <button
+                  id="sendButton"
+                  class="icon-button icon-button--primary"
+                  type="submit"
+                  aria-label="发送问题"
+                  title="发送问题"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                  </svg>
+                </button>
+              </form>
+
+              <div class="game-actions">
+                <button id="hintButton" class="action-button" type="button">
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5a6 6 0 0 0-12 0c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5" />
+                    <path d="M9 18h6" />
+                    <path d="M10 22h4" />
+                  </svg>
+                  获取提示
+                </button>
+
+                <button
+                  id="revealButton"
+                  class="action-button action-button--emphasis"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                  揭晓汤底
+                </button>
+
+                <button id="restartButton" class="action-button" type="button">
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+                    <path d="M3 3v5h5" />
+                  </svg>
+                  重新开始
+                </button>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="resultDialog" class="result-dialog">
+      <div class="result-heading">
+        <span class="eyebrow">真相揭晓</span>
+        <h2 id="resultTitle"></h2>
+      </div>
+
+      <section class="result-section">
+        <h3>完整汤底</h3>
+        <p id="resultBottom"></p>
+      </section>
+
+      <section class="result-section">
+        <h3>关键事实</h3>
+        <ul id="resultFacts" class="fact-list"></ul>
+      </section>
+
+      <div class="result-stats">
+        <span><strong id="resultQuestions">0</strong> 次提问</span>
+        <span><strong id="resultHints">0</strong> 次提示</span>
+      </div>
+
+      <div class="result-actions">
+        <button id="resultCloseButton" class="action-button" type="button">
+          返回对话
+        </button>
+        <button
+          id="resultRestartButton"
+          class="action-button action-button--emphasis"
+          type="button"
+        >
+          选择其他汤
+        </button>
+      </div>
+    </dialog>
+
+    <script src="stories.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
