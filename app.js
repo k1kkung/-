@@ -485,6 +485,7 @@
     refs.difficultyFilters = document.getElementById("difficultyFilters");
     refs.scaleFilters = document.getElementById("scaleFilters");
     refs.aiHintToggle = document.getElementById("aiHintToggle");
+    refs.aiStatus = document.getElementById("aiStatus");
     refs.clearPreferencesButton = document.getElementById(
       "clearPreferencesButton"
     );
