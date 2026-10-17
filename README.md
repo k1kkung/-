@@ -99,8 +99,10 @@ git push origin feature/your-feature
 
 生成或更新 `stories.js`。
 
-## 当前限制
+## 当前状态
 
-- 当前工作目录尚未补齐 `runtime\llama-server.exe`，真实本地模型加载和 AI 裁判仍需要实机验证。
+- 本机已配置 llama.cpp nightly `b11669` CUDA 12.4 Windows x64 runtime，并已验证 GGUF 模型成功加载。
+- 真实 Qwen3-4B 已通过基础验收问题，AI 提示也已使用本地模型生成。
+- 模型文件和 runtime 二进制不会提交到 Git；合作者需要在本地按上面的目录结构准备。
 - 模型文件体积较大，不建议提交到普通 Git 仓库；如确实需要托管模型，请使用 GitHub Release、Git LFS 或外部模型存储。
 - 本项目是课程原型，未做账号、联网、联机、语音和排行榜功能。
