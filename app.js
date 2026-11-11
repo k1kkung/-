@@ -5,6 +5,7 @@
     yes: "是",
     no: "不是",
     irrelevant: "与此无关",
+    unknown: "无法判断",
   };
 
   var AI_STATUS_LABELS = {
@@ -40,6 +41,7 @@
     currentStory: null,
     questionCount: 0,
     hintsUsed: 0,
+    history: [],
     revealed: false,
     judging: false,
     browsePage: 1,
@@ -90,6 +92,32 @@
 
   function hasNegation(text) {
     return /(没有|没|不是|并非|未|不会|不可能|未曾)/.test(text);
+  }
+
+  function isClearlyOpenQuestion(text) {
+    var normalized = String(text || "").trim();
+    if (/^是\s*\/?\s*不是/.test(normalized)) {
+      return false;
+    }
+    if (/^(为什么|为何|怎么|如何|谁|什么|哪里|哪儿|多少|多久|哪一)/.test(
+      normalized
+    )) {
+      return true;
+    }
+    if (/(为什么|为何|怎么|如何|谁|哪里|哪儿|多少|多久|哪一)/.test(
+      normalized
+    )) {
+      return true;
+    }
+    if (
+      /(是否|是不是|有没有|会不会|能不能|可不可以|对不对|算不算)/.test(
+        normalized
+      ) ||
+      /[吗？?]\s*$/.test(normalized)
+    ) {
+      return false;
+    }
+    return normalized.indexOf("什么") >= 0;
   }
 
   function localJudge(storyId, question) {
@@ -320,6 +348,7 @@
     return {
       id: story.id,
       title: story.title,
+      summary: story.summary || "",
       bottom: story.bottom,
       facts: (story.facts || []).map(function (fact) {
         return {
@@ -327,6 +356,22 @@
           truth: fact.truth,
         };
       }),
+    };
+  }
+
+  function partitionRevealFacts(facts) {
+    var confirmed = [];
+    var excluded = [];
+    (facts || []).forEach(function (fact) {
+      if (fact.truth === false) {
+        excluded.push(fact);
+      } else {
+        confirmed.push(fact);
+      }
+    });
+    return {
+      confirmed: confirmed,
+      excluded: excluded,
     };
   }
 
@@ -345,6 +390,7 @@
       used: index + 1,
       max: 2,
       source: "static",
+      suggested_question: (story.suggestions || [])[index] || null,
     };
   }
 
@@ -521,10 +567,9 @@
     refs.hintCount = document.getElementById("hintCount");
     refs.storyMeta = document.getElementById("storyMeta");
     refs.storySurface = document.getElementById("storySurface");
-    refs.suggestionBox = document.getElementById("suggestionBox");
-    refs.suggestionList = document.getElementById("suggestionList");
     refs.hintBox = document.getElementById("hintBox");
     refs.hintText = document.getElementById("hintText");
+    refs.hintSuggestion = document.getElementById("hintSuggestion");
     refs.chatLog = document.getElementById("chatLog");
     refs.questionForm = document.getElementById("questionForm");
     refs.questionInput = document.getElementById("questionInput");
@@ -538,8 +583,18 @@
     );
     refs.resultDialog = document.getElementById("resultDialog");
     refs.resultTitle = document.getElementById("resultTitle");
+    refs.resultSummary = document.getElementById("resultSummary");
     refs.resultBottom = document.getElementById("resultBottom");
+    refs.resultBottomDetails = document.getElementById(
+      "resultBottomDetails"
+    );
     refs.resultFacts = document.getElementById("resultFacts");
+    refs.resultExcludedSection = document.getElementById(
+      "resultExcludedSection"
+    );
+    refs.resultExcludedFacts = document.getElementById(
+      "resultExcludedFacts"
+    );
     refs.resultQuestions = document.getElementById("resultQuestions");
     refs.resultHints = document.getElementById("resultHints");
     refs.resultCloseButton = document.getElementById("resultCloseButton");
@@ -684,24 +739,6 @@
     });
   }
 
-  function renderSuggestions(story) {
-    var suggestions = story.suggestions || [];
-    refs.suggestionBox.hidden = suggestions.length === 0;
-    refs.suggestionList.textContent = "";
-    suggestions.forEach(function (suggestion) {
-      var button = createElement(
-        "button",
-        "suggestion-button",
-        suggestion
-      );
-      button.type = "button";
-      button.addEventListener("click", function () {
-        submitQuestion(suggestion);
-      });
-      refs.suggestionList.appendChild(button);
-    });
-  }
-
   function updateStats() {
     var maxHints = state.currentStory ? 2 : 2;
     refs.questionCount.textContent = String(state.questionCount);
@@ -722,11 +759,7 @@
     refs.restartButton.disabled = !state.currentStory || state.judging;
     refs.switchStoryButton.disabled = state.judging;
     refs.dislikeStoryButton.disabled = !state.currentStory && !state.preview;
-    refs.suggestionList
-      .querySelectorAll(".suggestion-button")
-      .forEach(function (button) {
-        button.disabled = !gameReady;
-      });
+    refs.hintSuggestion.disabled = !gameReady;
   }
 
   function clearComposer() {
@@ -823,13 +856,16 @@
       state.preview = story;
       state.questionCount = 0;
       state.hintsUsed = 0;
+      state.history = [];
       state.revealed = false;
       state.judging = false;
       refs.chatLog.textContent = "";
       refs.hintBox.hidden = true;
       refs.hintText.textContent = "";
+      refs.hintSuggestion.hidden = true;
+      refs.hintSuggestion.textContent = "";
+      refs.hintSuggestion.dataset.question = "";
       renderStoryMeta(story);
-      renderSuggestions(story);
       updateStats();
       setView("game");
       appendMessage("system", "汤面已公布，裁判开始回答。");
@@ -948,9 +984,20 @@
     if (!question) {
       return;
     }
+    if (isClearlyOpenQuestion(question)) {
+      appendMessage("user", question);
+      appendMessage(
+        "ai",
+        "请把问题改成可以用“是/不是”判断的命题，例如“广播是医院内部频道吗？”。"
+      );
+      clearComposer();
+      return;
+    }
 
     var storyId = state.currentStory.id;
     var localAnswer = localJudge(storyId, question);
+    var history = state.history.slice(-6);
+    var usedRuleFallback = false;
     appendMessage("user", question);
     state.questionCount += 1;
     state.judging = true;
@@ -959,8 +1006,9 @@
 
     dataCall(
       "judge",
-      [storyId, question],
+      [storyId, question, history],
       function () {
+        usedRuleFallback = true;
         return localAnswer;
       },
       32000
@@ -969,20 +1017,41 @@
         if (
           answer !== "yes" &&
           answer !== "no" &&
-          answer !== "irrelevant"
+          answer !== "irrelevant" &&
+          answer !== "unknown"
         ) {
           answer = localAnswer;
+          usedRuleFallback = true;
+        }
+        state.history.push({
+          question: question,
+          answer: answer,
+        });
+        if (state.history.length > 6) {
+          state.history.shift();
         }
         appendMessage("ai", "", answer);
         state.judging = false;
         clearComposer();
         updateControls();
+        if (usedRuleFallback) {
+          refreshAiStatus();
+        }
       })
       .catch(function () {
+        usedRuleFallback = true;
+        state.history.push({
+          question: question,
+          answer: localAnswer,
+        });
+        if (state.history.length > 6) {
+          state.history.shift();
+        }
         appendMessage("ai", "", localAnswer);
         state.judging = false;
         clearComposer();
         updateControls();
+        refreshAiStatus();
       });
   }
 
@@ -1009,6 +1078,13 @@
       state.hintsUsed = result.used || state.hintsUsed + 1;
       refs.hintBox.hidden = false;
       refs.hintText.textContent = result.hint;
+      var suggestedQuestion = result.suggested_question || "";
+      refs.hintSuggestion.hidden =
+        !suggestedQuestion || isClearlyOpenQuestion(suggestedQuestion);
+      refs.hintSuggestion.textContent = suggestedQuestion
+        ? "试着问：" + suggestedQuestion
+        : "";
+      refs.hintSuggestion.dataset.question = suggestedQuestion;
       appendMessage("hint", result.hint);
       updateStats();
       updateControls();
@@ -1032,12 +1108,26 @@
       }
       state.revealed = true;
       refs.resultTitle.textContent = reveal.title;
+      var summary = reveal.summary || reveal.bottom;
+      refs.resultSummary.textContent = summary;
       refs.resultBottom.textContent = reveal.bottom;
+      refs.resultBottomDetails.hidden =
+        !reveal.summary || reveal.summary === reveal.bottom;
+      refs.resultBottomDetails.open = false;
       refs.resultQuestions.textContent = String(state.questionCount);
       refs.resultHints.textContent = String(state.hintsUsed);
       refs.resultFacts.textContent = "";
-      (reveal.facts || []).forEach(function (fact) {
+      refs.resultExcludedFacts.textContent = "";
+      var factGroups = partitionRevealFacts(reveal.facts);
+      factGroups.confirmed.forEach(function (fact) {
         refs.resultFacts.appendChild(
+          createElement("li", "", fact.description)
+        );
+      });
+      refs.resultExcludedSection.hidden =
+        factGroups.excluded.length === 0;
+      factGroups.excluded.forEach(function (fact) {
+        refs.resultExcludedFacts.appendChild(
           createElement("li", "", fact.description)
         );
       });
@@ -1054,6 +1144,7 @@
     state.currentStory = null;
     state.questionCount = 0;
     state.hintsUsed = 0;
+    state.history = [];
     state.revealed = false;
     state.judging = false;
     setView("library");
@@ -1129,6 +1220,12 @@
     refs.backToLibraryButton.addEventListener("click", showLibrary);
     refs.restartButton.addEventListener("click", showLibrary);
     refs.hintButton.addEventListener("click", useHint);
+    refs.hintSuggestion.addEventListener("click", function () {
+      var question = refs.hintSuggestion.dataset.question;
+      if (question) {
+        submitQuestion(question);
+      }
+    });
     refs.revealButton.addEventListener("click", revealStory);
     refs.questionForm.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -1203,7 +1300,10 @@
 
   window.HaiTangEngine = {
     normalizeText: normalizeText,
+    isClearlyOpenQuestion: isClearlyOpenQuestion,
     localJudge: localJudge,
+    partitionRevealFacts: partitionRevealFacts,
+    localReveal: localReveal,
     localSearch: localSearch,
     localDraw: localDraw,
     localCatalog: localCatalog,

@@ -1,0 +1,755 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "id": "soup-ai-horror-v1",
+    "name": "SOUP.AI 惊悚反转题库 V1",
+    "version": "1.0.0",
+    "source": "基于用户提供的短视频截图重新整理和改编",
+    "rights_status": "授权待确认，正式公开发布前需要复核",
+    "notes": "保留核心惊悚反转，补全必要线索并修正明显逻辑矛盾"
+  },
+  "genres": [
+    "生活悬疑",
+    "轻松脑洞",
+    "社会派",
+    "惊悚恐怖",
+    "科幻实验室",
+    "校园",
+    "职场",
+    "家庭伦理",
+    "历史民国",
+    "犯罪推理"
+  ],
+  "difficulties": [
+    "入门",
+    "进阶",
+    "烧脑"
+  ],
+  "scales": [
+    "无怖",
+    "惊悚",
+    "重口"
+  ],
+  "stories": [
+    {
+      "id": "fifth-staircase",
+      "title": "第五组台阶",
+      "primary_genre": "校园",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "教学楼",
+        "楼梯",
+        "防空洞"
+      ],
+      "warnings": [],
+      "surface": "晚自习后，她独自留在位于一楼的教室。停电后，她沿唯一亮着应急灯的楼梯离开，数过五组台阶才看到出口。第二天，她坚持说自己从一楼向下走了五层，随后精神崩溃。",
+      "bottom": "教室门牌上的“一楼”是临街入口的旧编号，实际位置在山坡建筑的三层。应急灯把她引向一条封闭多年的旧楼梯，楼梯一直通到废弃防空洞。她数的是五组台阶，不是五层楼；真正让她崩溃的是，防空洞入口旁留着最近有人进入的脚印。",
+      "facts": [
+        {
+          "id": "old-floor-number",
+          "description": "一楼是临街入口的旧编号，教室实际在坡地建筑三层。",
+          "truth": true,
+          "aliases": [
+            "旧楼层编号",
+            "坡地建筑",
+            "不是一楼"
+          ]
+        },
+        {
+          "id": "bunker-stairs",
+          "description": "应急灯把她引向通往废弃防空洞的旧楼梯。",
+          "truth": true,
+          "aliases": [
+            "防空洞",
+            "旧楼梯",
+            "地下通道"
+          ]
+        },
+        {
+          "id": "five-floors",
+          "description": "她真的从一楼向下走了五层楼。",
+          "truth": false,
+          "aliases": [
+            "五层楼",
+            "向下五层",
+            "真实楼层"
+          ]
+        },
+        {
+          "id": "recent-footprints",
+          "description": "废弃防空洞入口附近有最近留下的脚印。",
+          "truth": true,
+          "aliases": [
+            "脚印",
+            "有人来过",
+            "最近进入"
+          ]
+        },
+        {
+          "id": "no-basement",
+          "description": "学校下面没有任何地下室或防空洞。",
+          "truth": false,
+          "aliases": [
+            "没有地下室",
+            "没有防空洞",
+            "建筑结构正常"
+          ]
+        }
+      ],
+      "hints": [
+        "一楼门牌不等于建筑的最低层。",
+        "她数到的是台阶组数，不是楼层数。"
+      ],
+      "suggestions": [
+        "教室实际位于坡地建筑的三层吗？",
+        "旧楼梯通向地下防空洞吗？",
+        "学校下面完全没有地下空间吗？"
+      ]
+    },
+    {
+      "id": "writer-hidden-camera",
+      "title": "作家的书房",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "作家",
+        "摄像头",
+        "真实案件"
+      ],
+      "warnings": [
+        "包含尸体、暴力和连环犯罪描写"
+      ],
+      "surface": "我参加了一位恐怖小说作家的生日宴，送给他一支昂贵的钢笔。回家后，我打开电脑想确认礼物是否正常工作，屏幕里的画面却让我差点窒息。",
+      "bottom": "钢笔里藏着微型摄像头。我是作家的狂热书迷，也是偷窥狂，想借此窥视他的生活。画面里，作家家中挂着人体残肢；他写下的恐怖情节并非虚构，而是真实作案记录。",
+      "facts": [
+        {
+          "id": "camera-pen",
+          "description": "主角送出的钢笔里藏着微型摄像头。",
+          "truth": true,
+          "aliases": [
+            "摄像头",
+            "偷拍钢笔",
+            "礼物有问题"
+          ]
+        },
+        {
+          "id": "fan-voyeur",
+          "description": "主角是作家的书迷，并主动偷窥他的生活。",
+          "truth": true,
+          "aliases": [
+            "偷窥狂",
+            "主动偷看",
+            "狂热书迷"
+          ]
+        },
+        {
+          "id": "author-killer",
+          "description": "作家是一名连环杀手。",
+          "truth": true,
+          "aliases": [
+            "连环杀手",
+            "真实凶手",
+            "作家杀人"
+          ]
+        },
+        {
+          "id": "novels-fiction",
+          "description": "作家的恐怖小说内容全部是虚构的。",
+          "truth": false,
+          "aliases": [
+            "纯属虚构",
+            "小说不是真的",
+            "没有真实案件"
+          ]
+        },
+        {
+          "id": "human-remains",
+          "description": "作家家中藏有人体残肢。",
+          "truth": true,
+          "aliases": [
+            "人体残肢",
+            "尸体",
+            "凶杀现场"
+          ]
+        }
+      ],
+      "hints": [
+        "真正有问题的不是电脑。",
+        "主角不是在偶然浏览作家家里的监控。"
+      ],
+      "suggestions": [
+        "钢笔里藏有摄像头吗？",
+        "作家的恐怖情节来自真实案件吗？",
+        "主角是毫无准备地收到钢笔的吗？"
+      ]
+    },
+    {
+      "id": "medical-party-game",
+      "title": "聚会游戏",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [
+        "校园",
+        "犯罪推理"
+      ],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "医学生",
+        "暗语",
+        "非法实验"
+      ],
+      "warnings": [
+        "包含非法人体实验、谋杀和暴力描写"
+      ],
+      "surface": "五名医学院学生聚会时玩“你有我没有”。A说自己敢带陌生人回宿舍，B说会半夜偷偷学习，C说每周都换一套实验用品，D说能进入监控系统，E说自己患有梦游症。话音刚落，所有人突然沉默。",
+      "bottom": "A、B、C、D共同绑架流浪者进行非法人体实验，所谓“学习”“实验用品”和“黑客能力”都是分工暗语。E的梦游症意味着他可能在夜里看见过手术现场。沉默之后，四人决定杀死E灭口。",
+      "facts": [
+        {
+          "id": "medical-students",
+          "description": "五个人都是医学院学生。",
+          "truth": true,
+          "aliases": [
+            "医学生",
+            "医学院",
+            "同学"
+          ]
+        },
+        {
+          "id": "illegal-surgery",
+          "description": "其中四人正在绑架活人进行非法手术实验。",
+          "truth": true,
+          "aliases": [
+            "非法实验",
+            "活体手术",
+            "绑架实验"
+          ]
+        },
+        {
+          "id": "coded-confessions",
+          "description": "游戏中的发言是四个人互相炫耀的分工暗语。",
+          "truth": true,
+          "aliases": [
+            "暗语",
+            "分工",
+            "互相炫耀"
+          ]
+        },
+        {
+          "id": "sleepwalk-risk",
+          "description": "E的梦游症使他可能目击过实验现场。",
+          "truth": true,
+          "aliases": [
+            "梦游目击",
+            "可能看见",
+            "E是目击者"
+          ]
+        },
+        {
+          "id": "e-safe",
+          "description": "另外四个人确认E什么都不知道，因此不会伤害他。",
+          "truth": false,
+          "aliases": [
+            "E安全",
+            "不会灭口",
+            "什么都不知道"
+          ]
+        }
+      ],
+      "hints": [
+        "他们说的不是普通校园生活。",
+        "梦游让E成为最危险的不确定目击者。"
+      ],
+      "suggestions": [
+        "五个人都是医学院学生吗？",
+        "其中四人在进行非法人体实验吗？",
+        "E的梦游症让其他人感到威胁吗？"
+      ]
+    },
+    {
+      "id": "twenty-five-point-five",
+      "title": "二十五点五个人",
+      "primary_genre": "校园",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "进阶",
+      "scale": "重口",
+      "tags": [
+        "校车",
+        "事故",
+        "人数"
+      ],
+      "warnings": [
+        "包含交通事故、肢体伤害和血腥描写"
+      ],
+      "surface": "校车发生事故后，老师让班长清点学生人数。班长沉默片刻，说：“老师，还剩25.5人。”",
+      "bottom": "一块巨大的金属板横切过校车车厢。50名学生中有49人被拦腰截断，只有弯腰系鞋带的班长完整幸存。老师不在学生统计范围内，班长把49具下半身按半个人计算得到24.5，再加上自己，报告25.5人。",
+      "facts": [
+        {
+          "id": "metal-sheet",
+          "description": "事故中有一块巨大的金属板横切过车厢。",
+          "truth": true,
+          "aliases": [
+            "金属板",
+            "横向切割",
+            "事故原因"
+          ]
+        },
+        {
+          "id": "forty-nine-cut",
+          "description": "49名学生只剩下了半具身体。",
+          "truth": true,
+          "aliases": [
+            "49个下半身",
+            "半具身体",
+            "拦腰截断"
+          ]
+        },
+        {
+          "id": "monitor-survived",
+          "description": "班长因为弯腰系鞋带而完整幸存。",
+          "truth": true,
+          "aliases": [
+            "班长幸存",
+            "系鞋带",
+            "弯腰躲避"
+          ]
+        },
+        {
+          "id": "teacher-included",
+          "description": "25.5人中包含老师。",
+          "truth": false,
+          "aliases": [
+            "老师算进人数",
+            "包含老师",
+            "老师也是0.5"
+          ]
+        },
+        {
+          "id": "half-count",
+          "description": "班长把半具身体按半个人计算。",
+          "truth": true,
+          "aliases": [
+            "半个人",
+            "24.5",
+            "按半具计算"
+          ]
+        }
+      ],
+      "hints": [
+        "25.5不是一个正常的人数。",
+        "班长恰好避开了切割线。"
+      ],
+      "suggestions": [
+        "事故中只有班长完整幸存吗？",
+        "49名学生的身体被切断了吗？",
+        "老师也被算进了25.5名学生吗？"
+      ]
+    },
+    {
+      "id": "death-age-carpool",
+      "title": "年龄",
+      "primary_genre": "惊悚恐怖",
+      "secondary_genres": [
+        "生活悬疑"
+      ],
+      "difficulty": "烧脑",
+      "scale": "惊悚",
+      "tags": [
+        "死亡年龄",
+        "拼车",
+        "车祸"
+      ],
+      "warnings": [],
+      "surface": "女孩从小能看见每个人头顶的死亡年龄。拼车时，后排女人说今晚要过30岁生日，司机说自己41岁。女孩看到两人的死亡年龄分别是30和41，立刻吓得说不出话。",
+      "bottom": "死亡年龄意味着他们会在当前年龄死去。两个陌生人的死亡年龄同时就是今晚，唯一共同点是这辆车。女孩意识到车辆即将发生致命事故，而自己也在车上。",
+      "facts": [
+        {
+          "id": "sees-death-age",
+          "description": "女孩能看见每个人将会死亡的年龄。",
+          "truth": true,
+          "aliases": [
+            "死亡年龄",
+            "看见寿命",
+            "特殊能力"
+          ]
+        },
+        {
+          "id": "woman-thirty",
+          "description": "后排女人将在30岁时死亡。",
+          "truth": true,
+          "aliases": [
+            "女人30岁死",
+            "死亡年龄30",
+            "今晚满30岁"
+          ]
+        },
+        {
+          "id": "driver-forty-one",
+          "description": "司机将在41岁时死亡。",
+          "truth": true,
+          "aliases": [
+            "司机41岁死",
+            "死亡年龄41",
+            "司机今晚死亡"
+          ]
+        },
+        {
+          "id": "imminent-crash",
+          "description": "这辆车即将发生致命事故。",
+          "truth": true,
+          "aliases": [
+            "车辆事故",
+            "车祸将至",
+            "共同死亡事件"
+          ]
+        },
+        {
+          "id": "birthday-countdown",
+          "description": "死亡年龄只是普通生日倒计时，与死亡时间无关。",
+          "truth": false,
+          "aliases": [
+            "生日倒计时",
+            "普通年龄",
+            "不会死亡"
+          ]
+        }
+      ],
+      "hints": [
+        "她看到的不是对方当前的年龄，而是终点。",
+        "两个陌生人的终点发生在同一时间。"
+      ],
+      "suggestions": [
+        "女孩能看见别人的死亡年龄吗？",
+        "女人和司机将在今晚死亡吗？",
+        "两个数字只是普通生日倒计时吗？"
+      ]
+    },
+    {
+      "id": "novel-page-turner",
+      "title": "看小说",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "独居",
+        "手机",
+        "床底"
+      ],
+      "warnings": [],
+      "surface": "深夜，她独居在家，用手机看小说。她没有开启自动翻页，页面却时不时自己向前滑动。关掉网络后，翻页仍在继续；床底的充电线也突然绷紧了。",
+      "bottom": "有人提前藏在她的床下，用另一台登录同一账号的设备同步阅读进度并翻页，同时借用床底充电线给手机充电。她独居，所以翻页不是系统故障，而是房间里还有第二个人。",
+      "facts": [
+        {
+          "id": "hidden-intruder",
+          "description": "她的床下藏着一个人。",
+          "truth": true,
+          "aliases": [
+            "床底有人",
+            "第二个人",
+            "入侵者"
+          ]
+        },
+        {
+          "id": "second-device",
+          "description": "床下的人用另一台设备控制阅读进度。",
+          "truth": true,
+          "aliases": [
+            "第二台手机",
+            "同步账号",
+            "远程翻页"
+          ]
+        },
+        {
+          "id": "auto-page",
+          "description": "页面自动翻动是手机系统故障造成的。",
+          "truth": false,
+          "aliases": [
+            "系统故障",
+            "自动翻页",
+            "软件错误"
+          ]
+        },
+        {
+          "id": "cable-moved",
+          "description": "床底充电线被藏在那里的人使用过。",
+          "truth": true,
+          "aliases": [
+            "充电线被拉紧",
+            "有人用充电线",
+            "床底充电"
+          ]
+        },
+        {
+          "id": "lives-alone",
+          "description": "她独自居住，房间里没有室友。",
+          "truth": true,
+          "aliases": [
+            "独居",
+            "没有室友",
+            "一个人住"
+          ]
+        }
+      ],
+      "hints": [
+        "问题不在阅读软件。",
+        "床底有东西同时连接着手机和房间。"
+      ],
+      "suggestions": [
+        "房间里有第二个人吗？",
+        "翻页是手机自动翻页功能造成的吗？",
+        "床底充电线被另一个人使用过吗？"
+      ]
+    },
+    {
+      "id": "storage-room-exit",
+      "title": "储藏室的门",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "烧脑",
+      "scale": "重口",
+      "tags": [
+        "车祸",
+        "囚禁",
+        "失明"
+      ],
+      "warnings": [
+        "包含车祸、囚禁、伤害和暴力描写"
+      ],
+      "surface": "车祸后，她失明并失去行动能力。现在的男友每天照顾她，却从不允许她开灯或独自出门。一天，她摸到储藏室的门，门缝里吹来外面的冷风，还有汽车驶过的声音。",
+      "bottom": "她以为的“家”其实是男友改造过的封闭房间。男友就是当年肇事司机，他撞死她原来的男友并导致她失明，随后冒充救助者控制她。储藏室的门才是真正通往外部世界的出口。",
+      "facts": [
+        {
+          "id": "boyfriend-driver",
+          "description": "现在的男友就是当年的肇事司机。",
+          "truth": true,
+          "aliases": [
+            "肇事司机",
+            "男友撞车",
+            "事故真凶"
+          ]
+        },
+        {
+          "id": "original-boyfriend-died",
+          "description": "她原来的男友在车祸中死亡。",
+          "truth": true,
+          "aliases": [
+            "前男友死亡",
+            "原男友去世",
+            "车祸死者"
+          ]
+        },
+        {
+          "id": "blindness-caused",
+          "description": "她的失明与那场车祸有关。",
+          "truth": true,
+          "aliases": [
+            "车祸失明",
+            "眼睛受伤",
+            "事故后失明"
+          ]
+        },
+        {
+          "id": "storage-is-exit",
+          "description": "储藏室的门实际上通往外部世界。",
+          "truth": true,
+          "aliases": [
+            "真正出口",
+            "门外有街道",
+            "储藏室通外面"
+          ]
+        },
+        {
+          "id": "own-home",
+          "description": "她一直住在自己的家里。",
+          "truth": false,
+          "aliases": [
+            "自己的家",
+            "没有囚禁",
+            "正常住所"
+          ]
+        }
+      ],
+      "hints": [
+        "他对她的照顾也是一种控制。",
+        "储藏室里的风和车声不属于普通储物间。"
+      ],
+      "suggestions": [
+        "现在的男友是当年的肇事司机吗？",
+        "储藏室的门通往外部世界吗？",
+        "她一直住在自己的家里吗？"
+      ]
+    },
+    {
+      "id": "lights-out-stairs",
+      "title": "灯灭了",
+      "primary_genre": "犯罪推理",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "夜班",
+        "声控灯",
+        "跟踪"
+      ],
+      "warnings": [],
+      "surface": "夜班结束后，她独自回到公寓楼。楼道声控灯随着脚步逐层亮起。她住在三楼，跑到二楼时发现一楼灯没灭；四楼灯随后亮起，三楼灯也在她面前亮起，一个男人正等在那里。",
+      "bottom": "后面的人一直跟着她，四楼的人提前下来堵住去路，两人是同伙。她意识到自己被困在二、三楼之间，而三楼的灯亮起说明第二个人已经站到了她面前。",
+      "facts": [
+        {
+          "id": "follower-behind",
+          "description": "一楼灯持续亮着，说明有人跟在她身后上楼。",
+          "truth": true,
+          "aliases": [
+            "身后有人",
+            "跟踪者",
+            "一楼灯亮"
+          ]
+        },
+        {
+          "id": "person-above",
+          "description": "四楼的人正在向楼下走。",
+          "truth": true,
+          "aliases": [
+            "四楼有人",
+            "下楼的人",
+            "堵住去路"
+          ]
+        },
+        {
+          "id": "accomplices",
+          "description": "楼上和楼下的人是同伙。",
+          "truth": true,
+          "aliases": [
+            "同伙",
+            "一起跟踪",
+            "两面夹击"
+          ]
+        },
+        {
+          "id": "lives-third",
+          "description": "她住在三楼。",
+          "truth": true,
+          "aliases": [
+            "三楼住户",
+            "回家路上",
+            "住三楼"
+          ]
+        },
+        {
+          "id": "fourth-empty",
+          "description": "四楼根本没有人，灯是故障造成的。",
+          "truth": false,
+          "aliases": [
+            "四楼没人",
+            "灯故障",
+            "无人下楼"
+          ]
+        }
+      ],
+      "hints": [
+        "声控灯亮起的位置代表人的位置。",
+        "跟踪她的人不止一个。"
+      ],
+      "suggestions": [
+        "她身后有一名跟踪者吗？",
+        "四楼有人正在下楼吗？",
+        "楼上和楼下的人是同伙吗？"
+      ]
+    },
+    {
+      "id": "photo-swap-photo",
+      "title": "交换照片",
+      "primary_genre": "生活悬疑",
+      "secondary_genres": [
+        "惊悚恐怖"
+      ],
+      "difficulty": "进阶",
+      "scale": "惊悚",
+      "tags": [
+        "网友",
+        "自拍",
+        "床底"
+      ],
+      "warnings": [],
+      "surface": "她和刚认识的网友聊得很投机，提出交换照片。她发出自拍后，对方沉默了很久，只把同一张照片发了回来。她点开照片后吓得立刻扔掉手机。",
+      "bottom": "对方放大照片后看见她床下露出一只鞋和半截脚。照片是刚拍的，她独居，因此房间里确实藏着陌生人；她只顾看镜头，没有注意到身后的床底。",
+      "facts": [
+        {
+          "id": "foot-under-bed",
+          "description": "照片里的床下露出一只脚。",
+          "truth": true,
+          "aliases": [
+            "床下脚",
+            "照片细节",
+            "鞋和脚"
+          ]
+        },
+        {
+          "id": "intruder-under-bed",
+          "description": "她的房间里藏着一个人。",
+          "truth": true,
+          "aliases": [
+            "床底有人",
+            "藏匿者",
+            "屋内陌生人"
+          ]
+        },
+        {
+          "id": "recent-selfie",
+          "description": "这张自拍是在她家中刚刚拍摄的。",
+          "truth": true,
+          "aliases": [
+            "刚刚拍摄",
+            "新照片",
+            "在卧室拍的"
+          ]
+        },
+        {
+          "id": "old-photo",
+          "description": "照片是她以前拍摄并重复使用的旧照片。",
+          "truth": false,
+          "aliases": [
+            "旧照片",
+            "以前拍的",
+            "重复使用"
+          ]
+        },
+        {
+          "id": "friend-outside",
+          "description": "网友其实站在她家门外。",
+          "truth": false,
+          "aliases": [
+            "门外",
+            "站在房子外面",
+            "没有进门"
+          ]
+        }
+      ],
+      "hints": [
+        "问题出在她自己发出去的照片里。",
+        "她忽略了一个近在身后的细节。"
+      ],
+      "suggestions": [
+        "照片里的床下露出了一只脚吗？",
+        "她的房间里藏着陌生人吗？",
+        "网友只是站在她家门外吗？"
+      ]
+    }
+  ]
+}

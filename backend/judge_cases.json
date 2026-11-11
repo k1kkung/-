@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "id": "socks-volunteer",
+      "story_id": "socks-in-freezer",
+      "question": "其中一位室友是急救志愿者吗？",
+      "expected": "yes"
+    },
+    {
+      "id": "socks-bandage",
+      "story_id": "socks-in-freezer",
+      "question": "袜子被用来给伤者临时包扎了吗？",
+      "expected": "yes"
+    },
+    {
+      "id": "socks-after-work",
+      "story_id": "socks-in-freezer",
+      "question": "他是不是打算下班后再处理袜子？",
+      "expected": "yes"
+    },
+    {
+      "id": "socks-hiding",
+      "story_id": "socks-in-freezer",
+      "question": "袜子是他故意藏进冰箱的吗？",
+      "expected": "no"
+    },
+    {
+      "id": "socks-food",
+      "story_id": "socks-in-freezer",
+      "question": "袜子放进冰箱是因为它和食物有关吗？",
+      "expected": "no"
+    },
+    {
+      "id": "socks-shoe-color",
+      "story_id": "socks-in-freezer",
+      "question": "他当时穿的鞋子是什么颜色？",
+      "expected": "unknown"
+    },
+    {
+      "id": "socks-movie",
+      "story_id": "socks-in-freezer",
+      "question": "室友平时喜欢看什么电影？",
+      "expected": "irrelevant"
+    },
+    {
+      "id": "raincoat-first-child",
+      "story_id": "mother-keeps-raincoat",
+      "question": "雨衣是为第一个孩子准备的吗？",
+      "expected": "yes"
+    },
+    {
+      "id": "raincoat-child-died",
+      "story_id": "mother-keeps-raincoat",
+      "question": "第一个孩子已经去世了吗？",
+      "expected": "yes"
+    },
+    {
+      "id": "raincoat-cash",
+      "story_id": "mother-keeps-raincoat",
+      "question": "雨衣里藏着大量现金吗？",
+      "expected": "no"
+    },
+    {
+      "id": "raincoat-brand",
+      "story_id": "mother-keeps-raincoat",
+      "question": "这件儿童雨衣是什么品牌？",
+      "expected": "unknown"
+    },
+    {
+      "id": "raincoat-weather",
+      "story_id": "mother-keeps-raincoat",
+      "question": "最近一周的天气怎么样？",
+      "expected": "irrelevant"
+    },
+    {
+      "id": "radio-predict-death",
+      "story_id": "radio-announces-deaths",
+      "question": "收音机真的能预报死亡吗？",
+      "expected": "no"
+    },
+    {
+      "id": "radio-hospital-channel",
+      "story_id": "radio-announces-deaths",
+      "question": "广播是医院内部频道吗？",
+      "expected": "yes"
+    },
+    {
+      "id": "socks-coreference",
+      "story_id": "socks-in-freezer",
+      "question": "那他是急救志愿者吗？",
+      "history": [
+        {
+          "question": "袜子被用来给伤者包扎了吗？",
+          "answer": "yes"
+        }
+      ],
+      "expected": "yes"
+    }
+  ]
+}

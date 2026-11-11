@@ -202,16 +202,18 @@
                 <span class="answer-chip answer-chip--yes">是</span>
                 <span class="answer-chip answer-chip--no">不是</span>
                 <span class="answer-chip answer-chip--irrelevant">与此无关</span>
-              </div>
-
-              <div id="suggestionBox" class="suggestion-box" hidden>
-                <div class="panel-label">示例提问</div>
-                <div id="suggestionList" class="suggestion-list"></div>
+                <span class="answer-chip answer-chip--unknown">无法判断</span>
               </div>
 
               <div id="hintBox" class="hint-box" hidden>
                 <div class="panel-label">最新提示</div>
                 <p id="hintText"></p>
+                <button
+                  id="hintSuggestion"
+                  class="suggestion-button hint-suggestion"
+                  type="button"
+                  hidden
+                ></button>
               </div>
             </aside>
 
@@ -230,7 +232,7 @@
                   id="questionInput"
                   rows="1"
                   maxlength="160"
-                  placeholder="输入你的问题..."
+                  placeholder="输入可以用“是/不是”判断的问题..."
                   autocomplete="off"
                 ></textarea>
                 <button
@@ -330,13 +332,29 @@
       </div>
 
       <section class="result-section">
-        <h3>完整汤底</h3>
-        <p id="resultBottom"></p>
+        <h3>汤底摘要</h3>
+        <p id="resultSummary"></p>
+        <details id="resultBottomDetails" class="result-details" hidden>
+          <summary>查看完整汤底</summary>
+          <p id="resultBottom"></p>
+        </details>
       </section>
 
       <section class="result-section">
         <h3>关键事实</h3>
         <ul id="resultFacts" class="fact-list"></ul>
+      </section>
+
+      <section
+        id="resultExcludedSection"
+        class="result-section result-section--excluded"
+        hidden
+      >
+        <h3>已排除的误导</h3>
+        <ul
+          id="resultExcludedFacts"
+          class="fact-list fact-list--excluded"
+        ></ul>
       </section>
 
       <div class="result-stats">

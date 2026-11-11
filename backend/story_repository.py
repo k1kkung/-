@@ -158,6 +158,7 @@ class StoryDatabase:
 
         title = str(raw.get("title", "")).strip()
         surface = str(raw.get("surface", "")).strip()
+        summary = str(raw.get("summary", "")).strip()
         bottom = str(raw.get("bottom", "")).strip()
         if not title or not surface or not bottom:
             raise SeedError(
@@ -275,6 +276,7 @@ class StoryDatabase:
             "id": story_id,
             "title": title,
             "surface": surface,
+            "summary": summary,
             "bottom": bottom,
             "primary_genre": primary_genre,
             "secondary_genres": secondary_genres,
@@ -300,6 +302,7 @@ class StoryDatabase:
                         id TEXT PRIMARY KEY,
                         title TEXT NOT NULL,
                         surface TEXT NOT NULL,
+                        summary TEXT NOT NULL DEFAULT '',
                         bottom TEXT NOT NULL,
                         primary_genre TEXT NOT NULL,
                         difficulty TEXT NOT NULL,
@@ -355,6 +358,17 @@ class StoryDatabase:
                         ON story_genres(genre);
                     """
                 )
+                columns = {
+                    row["name"]
+                    for row in connection.execute(
+                        "PRAGMA table_info(stories)"
+                    ).fetchall()
+                }
+                if "summary" not in columns:
+                    connection.execute(
+                        "ALTER TABLE stories "
+                        "ADD COLUMN summary TEXT NOT NULL DEFAULT ''"
+                    )
                 connection.commit()
             finally:
                 connection.close()
@@ -376,14 +390,15 @@ class StoryDatabase:
                     connection.execute(
                         """
                         INSERT INTO stories (
-                            id, title, surface, bottom, primary_genre,
+                            id, title, surface, summary, bottom, primary_genre,
                             difficulty, scale, warnings_json, active
-                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1)
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1)
                         """,
                         (
                             story["id"],
                             story["title"],
                             story["surface"],
+                            story["summary"],
                             story["bottom"],
                             story["primary_genre"],
                             story["difficulty"],
@@ -690,7 +705,7 @@ class StoryDatabase:
         with self._connect() as connection:
             story_row = connection.execute(
                 """
-                SELECT id, title, surface, bottom, primary_genre,
+                SELECT id, title, surface, summary, bottom, primary_genre,
                        difficulty, scale
                 FROM stories
                 WHERE id = ? AND active = 1
@@ -717,6 +732,14 @@ class StoryDatabase:
                 """,
                 (story_id,),
             ).fetchall()
+            suggestions = connection.execute(
+                """
+                SELECT suggestion FROM story_suggestions
+                WHERE story_id = ?
+                ORDER BY ordinal
+                """,
+                (story_id,),
+            ).fetchall()
 
         fact_map: Dict[str, Dict[str, Any]] = {}
         for row in facts:
@@ -730,12 +753,16 @@ class StoryDatabase:
             "id": story_row["id"],
             "title": story_row["title"],
             "surface": story_row["surface"],
+            "summary": story_row["summary"],
             "bottom": story_row["bottom"],
             "primary_genre": story_row["primary_genre"],
             "difficulty": story_row["difficulty"],
             "scale": story_row["scale"],
             "facts": fact_map,
             "hints": [row["hint"] for row in hints],
+            "suggestions": [
+                row["suggestion"] for row in suggestions
+            ],
         }
 
     def get_reveal(self, story_id: str) -> Optional[Dict[str, Any]]:
@@ -745,6 +772,7 @@ class StoryDatabase:
         return {
             "id": story["id"],
             "title": story["title"],
+            "summary": story["summary"],
             "bottom": story["bottom"],
             "facts": [
                 {

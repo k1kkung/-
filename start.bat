@@ -4,6 +4,8 @@ chcp 65001 >nul
 cd /d "%~dp0"
 
 set "PROJECT_ROOT=%CD%"
+if not defined SOUP_AI_STORIES_FILE set "SOUP_AI_STORIES_FILE=%PROJECT_ROOT%\backend\stories.json"
+if not defined SOUP_AI_DB_FILE set "SOUP_AI_DB_FILE=%PROJECT_ROOT%\backend\stories.db"
 set "CACHE_DIR=%PROJECT_ROOT%\cache"
 set "TEMP_DIR=%CACHE_DIR%\temp"
 set "PIP_CACHE_DIR=%CACHE_DIR%\pip"
@@ -36,7 +38,7 @@ if errorlevel 1 (
     if errorlevel 1 goto :error
 )
 
-"%VENV_PYTHON%" "%PROJECT_ROOT%\backend\export_frontend_data.py" >nul 2>nul
+"%VENV_PYTHON%" "%PROJECT_ROOT%\backend\export_frontend_data.py" --input "%SOUP_AI_STORIES_FILE%" --output "%PROJECT_ROOT%\stories.js" >nul 2>nul
 
 title SOUP.AI Turtle Soup
 if exist "%VENV_PYTHONW%" (

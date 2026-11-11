@@ -21,6 +21,12 @@ runtime/*.lib
 # Generated SQLite database and WAL files
 backend/stories.db
 backend/stories.db-*
+backend/stories_bali_50.db
+backend/stories_bali_50.db-*
+backend/stories_bali_50_validation.db*
+
+# User-provided source material
+数据库/
 
 # Local environment and editor files
 .env

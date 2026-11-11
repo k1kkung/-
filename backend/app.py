@@ -16,6 +16,7 @@ import subprocess
 import sys
 import threading
 import time
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -32,6 +33,16 @@ except Exception:  # pragma: no cover - handled as rule-mode fallback
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 BACKEND_DIR = Path(__file__).resolve().parent
+
+
+def _project_path_from_env(name: str, default: Path) -> Path:
+    raw_value = os.environ.get(name)
+    path = Path(raw_value).expanduser() if raw_value else default
+    if not path.is_absolute():
+        path = PROJECT_ROOT / path
+    return path.resolve()
+
+
 MODEL_PATH = (
     PROJECT_ROOT
     / "models"
@@ -39,8 +50,14 @@ MODEL_PATH = (
 )
 EXPECTED_MODEL_SIZE = 2497281120
 RUNTIME_EXE = PROJECT_ROOT / "runtime" / "llama-server.exe"
-STORIES_FILE = BACKEND_DIR / "stories.json"
-STORIES_DB_FILE = BACKEND_DIR / "stories.db"
+STORIES_FILE = _project_path_from_env(
+    "SOUP_AI_STORIES_FILE",
+    BACKEND_DIR / "stories.json",
+)
+STORIES_DB_FILE = _project_path_from_env(
+    "SOUP_AI_DB_FILE",
+    BACKEND_DIR / "stories.db",
+)
 CACHE_DIR = PROJECT_ROOT / "cache"
 LOGS_DIR = PROJECT_ROOT / "logs"
 APP_LOG_FILE = LOGS_DIR / "soup-ai.log"
@@ -54,6 +71,8 @@ DEFAULT_GPU_LAYERS = 99
 DEFAULT_STARTUP_TIMEOUT = 240.0
 DEFAULT_REQUEST_TIMEOUT = 30.0
 DEFAULT_MIN_CONFIDENCE = 0.65
+DEFAULT_MIN_EVIDENCE_SIMILARITY = 0.82
+VALID_JUDGE_ANSWERS = ("yes", "no", "irrelevant", "unknown")
 
 LOGGER = logging.getLogger("soup-ai")
 _LOGGING_CONFIGURED = False
@@ -530,18 +549,43 @@ class LocalJudgeService:
         if bool(use_ai) and self.llama.status() == "ready":
             generated = self._request_ai_hint(story, used)
             if generated:
-                return {
-                    "hint": generated,
-                    "hint_index": used,
-                    "used": used + 1,
-                    "max": 2,
-                    "source": "ai",
-                }
+                return self._attach_hint_suggestion(
+                    {
+                        "hint": generated,
+                        "hint_index": used,
+                        "used": used + 1,
+                        "max": 2,
+                        "source": "ai",
+                    },
+                    story,
+                    used,
+                )
 
-        return self.db.get_static_hint(story_key, used)
+        result = self.db.get_static_hint(story_key, used)
+        if result is None:
+            return None
+        return self._attach_hint_suggestion(result, story, used)
 
-    def judge(self, story_id: Any, question: Any) -> Optional[str]:
-        """Return yes/no/irrelevant, or None when the JS bridge should fallback."""
+    @staticmethod
+    def _attach_hint_suggestion(
+        result: Dict[str, Any],
+        story: Dict[str, Any],
+        hints_used: int,
+    ) -> Dict[str, Any]:
+        suggestions = story.get("suggestions") or []
+        if suggestions:
+            index = min(max(0, hints_used), len(suggestions) - 1)
+            result = dict(result)
+            result["suggested_question"] = suggestions[index]
+        return result
+
+    def judge(
+        self,
+        story_id: Any,
+        question: Any,
+        history: Any = None,
+    ) -> Optional[str]:
+        """Return a constrained answer, or None for rule-mode fallback."""
 
         if self.llama.status() != "ready":
             return None
@@ -560,7 +604,11 @@ class LocalJudgeService:
             return None
 
         try:
-            parsed = self._judge_with_model(story, question_text)
+            parsed = self._judge_with_model(
+                story,
+                question_text,
+                history,
+            )
         except Exception:
             LOGGER.exception("AI judge request failed")
             return None
@@ -568,26 +616,27 @@ class LocalJudgeService:
         if parsed is None:
             return None
 
-        answer, fact_id, confidence = parsed
+        answer, evidence, confidence = parsed
         if confidence < self.min_confidence:
             LOGGER.info(
-                "AI confidence below threshold: story=%s fact=%s "
-                "confidence=%s",
+                "AI confidence below threshold: story=%s answer=%s "
+                "confidence=%s evidence_length=%s",
                 story_key,
-                fact_id,
+                answer,
                 confidence,
+                len(evidence),
             )
-            return None
+            return "unknown"
 
-        if answer not in ("yes", "no", "irrelevant"):
+        if answer not in VALID_JUDGE_ANSWERS:
             return None
 
         LOGGER.info(
-            "AI verdict: story=%s fact=%s confidence=%s answer=%s",
+            "AI verdict: story=%s answer=%s confidence=%s evidence_length=%s",
             story_key,
-            fact_id,
-            confidence,
             answer,
+            confidence,
+            len(evidence),
         )
         return answer
 
@@ -595,12 +644,51 @@ class LocalJudgeService:
         self,
         story: Dict[str, Any],
         question: str,
-    ) -> Optional[Tuple[str, Optional[str], float]]:
+        history: Any = None,
+    ) -> Optional[Tuple[str, str, float]]:
         prompt = self._build_system_prompt(story)
-        content = self._request_completion(prompt, question)
+        user_prompt = self._build_user_prompt(question, history)
+        content = self._request_completion(prompt, user_prompt)
         if not content:
             return None
         return self._parse_model_result(content, story)
+
+    @staticmethod
+    def _build_user_prompt(question: str, history: Any = None) -> str:
+        if not isinstance(history, list):
+            return question
+        answer_labels = {
+            "yes": "是",
+            "no": "不是",
+            "irrelevant": "与此无关",
+            "unknown": "无法判断",
+        }
+        turns = []
+        for item in history[-6:]:
+            if not isinstance(item, dict):
+                continue
+            prior_question = str(item.get("question", "")).strip()
+            prior_answer = str(item.get("answer", "")).strip().lower()
+            if (
+                not prior_question
+                or len(prior_question) > 160
+                or prior_answer not in answer_labels
+            ):
+                continue
+            turns.append(
+                "玩家：{0}\n裁判：{1}".format(
+                    prior_question,
+                    answer_labels[prior_answer],
+                )
+            )
+        if not turns:
+            return question
+        return (
+            "【最近问答，仅用于理解代词和追问，不作为额外事实依据】\n"
+            + "\n".join(turns)
+            + "\n【当前问题】\n"
+            + question
+        )
 
     def _request_ai_hint(
         self,
@@ -609,6 +697,8 @@ class LocalJudgeService:
     ) -> Optional[str]:
         facts = []
         for fact in story["facts"].values():
+            if not fact["truth"]:
+                continue
             facts.append(
                 {
                     "id": fact["id"],
@@ -668,23 +758,38 @@ class LocalJudgeService:
             separators=(",", ":"),
         )
         return (
-            "你是海龟汤裁判的问答映射器，不是汤底解释器。\n"
-            "你的唯一任务：把玩家问题映射到下面事实表中的一条事实。\n"
-            "事实表是唯一裁决依据。不得自由解释汤底，不得泄露事实，"
-            "不得补充事实表之外的信息。\n"
-            "如果问题无法可靠映射到事实，返回 irrelevant。\n"
+            "你是海龟汤裁判，不是汤底解释器或提示生成器。\n"
+            "请根据公开汤面、完整汤底和参考事实，判断玩家问题是否符合"
+            "汤底。完整汤底是最终事实依据；参考事实是辅助索引，不得"
+            "限制你只能从事实表中选答案。\n"
+            "如果用户消息包含最近问答，只可用它理解“他、她、这件事、"
+            "后来”等指代；最近问答本身不能补充新的事实。\n"
+            "只能使用汤底明确表达的信息，不得用常识补充年龄、动机、"
+            "情绪、身份或后续经历。\n"
+            "answer 只能是 yes、no、irrelevant、unknown。\n"
+            "yes：汤底或参考事实明确支持问题中的命题。\n"
+            "no：汤底或参考事实明确否定问题中的命题。\n"
+            "irrelevant：问题与这个故事的核心情节无关。\n"
+            "unknown：问题与故事有关，但汤底没有说明，或问题不是可判定"
+            "的是/否命题。无法确定时优先使用 unknown，禁止猜测。\n"
+            "如果问题提到故事中的角色、物品、时间、地点或行为，但汤底"
+            "没有说明该细节，使用 unknown；只有引入故事外的新话题时才"
+            "使用 irrelevant。\n"
+            "例如，问故事中的一件雨衣是什么品牌，但汤底没有说明，应"
+            "返回 unknown；问与故事无关的最近天气，应返回 irrelevant。\n"
+            "当 answer 为 yes 或 no 时，evidence 必须逐字引用汤底中"
+            "或参考事实中能够支持该判断的原文片段，不得改写或编造。\n"
+            "当 answer 为 irrelevant 或 unknown 时，evidence 可以为空。\n"
             "输出必须是一个严格 JSON 对象，不要 Markdown，不要解释，"
             "不要输出 JSON 之外的任何文字。\n"
-            '固定格式：{"verdict":"yes","fact_id":"...","confidence":0.95}\n'
-            "verdict 只能是 yes、no、irrelevant。\n"
-            "fact_id 必须是事实表里的 id，无法映射时使用 null。\n"
-            "confidence 是 0 到 1 之间的数字。\n"
-            "即使事实表里某条事实的 truth 与你的直觉不同，也必须按"
-            "该事实的 truth 映射；后端会根据 fact_id 的真值决定最终"
-            "回答。\n"
+            '固定格式：{"answer":"yes","evidence":"汤底原文片段",'
+            '"self_confidence":0.95}\n'
+            "self_confidence 是你对本次判断的主观置信度，范围是 0 到 1。\n"
             "【公开汤面】\n"
             + story.get("surface", "")
-            + "\n【事实表】\n"
+            + "\n【完整汤底】\n"
+            + story.get("bottom", "")
+            + "\n【参考事实】\n"
             + facts_json
         )
 
@@ -704,7 +809,7 @@ class LocalJudgeService:
             ],
             "temperature": 0.0,
             "top_p": 0.1,
-            "max_tokens": 128,
+            "max_tokens": 256,
             "stream": False,
             "response_format": {"type": "json_object"},
         }
@@ -772,7 +877,7 @@ class LocalJudgeService:
         self,
         content: str,
         story: Dict[str, Any],
-    ) -> Optional[Tuple[str, Optional[str], float]]:
+    ) -> Optional[Tuple[str, str, float]]:
         match = re.search(r"\{.*\}", content, flags=re.DOTALL)
         if not match:
             return None
@@ -784,33 +889,82 @@ class LocalJudgeService:
         if not isinstance(data, dict):
             return None
 
-        verdict = str(data.get("verdict", "")).strip().lower()
-        if verdict not in ("yes", "no", "irrelevant"):
+        answer = str(
+            data.get("answer", data.get("verdict", ""))
+        ).strip().lower()
+        if answer not in VALID_JUDGE_ANSWERS:
             return None
 
-        raw_fact_id = data.get("fact_id", data.get("factId"))
-        fact_id: Optional[str] = None
-        if raw_fact_id is not None:
-            fact_id = str(raw_fact_id).strip()
-            if fact_id.lower() in ("", "null", "none"):
-                fact_id = None
+        evidence = str(data.get("evidence", "")).strip()
 
         try:
-            confidence = float(data.get("confidence"))
+            confidence = float(
+                data.get("self_confidence", data.get("confidence"))
+            )
         except (TypeError, ValueError):
             return None
         if confidence < 0.0 or confidence > 1.0:
             return None
 
-        if verdict == "irrelevant":
-            return "irrelevant", None, confidence
+        if answer in ("yes", "no"):
+            normalized_evidence = re.sub(r"\s+", "", evidence)
+            evidence_sources = [str(story.get("bottom", ""))]
+            for fact in story["facts"].values():
+                evidence_sources.append(str(fact.get("description", "")))
+                evidence_sources.extend(
+                    str(alias) for alias in fact.get("aliases", [])
+                )
+            normalized_sources = [
+                re.sub(r"\s+", "", source)
+                for source in evidence_sources
+                if source
+            ]
+            evidence_segments = [
+                re.sub(r"\s+", "", segment)
+                for segment in re.split(
+                    r"[。！？!?；;.]+",
+                    evidence,
+                )
+                if segment.strip()
+            ]
+            evidence_supported = any(
+                normalized_evidence in source
+                for source in normalized_sources
+            )
+            if not evidence_supported and evidence_segments:
+                evidence_supported = all(
+                    any(
+                        segment in source
+                        or SequenceMatcher(
+                            None,
+                            segment,
+                            source,
+                        ).ratio()
+                        >= DEFAULT_MIN_EVIDENCE_SIMILARITY
+                        for source in normalized_sources
+                    )
+                    for segment in evidence_segments
+                )
+            if (
+                len(normalized_evidence) < 4
+                or not evidence_supported
+            ):
+                return "unknown", evidence, confidence
 
-        if fact_id is None or fact_id not in story["facts"]:
-            return None
+            for fact in story["facts"].values():
+                description = re.sub(
+                    r"\s+",
+                    "",
+                    str(fact.get("description", "")),
+                )
+                if normalized_evidence != description:
+                    continue
+                expected_answer = "yes" if fact["truth"] else "no"
+                if answer != expected_answer:
+                    return "unknown", evidence, confidence
+                break
 
-        fact = story["facts"][fact_id]
-        answer = "yes" if fact["truth"] else "no"
-        return answer, fact_id, confidence
+        return answer, evidence, confidence
 
 
 def run_self_check() -> int:

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 from typing import Any, Dict, List
@@ -30,6 +31,7 @@ def _public_story(story: Dict[str, Any]) -> Dict[str, Any]:
         "scale": story["scale"],
         "warnings": story.get("warnings", []),
         "surface": story["surface"],
+        "summary": story.get("summary", ""),
         "bottom": story["bottom"],
         "facts": story["facts"],
         "hints": story["hints"],
@@ -38,7 +40,14 @@ def _public_story(story: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def main() -> int:
-    with SEED_FILE.open("r", encoding="utf-8") as handle:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path, default=SEED_FILE)
+    parser.add_argument("--output", type=Path, default=OUTPUT_FILE)
+    args = parser.parse_args()
+    seed_file = args.input if args.input.is_absolute() else ROOT / args.input
+    output_file = args.output if args.output.is_absolute() else ROOT / args.output
+
+    with seed_file.open("r", encoding="utf-8") as handle:
         seed = json.load(handle)
 
     stories: List[Dict[str, Any]] = [
@@ -60,8 +69,9 @@ def main() -> int:
         "  window.STORIES = window.SOUP_DATA.stories;\n"
         "})();\n"
     )
-    OUTPUT_FILE.write_text(content, encoding="utf-8")
-    print("wrote {0} stories to {1}".format(len(stories), OUTPUT_FILE))
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(content, encoding="utf-8")
+    print("wrote {0} stories to {1}".format(len(stories), output_file))
     return 0
 
 
